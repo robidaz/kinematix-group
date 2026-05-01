@@ -2,11 +2,23 @@
   <!-- AI Prompt Panel -->
   <div class="vv-prompt">
     <div class="vv-prompt__header">
-      <div>
-        <h2 class="vv-prompt__title">AI Vendor Match</h2>
-        <p class="vv-prompt__subtitle">Describe your client's needs in plain English. We'll narrow the catalog for you.</p>
+      <h2 class="vv-prompt__title">AI Vendor Match</h2>
+      <div class="vv-prompt__header-actions">
+        <button
+          class="vv-btn-circle vv-btn-circle--primary"
+          [disabled]="loading"
+          (click)="runAnalysis()"
+          title="Find Vendors">
+          <span class="material-icons">send</span>
+        </button>
+        <button
+          class="vv-btn-circle vv-btn-circle--ghost"
+          (click)="resetFilter()"
+          [disabled]="loading"
+          title="Clear / Reset">
+          <span class="material-icons">backspace</span>
+        </button>
       </div>
-      <span class="vv-model-badge">Claude · Sonnet</span>
     </div>
 
     <div class="vv-prompt__row">
@@ -17,7 +29,7 @@
           class="vv-prompt__textarea"
           [(ngModel)]="promptValue"
           placeholder="e.g. Mid-range cybersecurity vendor with strong compliance support"
-          rows="3"
+          rows="2"
           (input)="onPromptInput()"
           (focus)="onPromptFocus()"
           (blur)="onPromptBlur()"
@@ -32,23 +44,6 @@
             {{ s }}
           </div>
         </div>
-      </div>
-      <div class="vv-prompt__actions">
-        <button
-          ejs-button
-          isPrimary="true"
-          class="vv-btn vv-btn--primary"
-          [disabled]="loading"
-          (click)="runAnalysis()">
-          {{ loading ? 'Analyzing…' : 'Find Vendors' }}
-        </button>
-        <button
-          ejs-button
-          class="vv-btn vv-btn--ghost"
-          (click)="resetFilter()"
-          [disabled]="loading">
-          Clear / Reset
-        </button>
       </div>
     </div>
 
@@ -67,29 +62,25 @@
       <span class="vv-prompt__summary-label">Filter applied:</span>
       <span class="vv-prompt__summary-text">{{ aiSummary }}</span>
     </div>
-  </div>
 
-  <!-- Disclaimer -->
-  <div class="vv-disclaimer">
-    Vendor data is simulated for demonstration purposes. Some company names are real; all metrics and contract values are fabricated.
-  </div>
-
-  <!-- Column visibility toggle -->
-  <div class="vv-col-toggle">
-    <span class="vv-col-toggle__label">Select column name to toggle visibility</span>
-    <div class="vv-col-toggle__chips">
-      <span
-        *ngFor="let col of toggleableColumns"
-        class="vv-col-toggle__chip"
-        [class.vv-col-toggle__chip--hidden]="!columnVisibility[col]"
-        (click)="toggleColumn(col)">
-        {{ col }}
-      </span>
-    </div>
+    <p class="vv-prompt__powered-by">Powered by Anthropic's Claude Sonnet model</p>
   </div>
 
   <!-- Vendor Grid -->
   <div class="vv-grid-wrap">
+    <!-- Column visibility toggle (inline toolbar) -->
+    <div class="vv-col-toggle">
+      <div class="vv-col-toggle__chips">
+        <span
+          *ngFor="let col of toggleableColumns"
+          class="vv-col-toggle__chip"
+          [class.vv-col-toggle__chip--hidden]="!columnVisibility[col]"
+          (click)="toggleColumn(col)">
+          {{ col }}
+        </span>
+      </div>
+    </div>
+
     <ejs-grid
       #grid
       [dataSource]="visibleVendors"
