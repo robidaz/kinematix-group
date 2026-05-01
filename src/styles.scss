@@ -28,6 +28,14 @@ a:hover { text-decoration: underline; }
 /* Drop the theme's uppercase on buttons */
 .e-btn { text-transform: none !important; letter-spacing: 0 !important; }
 
+/* Sticky tab bar — sits just below the 61px app header */
+.e-tab .e-tab-header {
+  position: sticky;
+  top: 61px;
+  z-index: 99;
+  background: #fff;
+}
+
 /* Tab text — the material theme uppercases by default; keep sentence case */
 .e-tab .e-tab-header .e-toolbar-item .e-tab-text {
   text-transform: none !important;
