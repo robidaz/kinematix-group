@@ -1,0 +1,290 @@
+@import "../base/base.scss";
+
+@use 'sass:color';
+
+$appbar-bg-color-primary: $primary !default;
+$appbar-color-primary: $primary-font !default;
+$appbar-border-color-primary: $primary !default;
+$appbar-font-size: 14px !default;
+$appbar-bigger-font-size: 14px !default;
+$appbar-border: none !default;
+$appbar-bigger-height: 56px !default;
+$appbar-bigger-dense-height: 48px !default;
+$appbar-bigger-prominent-height: 112px !default;
+$appbar-nrml-height: 48px !default;
+$appbar-nrml-padding: 8px !default;
+$appbar-content-height: 100% !default;
+$appbar-nrml-prominent-height: 94px !default;
+$appbar-nrml-dense-height: 40px !default;
+$appbar-separator-height: 24px !default;
+$appbar-border-width: 1px !default;
+$appbar-input-group-icon-border: none !default;
+@include export-module('appbar-layout') {
+  .e-appbar {
+    display: flex;
+    width: 100%;
+    height: $appbar-nrml-height;
+    flex-shrink: 0;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    padding: $appbar-nrml-padding;
+    overflow: hidden;
+    font-size: $appbar-font-size;
+    @if ($skin-name == 'fluent2' or $skin-name == 'tailwind3') {
+      border-radius: $appbar-border-radius;
+    }
+    > div:first-child {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: $appbar-content-height;
+    }
+    &.e-sticky {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    &.e-prominent {
+      height: $appbar-nrml-prominent-height;
+      align-items: flex-start;
+      > div:first-child {
+        align-items: flex-start;
+      }
+    }
+    &.e-dense {
+      height: $appbar-nrml-dense-height;
+    }
+    &.e-horizontal-bottom {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      &.e-sticky {
+        position: fixed;
+        top: auto;
+        max-width: inherit;
+        left: auto;
+        right: auto;
+      }
+    }
+    .e-appbar-separator {
+      height: $appbar-separator-height;
+    }
+    .e-appbar-spacer {
+      flex-grow: 1;
+    }
+    .e-btn,
+    .e-css.e-btn {
+      border-image: unset;
+    }
+  }
+  .e-inherit.e-menu-wrapper.e-scrollable .e-menu,
+  .e-inherit.e-menu-container.e-scrollable .e-menu {
+    overflow: hidden;
+  }
+}
+@include export-module('appbar-theme') {
+  .e-appbar {
+    box-shadow: $appbar-bottom-shadow;
+    &.e-light {
+      background: $appbar-bg-color-alt1;
+      color: $appbar-color-alt1;
+      border: $appbar-border;
+      @if ($skin-name == 'Material3') {
+        border-image: $appbar-border-color-alt1;
+      }
+      @else {
+        border-color: $appbar-border-color-alt1;
+      }
+      .e-appbar-separator {
+        border-left: $appbar-border-width solid $appbar-color-alt1;
+      }
+      .e-btn,
+      .e-css.e-btn,
+      .e-dropdown-btn,
+      .e-dropdown-btn.e-btn {
+        &.e-inherit {
+          &:hover,
+          &:focus,
+          &:active,
+          &.e-active {
+            background: $appbar-hover-bg-color-alt1;
+          }
+        }
+      }
+      .e-menu-wrapper,
+      .e-menu-container {
+        &.e-inherit {
+          background: $appbar-bg-color-alt1;
+          color: $appbar-color-alt1;
+          box-shadow: none;
+          @if ($skin-name == 'Material3') {
+            border-image: $appbar-border-color-alt1;
+          }
+          @else {
+            border-color: $appbar-border-color-alt1;
+          }
+          & .e-menu .e-menu-item.e-selected,
+          & .e-menu .e-menu-item.e-focused {
+            background: $appbar-hover-bg-color-alt1;
+          }
+        }
+      }
+    }
+    &.e-dark {
+      background: $appbar-bg-color-alt2;
+      color: $appbar-color-alt2;
+      border-color: $appbar-border-color-alt2;
+      .e-appbar-separator {
+        border-left: $appbar-border-width solid $appbar-color-alt2;
+      }
+      .e-btn,
+      .e-css.e-btn,
+      .e-dropdown-btn,
+      .e-dropdown-btn.e-btn {
+        &.e-inherit {
+          &:hover,
+          &:focus,
+          &:active,
+          &.e-active {
+            background: $appbar-hover-bg-color-alt2;
+          }
+        }
+      }
+      .e-menu-wrapper,
+      .e-menu-container {
+        &.e-inherit {
+          background: $appbar-bg-color-alt2;
+          color: $appbar-color-alt2;
+          border-color: $appbar-border-color-alt2;
+          box-shadow: none;
+          & .e-menu .e-menu-item.e-selected,
+          & .e-menu .e-menu-item.e-focused {
+            background: $appbar-hover-bg-color-alt2;
+          }
+        }
+      }
+    }
+    &.e-primary {
+      background: $appbar-bg-color-primary;
+      color: $appbar-color-primary;
+      border-color: $appbar-border-color-primary;
+      .e-appbar-separator {
+        border-left: $appbar-border-width solid $appbar-color-primary;
+      }
+      .e-menu-wrapper,
+      .e-menu-container {
+        &.e-inherit {
+          background: $appbar-bg-color-primary;
+          color: $appbar-color-primary;
+          border-color: $appbar-border-color-primary;
+          box-shadow: none;
+        }
+      }
+    }
+    &.e-inherit {
+      background: inherit;
+      color: inherit;
+      border-color: inherit;
+      border: $appbar-border-width solid;
+      .e-appbar-separator {
+        border-left: $appbar-border-width solid;
+      }
+      .e-menu-wrapper,
+      .e-menu-container {
+        &.e-inherit {
+          background: inherit;
+          color: inherit;
+          border-color: inherit;
+          box-shadow: none;
+        }
+      }
+    }
+    &.e-horizontal-bottom {
+      box-shadow: $appbar-top-shadow;
+    }
+  }
+  .e-light {
+    &.e-inherit.e-input-group,
+    &.e-inherit.e-input-group.e-control-wrapper,
+    &.e-inherit.e-float-input,
+    &.e-inherit.e-float-input.e-input-group,
+    &.e-inherit.e-float-input.e-control-wrapper,
+    &.e-inherit.e-float-input.e-input-group.e-control-wrapper,
+    &.e-inherit.e-input-group:not(.e-disabled) .e-input-group-icon:hover,
+    &.e-inherit.e-input-group.e-control-wrapper:not(.e-disabled) .e-input-group-icon:hover {
+      background: $appbar-bg-color-alt1;
+      color: $appbar-color-alt1;
+    }
+  }
+  .e-dark {
+    &.e-inherit.e-input-group,
+    &.e-inherit.e-input-group.e-control-wrapper,
+    &.e-inherit.e-float-input,
+    &.e-inherit.e-float-input.e-input-group,
+    &.e-inherit.e-float-input.e-control-wrapper,
+    &.e-inherit.e-float-input.e-input-group.e-control-wrapper,
+    &.e-inherit.e-input-group:not(.e-disabled) .e-input-group-icon:hover,
+    &.e-inherit.e-input-group.e-control-wrapper:not(.e-disabled) .e-input-group-icon:hover {
+      background: $appbar-bg-color-alt2;
+      color: $appbar-color-alt2;
+    }
+  }
+  .e-primary {
+    &.e-inherit.e-input-group,
+    &.e-inherit.e-input-group.e-control-wrapper,
+    &.e-inherit.e-float-input,
+    &.e-inherit.e-float-input.e-input-group,
+    &.e-inherit.e-float-input.e-control-wrapper,
+    &.e-inherit.e-float-input.e-input-group.e-control-wrapper,
+    &.e-inherit.e-input-group:not(.e-disabled) .e-input-group-icon:hover,
+    &.e-inherit.e-input-group.e-control-wrapper:not(.e-disabled) .e-input-group-icon:hover {
+      background: $appbar-bg-color-primary;
+      color: $appbar-color-primary;
+    }
+  }
+  .e-inherit.e-input-group,
+  .e-inherit.e-input-group.e-control-wrapper,
+  .e-inherit.e-float-input,
+  .e-inherit.e-float-input.e-input-group,
+  .e-inherit.e-float-input.e-control-wrapper,
+  .e-inherit.e-float-input.e-input-group.e-control-wrapper,
+  .e-inherit.e-input-group:not(.e-disabled) .e-input-group-icon:hover,
+  .e-inherit.e-input-group.e-control-wrapper:not(.e-disabled) .e-input-group-icon:hover {
+    color: inherit;
+    background: rgba(transparent, .056);
+  }
+  .e-inherit.e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error),
+  .e-inherit.e-input-group.e-control-wrapper.e-input-focus:not(.e-success):not(.e-warning):not(.e-error),
+  .e-inherit.e-input-group:not(.e-disabled):active:not(.e-success):not(.e-warning):not(.e-error),
+  .e-inherit.e-input-group.e-control-wrapper:not(.e-disabled):active:not(.e-success):not(.e-warning):not(.e-error) {
+    box-shadow: none;
+  }
+  .e-inherit.e-input-group.e-control-wrapper .e-searchinput::placeholder {
+    color: inherit;
+    opacity: .8;
+  }
+  .e-inherit.e-input-group .e-input-group-icon,
+  .e-inherit.e-input-group.e-control-wrapper .e-input-group-icon {
+    border: $appbar-input-group-icon-border;
+    color: inherit;
+  }
+  .e-inherit.e-input-group .e-clear-icon,
+  .e-inherit.e-input-group.e-control-wrapper .e-clear-icon {
+    color: inherit;
+  }
+}
+@include export-module('appbar-bigger') {
+  .e-bigger .e-appbar,
+  .e-appbar.e-bigger {
+    height: $appbar-bigger-height;
+    font-size: $appbar-bigger-font-size;
+    &.e-dense {
+      height: $appbar-bigger-dense-height;
+    }
+    &.e-prominent {
+      height: $appbar-bigger-prominent-height;
+    }
+  }
+}

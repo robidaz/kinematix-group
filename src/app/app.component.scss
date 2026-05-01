@@ -1,0 +1,48 @@
+.km-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+}
+
+.km-header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+
+  &:hover { background: #fafafa; }
+
+  &:focus-visible {
+    outline: 2px solid var(--theme-primary);
+    outline-offset: -2px;
+  }
+}
+
+.km-header__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.km-header__company {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--theme-primary);
+}
+
+.km-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.km-main {
+  flex: 1;
+}

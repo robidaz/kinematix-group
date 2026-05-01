@@ -1,0 +1,28 @@
+<div class="email-page">
+  <div class="email-card">
+    <div class="email-meta">
+      <h1 class="email-subject">{{ meta.subject }}</h1>
+
+      <div class="email-meta-row">
+        <div class="email-avatar">ZR</div>
+        <div class="email-meta-cols">
+          <div class="email-from-line">
+            <span class="email-from-name">{{ meta.from }}</span>
+            <span class="email-from-email">&lt;{{ meta.fromEmail }}&gt;</span>
+          </div>
+          <div class="email-to-line">
+            To: <span class="email-to-name">{{ meta.to }}</span>
+            <span class="email-to-email">&lt;{{ meta.toEmail }}&gt;</span>
+          </div>
+        </div>
+        <div class="email-date">{{ meta.date }}</div>
+      </div>
+    </div>
+
+    <div class="email-divider"></div>
+
+    <article class="email-body">
+      <markdown src="assets/content/emailcontent.md"></markdown>
+    </article>
+  </div>
+</div>

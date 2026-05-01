@@ -1,0 +1,251 @@
+<section class="vv-page">
+  <!-- AI Prompt Panel -->
+  <div class="vv-prompt">
+    <div class="vv-prompt__header">
+      <div>
+        <h2 class="vv-prompt__title">AI Vendor Match</h2>
+        <p class="vv-prompt__subtitle">Describe your client's needs in plain English. We'll narrow the catalog for you.</p>
+      </div>
+      <span class="vv-model-badge">Claude · Sonnet</span>
+    </div>
+
+    <div class="vv-prompt__row">
+      <label class="vv-prompt__label" for="vv-input">Describe your client's needs</label>
+      <div class="vv-prompt__input-wrap">
+        <textarea
+          id="vv-input"
+          class="vv-prompt__textarea"
+          [(ngModel)]="promptValue"
+          placeholder="e.g. Mid-range cybersecurity vendor with strong compliance support"
+          rows="3"
+          (input)="onPromptInput()"
+          (focus)="onPromptFocus()"
+          (blur)="onPromptBlur()"
+          (keydown.escape)="showSuggestions = false"
+          (keydown.ctrl.enter)="runAnalysis()">
+        </textarea>
+        <div class="vv-suggestions" *ngIf="showSuggestions && filteredSuggestions.length > 0">
+          <div
+            class="vv-suggestions__item"
+            *ngFor="let s of filteredSuggestions"
+            (mousedown)="selectSuggestion(s)">
+            {{ s }}
+          </div>
+        </div>
+      </div>
+      <div class="vv-prompt__actions">
+        <button
+          ejs-button
+          isPrimary="true"
+          class="vv-btn vv-btn--primary"
+          [disabled]="loading"
+          (click)="runAnalysis()">
+          {{ loading ? 'Analyzing…' : 'Find Vendors' }}
+        </button>
+        <button
+          ejs-button
+          class="vv-btn vv-btn--ghost"
+          (click)="resetFilter()"
+          [disabled]="loading">
+          Clear / Reset
+        </button>
+      </div>
+    </div>
+
+    <div class="vv-prompt__progress" *ngIf="loading">
+      <ejs-progressbar
+        type="Linear"
+        height="4"
+        [isIndeterminate]="true"
+        progressColor="var(--theme-accent)"
+        trackColor="#dde4f0">
+      </ejs-progressbar>
+      <span class="vv-prompt__progress-label">Asking Claude to interpret your request…</span>
+    </div>
+
+    <div class="vv-prompt__summary" *ngIf="aiSummary && !loading">
+      <span class="vv-prompt__summary-label">Filter applied:</span>
+      <span class="vv-prompt__summary-text">{{ aiSummary }}</span>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="vv-disclaimer">
+    Vendor data is simulated for demonstration purposes. Some company names are real; all metrics and contract values are fabricated.
+  </div>
+
+  <!-- Column visibility toggle -->
+  <div class="vv-col-toggle">
+    <span class="vv-col-toggle__label">Select column name to toggle visibility</span>
+    <div class="vv-col-toggle__chips">
+      <span
+        *ngFor="let col of toggleableColumns"
+        class="vv-col-toggle__chip"
+        [class.vv-col-toggle__chip--hidden]="!columnVisibility[col]"
+        (click)="toggleColumn(col)">
+        {{ col }}
+      </span>
+    </div>
+  </div>
+
+  <!-- Vendor Grid -->
+  <div class="vv-grid-wrap">
+    <ejs-grid
+      #grid
+      [dataSource]="visibleVendors"
+      [allowPaging]="true"
+      [allowSorting]="true"
+      [allowResizing]="true"
+      [pageSettings]="pageSettings"
+      [toolbar]="toolbar"
+      (rowSelected)="onRowClick($event)"
+      gridLines="Horizontal"
+      height="640">
+      <e-columns>
+        <e-column field="logo" headerText="Logo" width="90" [allowSorting]="false" [allowSearching]="false" [showInColumnChooser]="false">
+          <ng-template #template let-row>
+            <img class="vv-logo" [src]="row.logo" [alt]="row.name" loading="lazy" (error)="onLogoError($event, row)" />
+          </ng-template>
+        </e-column>
+
+        <e-column field="name" headerText="Vendor" width="170" clipMode="EllipsisWithTooltip">
+          <ng-template #template let-row>
+            <div class="vv-name">{{ row.name }}</div>
+          </ng-template>
+        </e-column>
+
+        <e-column field="type" headerText="Type" width="120">
+          <ng-template #template let-row>
+            <span [class]="typePillClass[row.type] || 'km-pill km-pill--gray'">{{ row.type }}</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="costScale" headerText="Cost" width="100">
+          <ng-template #template let-row>
+            <span class="vv-cost">{{ costString(row.costScale) }}</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="reputation" headerText="Reputation" width="150">
+          <ng-template #template let-row>
+            <span class="vv-rep">
+              <span class="vv-rep__stars">{{ starString(row.reputation) }}</span>
+              <span class="vv-rep__num">{{ row.reputation.toFixed(1) }}</span>
+            </span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="specializations" headerText="Specializations" width="280" [allowSorting]="false">
+          <ng-template #template let-row>
+            <div class="vv-specs">
+              <span class="km-pill km-pill--gray vv-specs__chip" *ngFor="let s of visibleSpecs(row.specializations)">{{ s }}</span>
+              <span class="vv-specs__more" *ngIf="overflowCount(row.specializations) > 0">+{{ overflowCount(row.specializations) }} more</span>
+            </div>
+          </ng-template>
+        </e-column>
+
+        <e-column field="contractStatus" headerText="Contract" width="130">
+          <ng-template #template let-row>
+            <span [class]="statusPillClass[row.contractStatus] || 'km-pill km-pill--gray'">{{ row.contractStatus }}</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="renewalDate" headerText="Renewal" width="120">
+          <ng-template #template let-row>
+            <span>{{ formatRenewalDate(row.renewalDate) }}</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="annualSpend" headerText="Annual Spend" width="140" textAlign="Right">
+          <ng-template #template let-row>
+            <span class="vv-spend">{{ formatCurrency(row.annualSpend) }}</span>
+          </ng-template>
+        </e-column>
+      </e-columns>
+    </ejs-grid>
+  </div>
+
+  <!-- Vendor Detail Dialog -->
+  <ejs-dialog
+    *ngIf="detailVisible"
+    [visible]="detailVisible"
+    [showCloseIcon]="true"
+    [isModal]="true"
+    width="640px"
+    [animationSettings]="{ effect: 'Zoom', duration: 200 }"
+    (close)="closeDetail()"
+    [target]="'body'">
+    <ng-template #header>
+      <div class="vv-detail-header" *ngIf="selectedVendor">
+        <img class="vv-detail-header__logo" [src]="selectedVendor.logo" [alt]="selectedVendor.name" (error)="onLogoError($event, selectedVendor)" />
+        <div>
+          <div class="vv-detail-header__name">{{ selectedVendor.name }}</div>
+          <div class="vv-detail-header__sub">
+            <span [class]="typePillClass[selectedVendor.type] || 'km-pill km-pill--gray'">{{ selectedVendor.type }}</span>
+            <span [class]="statusPillClass[selectedVendor.contractStatus] || 'km-pill km-pill--gray'">{{ selectedVendor.contractStatus }}</span>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template #content>
+      <div class="vv-detail" *ngIf="selectedVendor">
+        <p class="vv-detail__desc">{{ selectedVendor.description }}</p>
+
+        <div class="vv-detail__grid">
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Founded</span>
+            <span class="vv-detail__value">{{ selectedVendor.founded }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Headquarters</span>
+            <span class="vv-detail__value">{{ selectedVendor.headquarters }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Employees</span>
+            <span class="vv-detail__value">{{ selectedVendor.employees }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Cost</span>
+            <span class="vv-detail__value vv-cost">{{ costString(selectedVendor.costScale) }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Reputation</span>
+            <span class="vv-detail__value">
+              <span class="vv-rep__stars">{{ starString(selectedVendor.reputation) }}</span>
+              {{ selectedVendor.reputation.toFixed(1) }}
+            </span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Annual Spend</span>
+            <span class="vv-detail__value">{{ formatCurrency(selectedVendor.annualSpend) }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Renewal Date</span>
+            <span class="vv-detail__value">{{ formatRenewalDate(selectedVendor.renewalDate) }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Website</span>
+            <span class="vv-detail__value"><a [href]="selectedVendor.website" target="_blank" rel="noopener">{{ selectedVendor.website }}</a></span>
+          </div>
+        </div>
+
+        <div class="vv-detail__section">
+          <h4>Specializations</h4>
+          <div class="vv-detail__chips">
+            <span class="km-pill km-pill--blue" *ngFor="let s of selectedVendor.specializations">{{ s }}</span>
+          </div>
+        </div>
+
+        <div class="vv-detail__section">
+          <h4>Tags</h4>
+          <div class="vv-detail__chips">
+            <span class="km-pill km-pill--gray" *ngFor="let t of selectedVendor.tags">{{ t }}</span>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ejs-dialog>
+
+  <ejs-toast #toast position="topCenter" target="body"></ejs-toast>
+</section>

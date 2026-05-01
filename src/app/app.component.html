@@ -1,0 +1,34 @@
+<div class="km-app">
+  <header class="km-header" (click)="goToFirstTab()" role="button" tabindex="0"
+          (keydown.enter)="goToFirstTab()" aria-label="Go to home tab">
+    <div class="km-header__left">
+      <img class="km-logo" src="assets/companylogo/kinematixlogo.png" alt="KineMatix Group" />
+      <span class="km-header__company">KineMatix Group</span>
+    </div>
+  </header>
+
+  <main class="km-main">
+    <ejs-tab #mainTab id="km-tab" cssClass="e-bigger" [animation]="{
+      previous: { effect: 'FadeIn', duration: 200 },
+      next: { effect: 'FadeIn', duration: 200 }
+    }">
+      <e-tabitems>
+        <e-tabitem [header]="headerItems[0]">
+          <ng-template #content>
+            <app-email-memo></app-email-memo>
+          </ng-template>
+        </e-tabitem>
+        <e-tabitem [header]="headerItems[1]">
+          <ng-template #content>
+            <app-design-requirements></app-design-requirements>
+          </ng-template>
+        </e-tabitem>
+        <e-tabitem [header]="headerItems[2]">
+          <ng-template #content>
+            <app-vendor-vault></app-vendor-vault>
+          </ng-template>
+        </e-tabitem>
+      </e-tabitems>
+    </ejs-tab>
+  </main>
+</div>

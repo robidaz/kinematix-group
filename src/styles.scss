@@ -1,0 +1,58 @@
+/* VendorVault — global base styles */
+
+/* Theme color tokens — mirror syncfusion-theme/settings.json */
+:root {
+  --theme-primary: rgba(245, 102, 0, 1);   /* $primary */
+  --theme-primary-dark: #c45000;            /* hover/pressed state */
+  --theme-accent: rgba(82, 45, 128, 1);    /* $accent */
+  --theme-accent-dark: #3d1060;             /* hover/pressed state */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #212121;
+  font-family: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+a { color: var(--theme-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Drop the theme's uppercase on buttons */
+.e-btn { text-transform: none !important; letter-spacing: 0 !important; }
+
+/* Tab text — the material theme uppercases by default; keep sentence case */
+.e-tab .e-tab-header .e-toolbar-item .e-tab-text {
+  text-transform: none !important;
+}
+
+/* Tab content — prevent Syncfusion from capping height */
+.e-tab .e-content .e-item {
+  height: auto !important;
+  overflow: visible;
+}
+
+/* Pill badges used for vendor data */
+.km-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.km-pill--blue   { background: #ede9fe; color: var(--theme-accent); }
+.km-pill--gray   { background: #f5f5f5; color: #424242; }
+.km-pill--teal   { background: #e0f2f1; color: #00695c; }
+.km-pill--purple { background: #f3e5f5; color: #6a1b9a; }
+.km-pill--green  { background: #e8f5e9; color: #2e7d32; }
+.km-pill--amber  { background: #fff8e1; color: #e65100; }

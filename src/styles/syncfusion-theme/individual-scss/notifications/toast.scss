@@ -1,0 +1,761 @@
+@import "../base/base.scss";
+@import "../buttons/button.scss";
+
+@use 'sass:color';
+
+//Mouse Mode
+$toast-icon-nrml-height: 24px !default;
+$toast-icon-nrml-width: 24px !default;
+$toast-icon-nrml-size: 18px !default;
+$toast-icon-nrml-right-margin: 14px !default;
+$toast-close-icon-nrml-height: 30px !default;
+$toast-close-icon-nrml-width: 30px !default;
+$toast-close-icon-nrml-size: 12px !default;
+$toast-position-nrml-distance: 10px !default;
+$multitoast-nrml-gap-distance: 10px !default;
+$toast-nrml-min-height: 48px !default;
+$toast-nrml-padding: 14px !default;
+$toast-action-btn-nrml-padding: 10px 0 0 0 !default;
+$toast-action-btn-nrml-margin: 10px !default;
+$toast-progressbar-nrml-height: 4px !default;
+$toast-content-nrml-padding: 14px 0 10px 0 !default;
+$toast-nrml-border-radious: 2px !default;
+$toast-font-nrml-size: 14px !default;
+$toast-title-font-nrml-size: 15px !default;
+//Touch Mode
+$toast-icon-bgr-height: 24px !default;
+$toast-icon-bgr-width: 24px !default;
+$toast-icon-bgr-size: 18px !default;
+$toast-icon-bgr-right-margin: 14px !default;
+$toast-close-icon-bgr-height: 30px !default;
+$toast-close-icon-bgr-width: 30px !default;
+$toast-close-icon-bgr-size: 14px !default;
+$toast-position-bgr-distance: 10px !default;
+$multitoast-bgr-gap-distance: 10px !default;
+$toast-bgr-min-height: 48px !default;
+$toast-bgr-padding: 14px !default;
+$toast-action-btn-bgr-padding: 10px 0 0 0 !default;
+$toast-action-btn-bgr-margin: 10px !default;
+$toast-progressbar-bgr-height: 4px !default;
+$toast-content-bgr-padding: 14px 0 10px 0 !default;
+$toast-bgr-border-radious: 2px !default;
+$toast-font-bgr-size: 14px !default;
+$toast-title-font-weight: bold !default;
+//theme variables
+$toast-border: none !default;
+$toast-box-shadow: 0 2px 5px 0 rgba($grey-black, .26) !default;
+$toast-hover-box-shadow: 0 3px 6px 0 rgba($grey-black, .26) !default;
+$toast-progress-color: $accent !default;
+$toast-bg-color: $grey-dark !default;
+$toast-hover-bg-color: $grey-900 !default;
+$toast-active-bg-color: $grey-dark !default;
+$toast-font-color: $grey-dark-font !default;
+$toast-icon-color: $grey-dark-font !default;
+$toast-close-icon-color: $grey-dark-font !default;
+$toast-title-color: $grey-dark-font !default;
+$toast-content-color: $grey-dark-font !default;
+// Flat Button Customization
+$toast-btn-flat-color: color.adjust($accent, $lightness: 15%) !default;
+$toast-btn-flat-bgcolor: transparent !default;
+$toast-btn-flat-border-color: transparent !default;
+$toast-btn-flat-box-shadow: none !default;
+$toast-btn-flat-hover-color: $toast-btn-flat-color !default;
+$toast-btn-flat-hover-bgcolor: transparent !default;
+$toast-btn-flat-focus-color: $toast-btn-flat-color !default;
+$toast-btn-flat-focus-bgcolor: transparent !default;
+$toast-btn-flat-active-color: $toast-btn-flat-color !default;
+$toast-btn-flat-active-bgcolor: transparent !default;
+// Toast Types theme definitions
+$toast-success-bg-color: #4d831e !default;
+$toast-success-color: $toast-font-color !default;
+$toast-success-title-color: $toast-success-color !default;
+$toast-success-icon-color: $toast-success-color !default;
+$toast-success-content-color: $toast-success-color !default;
+$toast-success-hover-bg-color: $toast-success-bg-color !default;
+$toast-success-hover-color: $toast-success-color !default;
+$toast-success-hover-box-shadow: 0 3px 6px 0 rgba($grey-black, .26) !default;
+$toast-info-bg-color: #0677d5 !default;
+$toast-info-color: $toast-font-color !default;
+$toast-info-title-color: $toast-info-color !default;
+$toast-info-icon-color: $toast-info-color !default;
+$toast-info-content-color: $toast-info-color !default;
+$toast-info-hover-bg-color: $toast-info-bg-color !default;
+$toast-info-hover-color: $toast-info-color !default;
+$toast-info-hover-box-shadow: 0 3px 6px 0 rgba($grey-black, .26) !default;
+$toast-warning-bg-color: #c15601 !default;
+$toast-warning-color: $toast-font-color !default;
+$toast-warning-title-color: $toast-warning-color !default;
+$toast-warning-icon-color: $toast-warning-color !default;
+$toast-warning-content-color: $toast-warning-color !default;
+$toast-warning-hover-bg-color: $toast-warning-bg-color !default;
+$toast-warning-hover-color: $toast-warning-color !default;
+$toast-warning-hover-box-shadow: 0 3px 6px 0 rgba($grey-black, .26) !default;
+$toast-danger-bg-color: #d74113 !default;
+$toast-danger-color: $toast-font-color !default;
+$toast-danger-title-color: $toast-danger-color !default;
+$toast-danger-icon-color: $toast-danger-color !default;
+$toast-danger-content-color: $toast-danger-color !default;
+$toast-danger-hover-bg-color: $toast-danger-bg-color !default;
+$toast-danger-hover-color: $toast-danger-color !default;
+$toast-danger-hover-box-shadow: 0 3px 6px 0 rgba($grey-black, .26) !default;
+$toast-title-font-weight: bold !default;
+$toast-close-icon-hover-bg-color: $grey-300 !default;
+$toast-close-icon-hover-color: $grey-light-font !default;
+$toast-icon-hover-border-radius: 50% !default;
+$toast-bigger-bottom-margin: 0 auto $multitoast-bgr-gap-distance !default;
+$toast-bigger-top-margin: 0 auto $multitoast-bgr-gap-distance !default;
+$toast-bigger-full-width-margin: 0 auto $multitoast-bgr-gap-distance !default;
+$toast-bigger-margin: 0 0 $multitoast-bgr-gap-distance !default;
+$toast-zero-padding-margin: 0 !default;
+$toast-normal-bottom-margin: 0 auto $multitoast-nrml-gap-distance !default;
+$toast-normal-top-margin: 0 auto $multitoast-nrml-gap-distance !default;
+$toast-normal-full-width-margin: 0 auto $multitoast-nrml-gap-distance !default;
+$toast-normal-margin: 0 0 $multitoast-nrml-gap-distance !default;
+$toast-action-margin: 1px !default;
+$toast-close-icon-border-radius: 50% !default;
+$toast-bigger-min-height: 100px !default;
+$toast-zero-padding-margin: 0 !default;
+$toast-close-icon-height: 20px !default;
+$toast-close-icon-width: 22px !default;
+$toast-auto-margin: auto !default;
+$toast-close-icon-bottom: 6px !default;
+$toast-full-width: 100% !default;
+$toast-tittle-letter-spacing: .5px !default;
+$toast-half-full-width: 96% !default;
+$toast-border: 1px !default;
+@include export-module('toast-layout') {
+  /* stylelint-disable property-no-vendor-prefix */
+  .e-toast-container {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    &.e-toast-top-left {
+      left: $toast-position-nrml-distance;
+      top: $toast-position-nrml-distance;
+    }
+    &.e-toast-bottom-left {
+      bottom: $toast-position-nrml-distance;
+      left: $toast-position-nrml-distance;
+    }
+    &.e-toast-top-right {
+      right: $toast-position-nrml-distance;
+      top: $toast-position-nrml-distance;
+    }
+    &.e-toast-bottom-right {
+      bottom: $toast-position-nrml-distance;
+      right: $toast-position-nrml-distance;
+    }
+    &.e-toast-bottom-center {
+      bottom: $toast-position-nrml-distance;
+      pointer-events: none;
+      right: $toast-zero-padding-margin;
+      width: $toast-full-width;
+      .e-toast {
+        margin: $toast-normal-bottom-margin;
+        pointer-events: auto;
+      }
+    }
+    &.e-toast-top-center {
+      pointer-events: none;
+      right: $toast-zero-padding-margin;
+      top: $toast-position-nrml-distance;
+      width: $toast-full-width;
+      .e-toast {
+        margin: $toast-normal-top-margin;
+        pointer-events: auto;
+      }
+    }
+    &.e-toast-full-width {
+      left: $toast-zero-padding-margin;
+      right: $toast-zero-padding-margin;
+      width: $toast-full-width;
+      .e-toast {
+        margin: $toast-normal-full-width-margin;
+        width: $toast-half-full-width;
+      }
+    }
+    &.e-rtl {
+      .e-toast {
+        .e-toast-actions {
+          text-align: left;
+          > * {
+            margin-left: initial;
+            margin-right: $toast-action-btn-nrml-margin;
+          }
+        }
+        .e-toast-close-icon {
+          margin-left: initial;
+          margin-right: $toast-auto-margin;
+        }
+        .e-toast-icon {
+          margin-left: $toast-icon-nrml-right-margin;
+          margin-right: initial;
+        }
+        .e-toast-progress {
+          left: $toast-auto-margin;
+          right: $toast-zero-padding-margin;
+        }
+      }
+    }
+    .e-toast {
+      border-radius: $toast-nrml-border-radious;
+      display: inline-flex;
+      font-size: $toast-font-nrml-size;
+      margin: $toast-normal-margin;
+      overflow: hidden;
+      padding: $toast-nrml-padding;
+      position: relative;
+      .e-toast-icon,
+      .e-toast-message {
+        display: inline-flex;
+      }
+      > * {
+        word-break: break-word;
+        word-wrap: break-word;
+      }
+      .e-toast-message {
+        align-self: center;
+        flex-direction: column;
+        overflow: hidden;
+        width: inherit;
+        @if $skin-name == 'material' or $skin-name == 'Material3' {
+          flex: 1;
+        }
+        .e-toast-title,
+        .e-toast-content {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          &:first-child {
+            padding: $toast-zero-padding-margin;
+            @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+              padding-bottom: $toast-content-first-child-padding-bottom;
+              padding-left: $toast-content-first-child-padding-left;
+              padding-right: $toast-content-first-child-padding-right;
+              padding-top: $toast-content-first-child-padding-top;
+            }
+          }
+          &:last-child {
+            padding-bottom: $toast-zero-padding-margin;
+            @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+              padding-bottom: $toast-content-last-padding-bottom;
+            }
+          }
+          > * {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .e-toast-title {
+          font-size: $toast-title-font-nrml-size;
+          font-weight: $toast-title-font-weight;
+          letter-spacing: $toast-tittle-letter-spacing;
+          @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+            border-bottom: 1px solid $border;
+          }
+        }
+        .e-toast-content {
+          padding: $toast-content-nrml-padding;
+          word-break: break-word;
+          word-wrap: break-word;
+          + .e-toast-actions {
+            padding-top: $toast-zero-padding-margin;
+            @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+              padding: $toast-action-btn-bgr-padding;
+            }
+          }
+        }
+        .e-toast-actions {
+          margin: $toast-action-margin;
+          @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+            border-top: 1px solid $border;
+            margin-left: $toast-actions-margin;
+            margin-right: $toast-actions-margin;
+          }
+          @if $skin-name != 'tailwind3' {
+            padding: $toast-action-btn-nrml-padding;
+          }
+          text-align: right;
+          > * {
+            margin-left: $toast-action-btn-nrml-margin;
+          }
+        }
+      }
+      &.e-toast-header-icon {
+        .e-toast-message {
+          .e-toast-title,
+          .e-toast-content {
+            &:first-child {
+              @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+                padding-left: $toast-header-padding-left;
+              }
+            }
+          }
+        }
+      }
+      &.e-toast-header-close-icon {
+        .e-toast-message {
+          .e-toast-title,
+          .e-toast-content {
+            &:first-child {
+              @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+                padding-right: $toast-header-padding-right;
+              }
+            }
+          }
+        }
+      }
+      .e-toast-close-icon {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        font-size: $toast-close-icon-nrml-size;
+        height: $toast-close-icon-nrml-height;
+        justify-content: center;
+        margin-left: $toast-auto-margin;
+        width: $toast-close-icon-nrml-width;
+        @if $skin-name == 'material' {
+          opacity: .7;
+        }
+        @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          margin-top: $toast-close-icon-margin-top;
+          position: absolute;
+          right: $toast-close-icon-right;
+        }
+      }
+      .e-toast-icon {
+        align-items: center;
+        font-size: $toast-icon-nrml-size;
+        height: $toast-icon-nrml-height;
+        justify-content: center;
+        margin-right: $toast-icon-nrml-right-margin;
+        width: $toast-icon-nrml-width;
+        @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          left: $toast-zero-padding-margin;
+          margin-left: $toast-icon-margin-left;
+          margin-top: $toast-icon-top;
+          padding-bottom: $toast-icon-padding-bottom;
+          position: absolute;
+        }
+        @if $skin-name == 'fluent2' {
+          margin-top: $toast-icon-top;
+        }
+      }
+      .e-toast-progress {
+        bottom: $toast-zero-padding-margin;
+        height: $toast-progressbar-nrml-height;
+        left: $toast-zero-padding-margin;
+        position: absolute;
+      }
+    }
+  }
+  .e-content-placeholder.e-toast.e-placeholder-toast {
+    background-size: 400px 100px;
+    min-height: $toast-bigger-min-height;
+  }
+  .e-blazor-toast-hidden {
+    visibility: hidden;
+  }
+  .e-toast-container .e-toast .e-toast-close-icon.blazor-toast-close-icon {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: $toast-close-icon-border-radius;
+    bottom: $toast-close-icon-bottom;
+    height: $toast-close-icon-height;
+    position: relative;
+    width: $toast-close-icon-width;
+  }
+}
+.e-toast-container {
+  .e-toast {
+    background-color: $toast-bg-color;
+    border: $toast-border;
+    box-shadow: $toast-box-shadow;
+    color: $toast-font-color;
+    .e-toast-close-icon {
+      color: $toast-close-icon-color;
+      &.e-blazor-toast-close-icon,
+      &.e-blazor-toast-close-icon:focus,
+      &.e-blazor-toast-close-icon:active {
+        @if $skin-name == 'Material3' {
+          background: transparent;
+        }
+        @else {
+          background-color: transparent;
+        }
+        border: 0;
+        box-shadow: none;
+        outline: 0;
+      }
+      &.e-blazor-toast-close-icon:focus,
+      &.e-blazor-toast-close-icon:hover {
+        @if $skin-name == 'Material3' {
+          background: $toast-close-icon-hover-bg-color;
+        }
+        @else {
+          background-color: $toast-close-icon-hover-bg-color;
+        }
+        color: $toast-close-icon-hover-color;
+      }
+    }
+    .e-toast-close-icon.e-icons:hover,
+    .e-toast-close-icon.e-icons:focus{
+      @if $skin-name == 'Material3' {
+        background: $toast-close-icon-hover-bg-color;
+        border-radius: $toast-icon-hover-border-radius;
+        height: 32px;
+      }
+      @else {
+        background-color: $toast-close-icon-hover-bg-color;
+      }
+      @if $skin-name == 'material' {
+        border-radius: $toast-icon-hover-border-radius;
+      }
+      color: $toast-close-icon-hover-color;
+    }
+    &.e-toast-success {
+      background-color: $toast-success-bg-color;
+      color: $toast-success-color;
+      @if $skin-name == 'highcontrast' or $skin-name == 'bootstrap' or $skin-name == 'bootstrap4' {
+        border-color: $toast-success-border-color;
+      }
+      .e-toast-message .e-toast-title {
+        color: $toast-success-title-color;
+        @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          border-color: $toast-success-title-border-color;
+        }
+      }
+      .e-toast-message .e-toast-content {
+        color: $toast-success-content-color;
+      }
+      .e-toast-icon {
+        color: $toast-success-icon-color;
+      }
+      .e-toast-close-icon {
+        color: $toast-success-icon-color;
+      }
+      &:hover {
+        background-color: $toast-success-hover-bg-color;
+        box-shadow: $toast-success-hover-box-shadow;
+        color: $toast-success-hover-color;
+        @if $skin-name == 'highcontrast' or $skin-name == 'bootstrap' or $skin-name == 'bootstrap4' {
+          border-color: $toast-success-hover-border-color;
+        }
+      }
+    }
+    &.e-toast-info {
+      background-color: $toast-info-bg-color;
+      color: $toast-info-color;
+      @if $skin-name == 'highcontrast' or $skin-name == 'bootstrap' or $skin-name == 'bootstrap4' {
+        border-color: $toast-info-border-color;
+      }
+      .e-toast-message .e-toast-title {
+        color: $toast-info-title-color;
+        @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          border-color: $toast-info-title-border-color;
+        }
+      }
+      .e-toast-message .e-toast-content {
+        color: $toast-info-content-color;
+      }
+      .e-toast-icon {
+        color: $toast-info-icon-color;
+      }
+      .e-toast-close-icon {
+        color: $toast-info-icon-color;
+      }
+      &:hover {
+        background-color: $toast-info-hover-bg-color;
+        box-shadow: $toast-info-hover-box-shadow;
+        color: $toast-info-hover-color;
+        @if $skin-name == 'highcontrast' or $skin-name == 'bootstrap' or $skin-name == 'bootstrap4' {
+          border-color: $toast-info-hover-border-color;
+        }
+      }
+    }
+    &.e-toast-warning {
+      background-color: $toast-warning-bg-color;
+      color: $toast-warning-color;
+      @if $skin-name == 'highcontrast' or $skin-name == 'bootstrap' or $skin-name == 'bootstrap4' {
+        border-color: $toast-warning-border-color;
+      }
+      .e-toast-message .e-toast-title {
+        color: $toast-warning-title-color;
+        @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          border-color: $toast-warning-title-border-color;
+        }
+      }
+      .e-toast-message .e-toast-content {
+        color: $toast-warning-content-color;
+      }
+      .e-toast-icon {
+        color: $toast-warning-icon-color;
+      }
+      .e-toast-close-icon {
+        color: $toast-warning-icon-color;
+      }
+      &:hover {
+        background-color: $toast-warning-hover-bg-color;
+        box-shadow: $toast-warning-hover-box-shadow;
+        color: $toast-warning-hover-color;
+        @if $skin-name == 'highcontrast' or $skin-name == 'bootstrap' or $skin-name == 'bootstrap4' {
+          border-color: $toast-warning-hover-border-color;
+        }
+      }
+    }
+    &.e-toast-danger {
+      background-color: $toast-danger-bg-color;
+      color: $toast-danger-color;
+      @if $skin-name == 'highcontrast' {
+        border-color: $toast-danger-border-color;
+      }
+      .e-toast-message .e-toast-title {
+        color: $toast-danger-title-color;
+        @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          border-color: $toast-danger-title-border-color;
+        }
+      }
+      .e-toast-message .e-toast-content {
+        color: $toast-danger-content-color;
+      }
+      .e-toast-icon {
+        color: $toast-danger-icon-color;
+      }
+      .e-toast-close-icon {
+        color: $toast-danger-icon-color;
+      }
+      &:hover {
+        background-color: $toast-danger-hover-bg-color;
+        box-shadow: $toast-danger-hover-box-shadow;
+        color: $toast-danger-hover-color;
+        @if $skin-name == 'highcontrast' or $skin-name == 'bootstrap' or $skin-name == 'bootstrap4' {
+          border-color: $toast-danger-hover-border-color;
+        }
+      }
+    }
+    &:hover {
+      background-color: $toast-hover-bg-color;
+      box-shadow: $toast-hover-box-shadow;
+      @if $skin-name == 'highcontrast' {
+        border-color: $toast-hover-border-color;
+      }
+    }
+    .e-toast-icon {
+      color: $toast-icon-color;
+    }
+    .e-toast-message {
+      .e-toast-title {
+        color: $toast-title-color;
+      }
+      .e-toast-content {
+        color: $toast-content-color;
+      }
+    }
+    .e-toast-progress {
+      background-color: $toast-progress-color;
+    }
+    @if $skin-name == 'material' {
+      .e-toast-actions {
+        .e-btn {
+          background-color: $toast-btn-flat-bgcolor;
+          border-color: $toast-btn-flat-border-color;
+          box-shadow: $toast-btn-flat-box-shadow;
+          color: $toast-btn-flat-color;
+          &:hover {
+            background-color: $toast-btn-flat-hover-bgcolor;
+            color: $toast-btn-flat-hover-color;
+          }
+          &:focus {
+            background-color: $toast-btn-flat-focus-bgcolor;
+            color: $toast-btn-flat-focus-color;
+          }
+          &:active {
+            background-color: $toast-btn-flat-active-bgcolor;
+            color: $toast-btn-flat-active-color;
+          }
+        }
+      }
+    }
+  }
+}
+.e-toast-container .e-toast.e-toast-danger .e-toast-close-icon.e-icons:hover {
+  @if ($skin-name == 'tailwind3' or $skin-name == 'tailwind' or $skin-name == 'fluent2' or $skin-name == 'FluentUI' or $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3') {
+    color: $toast-danger-icon-hover-dark;
+  }
+}
+@include export-module('toast-material-icons') {
+  .e-toast {
+    .e-toast-close-icon::before {
+      content: '\e7fc';
+      font-family: 'e-icons';
+    }
+    .e-toast-success-icon::before {
+      content: '\ea84';
+      font-family: 'e-icons';
+    }
+    .e-toast-error-icon::before {
+      content: '\e208';
+      font-family: 'e-icons';
+    }
+    .e-toast-info-icon::before {
+      content: '\e607';
+      font-family: 'e-icons';
+    }
+    .e-toast-warning-icon::before {
+      content: '\e92f';
+      font-family: 'e-icons';
+    }
+  }
+}
+@include export-module('toast-bigger') {
+  .e-bigger .e-toast-container,
+  .e-toast-container.e-bigger {
+    &.e-toast-top-left {
+      left: $toast-position-bgr-distance;
+      top: $toast-position-bgr-distance;
+    }
+    &.e-toast-bottom-left {
+      bottom: $toast-position-bgr-distance;
+      left: $toast-position-bgr-distance;
+    }
+    &.e-toast-top-right {
+      right: $toast-position-bgr-distance;
+      top: $toast-position-bgr-distance;
+    }
+    &.e-toast-bottom-right {
+      bottom: $toast-position-bgr-distance;
+      right: $toast-position-bgr-distance;
+    }
+    &.e-toast-bottom-center {
+      bottom: $toast-position-bgr-distance;
+      .e-toast {
+        margin: $toast-bigger-bottom-margin;
+      }
+    }
+    &.e-toast-top-center {
+      top: $toast-position-bgr-distance;
+      .e-toast {
+        margin: $toast-bigger-top-margin;
+      }
+    }
+    &.e-toast-full-width {
+      left: $toast-zero-padding-margin;
+      right: $toast-zero-padding-margin;
+      .e-toast {
+        margin: $toast-bigger-full-width-margin;
+      }
+    }
+    &.e-rtl {
+      .e-toast {
+        .e-toast-message .e-toast-actions {
+          text-align: left;
+          > * {
+            margin-left: initial;
+            margin-right: $toast-action-btn-bgr-margin;
+          }
+        }
+        .e-toast-close-icon {
+          margin-left: initial;
+          margin-right: $toast-auto-margin;
+        }
+        .e-toast-icon {
+          margin-left: $toast-icon-bgr-right-margin;
+          margin-right: initial;
+        }
+        .e-toast-progress {
+          left: $toast-auto-margin;
+          right: $toast-zero-padding-margin;
+        }
+      }
+    }
+    .e-toast {
+      border-radius: $toast-bgr-border-radious;
+      font-size: $toast-font-bgr-size;
+      margin: $toast-bigger-margin;
+      min-height: $toast-bgr-min-height;
+      .e-toast-message {
+        .e-toast-content {
+          padding: $toast-content-bgr-padding;
+          &:first-child {
+            @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+              padding-bottom: $toast-bgr-content-first-child-padding-bottom;
+              padding-left: $toast-bgr-content-first-child-padding-left;
+              padding-right: $toast-bgr-content-first-child-padding-right;
+              padding-top: $toast-bgr-content-first-child-padding-top;
+            }
+            @else {
+              padding: $toast-zero-padding-margin;
+            }
+          }
+          &:last-child {
+            padding-bottom: $toast-zero-padding-margin;
+            @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+              padding-bottom: $toast-bgr-last-child-padding-bottom;
+            }
+          }
+          + .e-toast-actions {
+            @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+              padding: $toast-action-btn-bgr-padding;
+            }
+            @else {
+              padding: $toast-zero-padding-margin;
+            }
+          }
+          @if $skin-name == 'tailwind' or $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+            + .e-toast-actions {
+              padding: $toast-action-btn-bgr-padding;
+            }
+          }
+        }
+        .e-toast-actions {
+          padding: $toast-action-btn-bgr-padding;
+          text-align: right;
+          @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+            border-top: $toast-border solid $border;
+            margin-left: $toast-bgr-actions-margin;
+            margin-right: $toast-bgr-actions-margin;
+          }
+          > * {
+            margin-left: $toast-action-btn-bgr-margin;
+          }
+        }
+      }
+      .e-toast-close-icon {
+        font-size: $toast-close-icon-bgr-size;
+        height: $toast-close-icon-bgr-height;
+        width: $toast-close-icon-bgr-width;
+        @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          margin-top: $toast-bgr-close-icon-margin-top;
+          position: absolute;
+          right: $toast-bgr-close-icon-right;
+        }
+      }
+      .e-toast-icon {
+        font-size: $toast-icon-bgr-size;
+        height: $toast-icon-bgr-height;
+        margin-right: $toast-icon-bgr-right-margin;
+        width: $toast-icon-bgr-width;
+        @if $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          left: $toast-zero-padding-margin;
+          margin-top: $toast-bgr-toast-icon-margin-top;
+          margin-left: $toast-bgr-toast-icon-margin-left;
+        }
+      }
+      .e-toast-progress {
+        height: $toast-progressbar-bgr-height;
+      }
+    }
+  }
+  .e-bigger .e-content-placeholder.e-toast.e-placeholder-toast,
+  .e-bigger.e-content-placeholder.e-toast.e-placeholder-toast {
+    background-size: 400px 100px;
+    min-height: $toast-bigger-min-height;
+  }
+  @if $skin-name == 'tailwind' {
+    .e-bigger .e-toast .e-toast {
+      padding: 24px;
+    }
+    .e-bigger .e-toast-container .e-toast .e-toast-message .e-toast-title {
+      font-size: 16px;
+    }
+  }
+}

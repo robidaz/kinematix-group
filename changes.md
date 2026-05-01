@@ -1,0 +1,3 @@
+- update the timestamp on the email page to be currenttimestamp() - 1hr. default to EST
+- increase the real-estate of the logo by minimizing the padding (still retain some so they dont run together) and increase the starting width of the Logo columns by 25%
+- update the header text to be primary theme color

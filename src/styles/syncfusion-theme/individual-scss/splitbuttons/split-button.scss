@@ -1,0 +1,647 @@
+@import "../base/base.scss";
+@import "../popups/popup.scss";
+@import "../buttons/button.scss";
+@import "../splitbuttons/drop-down-button.scss";
+
+@use 'sass:color';
+
+$split-btn-zindex: 0 !default;
+$split-btn-border-radius: 2px !default;
+$split-btn-focus-border-color: transparent !default;
+$split-btn-focus-vertical-border-color: transparent !default;
+$split-btn-focus-outline-offset: 0 !default;
+$split-btn-vertical-secondary-icon-line-height: .417em !default;
+$split-btn-seperator-border: 1px solid !default;
+$split-btn-seperator-border-color: transparent !default;
+$split-btn-seperator-default-border-color: transparent !default;
+$split-btn-seperator-vertical-border-color: transparent !default;
+$split-btn-hover-border-color: transparent !default;
+$split-btn-hover-vertical-border-color: transparent !default;
+$split-btn-active-border-color: transparent !default;
+$split-btn-active-vertical-border-color: transparent !default;
+$split-btn-disabled-vertical-border-color: transparent !default;
+$split-btn-active-box-shadow: none !default;
+$split-btn-disabled-left-border-color: transparent !default;
+$split-btn-hover-left-border-color: transparent !default;
+$split-btn-focus-left-border-color: transparent !default;
+$split-btn-active-left-border-color: transparent !default;
+$split-btn-sec-btn-margin-left: 0 !default;
+$split-btn-icon-btn-padding: 6px !default;
+$split-btn-icon-btn-padding-bigger: 9px !default;
+$drop-dbtn-bigger-padding-left: 4px !default;
+$drop-dbtn-bigger-padding-right: 4px !default;
+$split-btn-bigger-padding-left: 12px !default;
+$split-btn-bigger-padding-right: 6px !default;
+$split-btn-bgr-vertical-padding-bottom: 6px !default;
+$split-btn-bgr-vertical-padding-right: 12px !default;
+$drop-down-btn-bgr-vertical-padding-bottom: 4px !default;
+$drop-down-btn-bgr-vertical-padding-top: 4px !default;
+$drop-down-bigger-btn-icon-margin-left: 0 !default;
+$drop-down-bigger-btn-icon-padding-right: 10px !default;
+$drop-down-bigger-icon-top-padding-bottom: 6px !default;
+$drop-down-zero-padding-margin: 0 !default;
+$drop-down-zero-border-radius: 0 !default;
+$drop-down-bigger-rtl-padding-left: 6px !default;
+$drop-down-bigger-rtl-padding-right: 12px !default;
+$drop-down-bgr-rtl-icon-padding-left: 10px !default;
+$drop-dbtn-bigger-padding-left: 4px !default;
+$drop-dbtn-bigger-padding-right: 4px !default;
+$split-rtl-btn-padding-left: 4px !default;
+$split-rtl-btn-padding-right: 10px !default;
+$split-btn-icon-padding-right: 8px !default;
+$split-rtl-btn-icon-padding-left: 8px !default;
+$split-btn-padding-left: 10px !default;
+$split-btn-padding-right: 10px !default;
+$split-btn-top-icon-padding-bottom: 10px !default;
+$split-btn-top-icon-padding-top: 10px !default;
+$split-btn-icon-top-padding-bottom: 4px !default;
+$drop-down-btn-padding-left: 4px !default;
+$drop-down-btn-padding-right: 4px !default;
+$split-btn-line-height: 1 !default;
+$split-btn-vertical-padding-bottom: 4px !default;
+$split-btn-vertical-padding-right: 10px !default;
+$split-btn-vertical-icon-top-padding: 4px !default;
+$drop-down-btn-vertical-padding-bottom: 4px !default;
+$drop-down-btn-vertical-padding-top: 4px !default;
+$split-btn-top-icon-padding-bottom: 12px !default;
+$split-btn-top-icon-padding-top: 12px !default;
+$split-auto-width: auto !default;
+$split-full-width: 100% !default;
+@include export-module('split-button-layout') {
+  .e-split-btn-wrapper {
+    display: inline-flex;
+    white-space: nowrap;
+    width: min-content;
+    @if $skin-name == 'Material3' {
+      border-radius: $split-bgr-btn-border-radius;
+      box-shadow: $btn-box-shadow;
+    }
+    .e-split-btn {
+      border-bottom-right-radius: $drop-down-zero-border-radius;
+      border-top-right-radius: $drop-down-zero-border-radius;
+      text-transform: none;
+      @if $skin-name == 'bootstrap4' {
+        padding-left: $split-btn-icon-btn-padding;
+        padding-right: $split-btn-icon-btn-padding;
+      }
+      @else if $skin-name == 'FluentUI' {
+        padding: 3px 7px;
+      }
+      @if $skin-name == 'Material3' or $skin-name == 'Material3-dark' {
+        padding: $split-nrml-btn-padding;
+        line-height: $split-nrml-btn-line-height;
+        box-shadow: none;
+        z-index: 1;
+      }
+      @if $skin-name == 'bootstrap5.3' {
+        border: 0;
+      }
+      @if $skin-name == 'bootstrap5' or $skin-name == 'fluent2' or $skin-name == 'tailwind3' or $skin-name == 'tailwind3-dark' or $skin-name == 'tailwind' or $skin-name == 'tailwind-dark' {
+        padding: $split-btn-wrapper-btn-padding;
+      }
+      @else {
+        padding-left: $split-btn-padding-left;
+        padding-right: $split-btn-padding-right;
+      }
+      &:focus {
+        outline-offset: $split-btn-focus-outline-offset;
+      }
+      &:hover {
+        @if $skin-name != 'bootstrap4' and $skin-name != 'bootstrap5' and $skin-name != 'bootstrap5.3' and $skin-name != 'FluentUI' and $theme-name != 'FluentUI' {
+          box-shadow: none;
+        }
+      }
+      &:focus {
+        @if $skin-name == 'tailwind' or $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          box-shadow: $split-btn-active-box-shadow;
+          z-index: $split-btn-zindex;
+        }
+        @else {
+          box-shadow: none;
+        }
+      }
+      &:focus-visible { // only for keybord
+        @if $skin-name == 'Material3' {
+          box-shadow: $btn-keyboard-focus-box-shadow;
+        }
+      }
+      &.e-btn:focus-visible { // only for keybord
+        @if $skin-name == 'fluent2' {
+          border-right-color: $grey-black !important; /* stylelint-disable-line declaration-no-important */
+          box-shadow: $btn-keyboard-focus-box-shadow;
+        }
+      }
+      &:active {
+        box-shadow: $split-btn-active-box-shadow;
+        z-index: $split-btn-zindex;
+      }
+      &.e-top-icon-btn {
+        padding-bottom: $split-btn-top-icon-padding-bottom;
+        padding-top: $split-btn-top-icon-padding-top;
+      }
+      .e-btn-icon {
+        font-size: $drop-down-btn-icon-font-size;
+        margin-left: $drop-down-zero-padding-margin;
+        padding-right: $split-btn-icon-padding-right;
+        width: $split-auto-width;
+        @if $skin-name == 'Material3' {
+          border-radius: $btn-border-radius;
+        }
+      }
+      .e-icon-top {
+        padding-bottom: $split-btn-icon-top-padding-bottom;
+        padding-right: $drop-down-zero-padding-margin;
+      }
+      &.e-icon-btn {
+        padding-left: $split-btn-icon-btn-padding;
+        padding-right: $split-btn-icon-btn-padding;
+        @if $skin-name == 'bootstrap5' {
+          padding: 3.75px 11px;
+        }
+        .e-btn-icon {
+          padding-right: $drop-down-zero-padding-margin;
+        }
+      }
+    }
+    .e-dropdown-btn {
+      border-bottom-left-radius: $drop-down-zero-border-radius;
+      border-top-left-radius: $drop-down-zero-border-radius;
+      margin-left: $split-btn-sec-btn-margin-left;
+      @if $skin-name == 'Material3' {
+        box-shadow: none;
+      }
+      @if $skin-name == 'bootstrap4' or $skin-name == 'tailwind' {
+        padding-left: $split-btn-icon-btn-padding;
+        padding-right: $split-btn-icon-btn-padding;
+      }
+      @else if $skin-name == 'FluentUI' {
+        padding: 4px;
+      }
+      @else {
+        padding-left: $drop-down-btn-padding-left;
+        padding-right: $drop-down-btn-padding-right;
+      }
+      &:focus,
+      &:hover {
+        @if $skin-name != 'bootstrap4' and $skin-name != 'bootstrap5' and $skin-name != 'bootstrap5.3' and $skin-name != 'FluentUI' and $theme-name != 'FluentUI' and $theme-name != 'Material3' {
+          box-shadow: none;
+        }
+      }
+      &:active {
+        box-shadow: $split-btn-active-box-shadow;
+        z-index: $split-btn-zindex;
+      }
+      &:disabled {
+        &:focus,
+        &:hover,
+        &:active {
+          z-index: 0;
+        }
+      }
+      &:focus {
+        outline-offset: $split-btn-focus-outline-offset;
+      }
+      &.e-btn:focus-visible { // only for keybord
+        @if $skin-name == 'fluent2' {
+          margin-left: $drop-down-zero-padding-margin !important; /* stylelint-disable-line declaration-no-important */
+          box-shadow: $btn-keyboard-focus-box-shadow;
+        }
+      }
+    }
+    .e-btn {
+      @if $skin-name != 'bootstrap4' and $skin-name != 'tailwind3' and $skin-name != 'bootstrap5' and $skin-name != 'bootstrap5.3' and $skin-name != 'FluentUI' and $theme-name != 'fluent2' and $theme-name != 'Material3' {
+        box-shadow: none;
+      }
+      &:hover {
+        @if $skin-name != 'bootstrap4' and $skin-name != 'bootstrap5' and $skin-name != 'bootstrap5.3' and $skin-name != 'FluentUI' and $theme-name != 'fluent2' {
+          box-shadow: none;
+        }
+      }
+      &:focus {
+        @if $skin-name == 'tailwind' or $skin-name == 'tailwind3' or $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          box-shadow: $split-btn-active-box-shadow;
+          z-index: $split-btn-zindex;
+        }
+        @else {
+          box-shadow: none;
+        }
+      }
+      &:focus-visible { // only for keybord
+        @if $skin-name == 'Material3' {
+          box-shadow: $btn-keyboard-focus-box-shadow;
+        }
+      }
+      &:active {
+        box-shadow: $split-btn-active-box-shadow;
+        @if $skin-name == 'tailwind' or $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3' {
+          z-index: $split-btn-zindex;
+        }
+      }
+      &:disabled {
+        box-shadow: none;
+        @if $skin-name == 'FluentUI' or $theme-name == 'FluentUI' {
+          outline: 0;
+          outline-offset: 0;
+        }
+      }
+      &.e-inherit {
+        &:focus,
+        &:active {
+          box-shadow: none;
+        }
+      }
+    }
+    &.e-rtl {
+      .e-split-btn {
+        border-bottom-left-radius: $drop-down-zero-border-radius;
+        border-bottom-right-radius: $split-btn-border-radius;
+        border-top-left-radius: $drop-down-zero-border-radius;
+        border-top-right-radius: $split-btn-border-radius;
+        margin-left: $split-btn-sec-btn-margin-left;
+        @if $skin-name == 'bootstrap4' or $skin-name == 'FluentUI' {
+          padding-left: $split-btn-icon-btn-padding;
+          padding-right: $split-btn-icon-btn-padding;
+        }
+        @else {
+          padding-left: $split-rtl-btn-padding-left;
+          padding-right: $split-rtl-btn-padding-right;
+        }
+        @if $skin-name == 'Material3' {
+          border-radius: $split-bgr-btn-border-radius;
+        }
+        .e-btn-icon {
+          margin-right: $drop-down-zero-padding-margin;
+          padding-left: $split-rtl-btn-icon-padding-left;
+          padding-right: $drop-down-zero-padding-margin;
+          @if $skin-name == 'Material3' {
+            border-radius: $btn-border-radius;
+          }
+        }
+        .e-icon-top {
+          padding-left: $drop-down-zero-padding-margin;
+        }
+        &.e-icon-btn {
+          padding-left: $split-btn-icon-btn-padding;
+          padding-right: $split-btn-icon-btn-padding;
+          .e-btn-icon {
+            padding-left: $drop-down-zero-padding-margin;
+          }
+        }
+      }
+      .e-dropdown-btn {
+        border-bottom-left-radius: $split-btn-border-radius;
+        border-bottom-right-radius: $drop-down-zero-border-radius;
+        border-top-left-radius: $split-btn-border-radius;
+        border-top-right-radius: $drop-down-zero-border-radius;
+        margin-left: $drop-down-zero-padding-margin;
+        @if $skin-name == 'Material3' {
+          border-radius: $split-bgr-btn-border-radius;
+          box-shadow: none;
+        }
+      }
+    }
+    &.e-vertical {
+      display: inline-block;
+      .e-split-btn,
+      .e-dropdown-btn {
+        display: block;
+        width: $split-full-width;
+      }
+      .e-split-btn {
+        border-bottom-left-radius: $drop-down-zero-border-radius;
+        border-top-right-radius: $split-btn-border-radius;
+        line-height: $split-btn-line-height;
+        @if $skin-name == 'bootstrap4'or $skin-name == 'tailwind' {
+          padding-bottom: $split-btn-icon-btn-padding;
+          padding-right: $split-btn-icon-btn-padding;
+        }
+        @else {
+          padding-bottom: $split-btn-vertical-padding-bottom;
+          padding-right: $split-btn-vertical-padding-right;
+        }
+        @if $skin-name == 'Material3' {
+          border-radius: $split-bgr-btn-border-radius;
+          box-shadow: none;
+        }
+        .e-icon-top {
+          padding-bottom: $split-btn-vertical-icon-top-padding;
+        }
+      }
+      .e-dropdown-btn {
+        border-bottom-left-radius: $split-btn-border-radius;
+        border-top-right-radius: $drop-down-zero-border-radius;
+        line-height: $split-btn-vertical-secondary-icon-line-height;
+        margin-left: $drop-down-zero-padding-margin;
+        margin-top: $split-btn-sec-btn-margin-left;
+        @if $skin-name == 'bootstrap4' {
+          padding-bottom: $split-btn-icon-btn-padding;
+          padding-top: $split-btn-icon-btn-padding;
+        }
+        @else {
+          padding-bottom: $drop-down-btn-vertical-padding-bottom;
+          padding-top: $drop-down-btn-vertical-padding-top;
+        }
+        @if $skin-name == 'Material3' {
+          border-radius: $split-bgr-btn-border-radius;
+          box-shadow: none;
+        }
+        .e-icon-bottom {
+          padding-top: $drop-down-zero-padding-margin;
+        }
+      }
+      &.e-rtl {
+        .e-split-btn {
+          border-bottom-right-radius: $drop-down-zero-border-radius;
+          border-top-left-radius: $split-btn-border-radius;
+          margin-left: $drop-down-zero-padding-margin;
+        }
+        .e-dropdown-btn {
+          border-bottom-right-radius: $split-btn-border-radius;
+          border-top-left-radius: $drop-down-zero-border-radius;
+        }
+      }
+    }
+  }
+}
+@include export-module('split-button-theme') {
+  .e-split-btn-wrapper {
+    .e-split-btn {
+      @if $skin-name != 'tailwind3' {
+        border-right-color: $split-btn-seperator-border-color;
+      }
+      @if $skin-name == 'Material3' or $skin-name == 'Material3-dark' {
+        border-image: $split-btn-seperator-border-color;
+        border-width: 0 1px 0 0;
+      }
+      &:focus {
+        border-right-color: $split-btn-focus-border-color;
+      }
+      &:active {
+        border-right-color: $split-btn-active-border-color;
+      }
+      &:disabled {
+        border-right-color: $btn-disabled-bgcolor;
+        @if $skin-name == 'tailwind3' {
+          border-right-color: $btn-disabled-border-color;
+        }
+      }
+      &.e-inherit {
+        border-color: transparent;
+      }
+    }
+    &.e-splitbtn-disabled {
+      @if $skin-name == 'Material3' {
+        box-shadow: none;
+      }
+    }
+    &:hover :not(e-active) {
+      & .e-split-btn {
+        border-right-color: $split-btn-hover-border-color;
+        &:disabled {
+          border-right-color: $btn-disabled-border-color;
+        }
+      }
+    }
+    &.e-rtl {
+      .e-split-btn {
+        @if $skin-name == 'material' or $skin-name == 'fabric' {
+          border-color: transparent;
+        }
+        @else if $skin-name == 'Material3' {
+          border-image: $split-btn-seperator-border-color-rtl;
+          border-width: 0 0 0 1px;
+        }
+        @else {
+          border-left-color: $split-btn-seperator-border-color;
+          border-right-color: $split-btn-seperator-default-border-color;
+        }
+        &:focus {
+          @if $skin-name == 'material' or $skin-name == 'fabric' {
+            border-color: transparent;
+          }
+          @else {
+            border-left-color: $split-btn-focus-border-color;
+            border-right-color: $split-btn-focus-vertical-border-color;
+          }
+        }
+        &:active {
+          @if $skin-name == 'material' or $skin-name == 'fabric' {
+            border-color: transparent;
+          }
+          @else {
+            border-left-color: $split-btn-active-border-color;
+            border-right-color: $split-btn-active-vertical-border-color;
+          }
+        }
+        &:disabled {
+          border-left-color: $btn-disabled-border-color;
+          border-right-color: $split-btn-disabled-vertical-border-color;
+        }
+        &.e-inherit {
+          border-color: transparent;
+        }
+      }
+      &:hover {
+        & .e-split-btn :not(e-active) {
+          border-left-color: $split-btn-hover-border-color;
+          border-right-color: $split-btn-hover-vertical-border-color;
+          &:disabled {
+            border-left-color: $btn-disabled-border-color;
+          }
+        }
+      }
+    }
+    &.e-vertical {
+      .e-split-btn {
+        @if $skin-name == 'Material3' {
+          border-image: $split-btn-seperator-border-color-vertical;
+          border-width: 0 0 2px;
+        }
+        border-bottom-color: $split-btn-seperator-vertical-border-color;
+        border-right-color: $split-btn-seperator-default-border-color;
+        &.e-inherit,
+        &.e-inherit:focus,
+        &.e-inherit:active,
+        &.e-inherit:disabled {
+          border-color: transparent;
+        }
+        &:focus {
+          border-bottom-color: $split-btn-focus-border-color;
+          border-right-color: $split-btn-focus-vertical-border-color;
+        }
+        &:active {
+          border-bottom-color: $split-btn-active-border-color;
+          border-right-color: $split-btn-active-vertical-border-color;
+        }
+        &:disabled {
+          border-bottom-color: $btn-disabled-border-color;
+          border-right-color: $split-btn-disabled-vertical-border-color;
+        }
+      }
+      &:hover {
+        & .e-split-btn {
+          border-bottom-color: $split-btn-hover-border-color;
+          border-right-color: $split-btn-hover-vertical-border-color;
+          &.e-inherit,
+          &.e-inherit:disabled {
+            border-color: transparent;
+          }
+          &:disabled {
+            border-bottom-color: $btn-disabled-border-color;
+          }
+        }
+      }
+      &.e-rtl {
+        .e-split-btn {
+          border-left-color: $split-btn-seperator-default-border-color;
+          &.e-inherit,
+          &.e-inherit:focus,
+          &.e-inherit:active,
+          &.e-inherit:disabled {
+            border-color: transparent;
+          }
+          &:focus {
+            border-left-color: $split-btn-focus-left-border-color;
+          }
+          &:active {
+            border-left-color: $split-btn-active-left-border-color;
+          }
+          &:disabled {
+            border-left-color: $split-btn-disabled-left-border-color;
+          }
+        }
+        &:hover {
+          & .e-split-btn {
+            border-left-color: $split-btn-hover-left-border-color;
+            &.e-inherit {
+              border-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include export-module('split-button-bigger') {
+  .e-bigger .e-split-btn-wrapper,
+  .e-bigger.e-split-btn-wrapper {
+    @if $skin-name == 'Material3' {
+      border-radius: $split-bgr-btn-border-radius;
+      box-shadow: $btn-box-shadow;
+    }
+    .e-split-btn {
+      @if $skin-name == 'Material3' or $skin-name == 'Material3-dark' {
+        border-radius: $split-bgr-btn-border-radius;
+        box-shadow: none;
+        padding: $split-wrapper-split-btn-padding;
+      }
+      @if $skin-name == 'bootstrap4'or $skin-name == 'FluentUI' {
+        padding: 7px 4px;
+        padding-left: $split-btn-icon-btn-padding-bigger;
+        padding-right: $split-btn-icon-btn-padding-bigger;
+      }
+      @else if $skin-name == 'tailwind' or $skin-name == 'tailwind-dark' {
+        padding-left: $split-btn-bigger-padding-left;
+        padding-right: $split-btn-bigger-padding-right;
+        line-height: 1.781em;
+      }
+      @else {
+        padding-left: $split-btn-bigger-padding-left;
+        padding-right: $split-btn-bigger-padding-right;
+      }
+      &.e-top-icon-btn {
+        padding-bottom: $split-btn-top-icon-padding-bottom;
+        padding-top: $split-btn-top-icon-padding-top;
+      }
+      .e-btn-icon {
+        font-size: $drop-down-btn-icon-font-size-bigger;
+        margin-left: $drop-down-bigger-btn-icon-margin-left;
+        padding-right: $drop-down-bigger-btn-icon-padding-right;
+        width: $split-auto-width;
+        @if $skin-name == 'Material3' {
+          border-radius: $split-bgr-btn-border-radius;
+        }
+      }
+      .e-icon-top {
+        padding-bottom: $drop-down-bigger-icon-top-padding-bottom;
+        padding-right: $drop-down-zero-padding-margin;
+      }
+      &.e-icon-btn {
+        padding-left: $split-btn-icon-btn-padding-bigger;
+        padding-right: $split-btn-icon-btn-padding-bigger;
+        .e-btn-icon {
+          padding-right: $drop-down-zero-padding-margin;
+        }
+      }
+    }
+    .e-dropdown-btn {
+      @if $skin-name == 'Material3' or $skin-name == 'Material3-dark' {
+        padding: $split-wrapper-split-btn-padding;
+      }
+      @else {
+        padding-left: $drop-dbtn-bigger-padding-left;
+        padding-right: $drop-dbtn-bigger-padding-right;
+      }
+      @if $skin-name == 'tailwind' or $skin-name == 'tailwind-dark' {
+        z-index: 1;
+      }
+    }
+    &.e-rtl {
+      .e-split-btn {
+        @if $skin-name == 'bootstrap4' {
+          padding-left: $split-btn-icon-btn-padding-bigger;
+          padding-right: $split-btn-icon-btn-padding-bigger;
+        }
+        @else {
+          padding-left: $drop-down-bigger-rtl-padding-left;
+          padding-right: $drop-down-bigger-rtl-padding-right;
+        }
+        .e-btn-icon {
+          padding-left: $drop-down-bgr-rtl-icon-padding-left;
+          padding-right: $drop-down-zero-padding-margin;
+          @if $skin-name == 'Material3' {
+            border-radius: $split-bgr-btn-border-radius;
+          }
+        }
+        .e-icon-top {
+          padding-left: $drop-down-zero-padding-margin;
+        }
+        &.e-icon-btn {
+          padding-left: $split-btn-icon-btn-padding-bigger;
+          padding-right: $split-btn-icon-btn-padding-bigger;
+          .e-btn-icon {
+            padding-left: $drop-down-zero-padding-margin;
+          }
+        }
+      }
+    }
+    &.e-vertical {
+      .e-split-btn {
+        @if $skin-name == 'bootstrap4' or $skin-name == 'tailwind' {
+          padding-bottom: $split-btn-icon-btn-padding-bigger;
+          padding-right: $split-btn-icon-btn-padding-bigger;
+        }
+        @else {
+          padding-bottom: $split-btn-bgr-vertical-padding-bottom;
+          padding-right: $split-btn-bgr-vertical-padding-right;
+        }
+      }
+      .e-dropdown-btn {
+        @if $skin-name == 'bootstrap4' {
+          padding-bottom: $split-btn-icon-btn-padding-bigger;
+          padding-top: $split-btn-icon-btn-padding-bigger;
+        }
+        @else {
+          padding-bottom: $drop-down-btn-bgr-vertical-padding-bottom;
+          padding-top: $drop-down-btn-bgr-vertical-padding-top;
+        }
+        @if $skin-name == 'tailwind' or $skin-name == 'tailwind-dark' {
+          z-index: 1;
+        }
+        .e-icon-bottom {
+          padding-top: $drop-down-zero-padding-margin;
+        }
+      }
+    }
+  }
+}

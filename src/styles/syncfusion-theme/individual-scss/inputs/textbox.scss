@@ -1,0 +1,992 @@
+
+/* stylelint-disable-line no-empty-source */
+$multiline-clear-icon-right-position: 15px;
+$multiline-clear-icon-top-position: 10px;
+$multiline-clear-icon-left-position: 15px;
+$input-bigger-focus-text-padding-right: 32px;
+$input-bigger-focus-text-padding-left: 32px;
+$input-focus-text-padding-right: 30px;
+$input-focus-text-padding-left: 30px;
+$textbox-bigger-min-height: 40px;
+$textbox-min-height: 33px;
+$textbox-prepend-padding: 12px 8px 12px 1px;
+$textbox-append-padding: 12px 1px 12px 8px;
+$textbox-rtl-prepend-padding: 12px 1px 12px 7px;
+$textbox-icon-template-font-size: 16px;
+$textbox-icon-template-margin: 0 3px;
+$textbox-outline-prepend-padding: 12px 8px 12px 12px;
+$textbox-outline-append-padding: 12px 12px 12px 3px;
+$textbox-filled-prepend-padding: 12px 8px 12px 0;
+$textbox-filled-append-padding: 12px 0 12px 8px;
+$textbox-prepend-float-label-top: -5px;
+$textbox-prepend-focus-float-label-margin-left: 0;
+$textbox-outline-prepend-multiline-label-top: -6px;
+$textbox-outline-prepend-input-padding: 10px 12px 9px 0;
+$textbox-outline-prepend-append-input-padding: 10px 0 9px;
+$textbox-filled-prepend-label-bottom-top: 12px;
+$textbox-filled-prepend-label-top: 10px;
+$textbox-prepand-multiline-label-top: -20px;
+$textbox-prepand-multiline-padding: 7px 8px 7px 0;
+$textbox-append-multiline-padding: 7px 0 7px 8px;
+$textbox-prepand-multiline-outline-padding: 11px 8px 11px 12px;
+$textbox-prepand-multiline-filled-padding: 4px 8px 5px 12px;
+$textbox-prepand-append-multiline-filled-padding: 0 1px 5px 1px;
+$textbox-prepand-multiline-filled-textarea-padding: 0 12px 5px 1px;
+$textbox-prepand-multiline-filled-label-top: 10px;
+$textbox-prepand-append-multiline-outline-textarea-padding: 2px 1px 1px 1px;
+$textbox-prepand-multiline-outline-textarea-padding: 0 12px 5px 1px;
+$textbox-append-outline-input-padding: 10px 0 9px 12px;
+$textbox-append-multiline-filled-template-padding: 4px 12px 5px 5px;
+$textbox-append-multiline-filled-textarea-padding: 0 1px 5px 12px;
+$textbox-append-multiline-outline-textarea-padding: 0 1px 5px 12px;
+$textbox-rtl-outline-prepend-padding: 12px 12px 12px 8px;
+$textbox-rtl-prepand-append-input-padding: 10px 0 9px;
+$textbox-rtl-append-outline-template-padding: 12px 3px 12px 12px;
+$textbox-rtl-filled-prepend-padding: 12px 0 12px 8px;
+$textbox-rtl-append-filled-template-padding: 12px 8px 12px 0;
+$textbox-append-multiline-outline-template-padding: 11px 12px 11px 3px;
+$textbox-rtlt-prepend-multiline-filled-template-padding: 4px 12px 5px 5px;
+$textbox-rtl-multiline-append-filled-template-padding: 4px 5px 5px 12px;
+$textbox-rtl-prepand-outline-input-padding: 10px 2px 9px 12px;
+$textbox-rtl-append-outline-input-padding: 10px 12px 9px 0;
+$textbox-rtl-multiline-prepand-template-padding: 7px 0 7px 3px;
+$textbox-rtl-multiline-prepand-outline-textarea-padding: 0 1px 5px 12px;
+$textbox-rtl-multiline-prepand-filled-textarea-padding: 0 1px 5px 12px;
+$textbox-rtl-append-template-padding: 7px 3px 7px 0;
+$textbox-rtl-multiline-append-outline-textarea-padding: 0 12px 5px 1px;
+$textbox-rtl-multiline-append-filled-textarea-padding: 0 12px 5px 1px;
+$textbox-rtl-multiline-outline-prepand-template-padding: 12px 12px 12px 8px;
+$textbox-rtl-multiline-prepand-append-outline-textarea-padding: 0 1px 5px 1px;
+$textbox-prepend-float-label-bottom: -6px;
+$textbox-outline-prepend-label-bottom-top: -6px;
+$textbox-outline-prepend-label-top: -6px;
+$textbox-multiline-prepand-multiline-label-bottom-top: -10px;
+$textbox-multiline-outline-prepand-multiline-label-bottom-top: -6px;
+$textbox-multiline-filled-prepand-multiline-label-bottom-top: 17px;
+$textbox-bigger-prepand-template-padding: 19px 14px 19px 1px;
+$textbox-bigger-append-template-padding: 19px 1px 19px 14px;
+$textbox-bigger-icon-template-font-size: 18px;
+$textbox-bigger-outline-prepand-template-padding: 19px 14px 19px 16px;
+$textbox-bigger-outline-append-template-padding: 19px 16px 19px 14px;
+$textbox-bigger-filled-prepand-template-padding: 18px 14px 18px 0;
+$textbox-bigger-filled-append-template-padding: 18px 0 18px 14px;
+$textbox-bigger-prepand-bottom-label-top: 1px;
+$textbox-bigger-prepand-top-label-top: -6px;
+$textbox-bigger-outline-prepand-bottom-label-top: -8px;
+$textbox-bigger-outline-prepand-top-label-top: -6px;
+$textbox-bigger-filled-prepand-bottom-label-top: 18px;
+$textbox-bigger-filled-prepand-top-label-top: 10px;
+$textbox-bigger-rtl-prepand-template-padding: 19px 1px 19px 14px;
+$textbox-bigger-rtl-outline-prepand-template-padding: 19px 16px 19px 14px;
+$textbox-bigger-rtl-filled-prepand-template-padding: 18px 0 18px 14px;
+$textbox-bigger-rtl-append-template-padding: 19px 14px 19px 1px;
+$textbox-bigger-rtl-outline-append-template-padding: 19px 14px 19px 16px;
+$textbox-bigger-rtl-filled-append-template-padding: 18px 14px 18px 0;
+$textbox-bigger-multiline-prepand-template-padding: 11px 14px 11px 0;
+$textbox-bigger-multiline-prepand-bottom-label-top: -8px;
+$textbox-bigger-multiline-prepand-top-label-top: -20px;
+$textbox-bigger-multiline-outline-prepand-template-padding: 19px 14px 10px 16px;
+$textbox-bigger-multiline-outline-prepand-bottom-label-top: -6px;
+$textbox-bigger-multiline-outline-prepand-top-label-top: -6px;
+$textbox-bigger-multiline-filled-prepand-template-padding: 2px 14px 5px 16px;
+$textbox-bigger-multiline-filled-prepand-bottom-label-top: 22px;
+$textbox-bigger-multiline-filled-prepand-top-label-top: 0;
+$textbox-bigger-multiline-append-template-padding: 11px 0 11px 14px;
+$textbox-bigger-multiline-outline-append-template-padding: 19px 16px 10px 14px;
+$textbox-bigger-multiline-filled-append-template-padding: 2px 16px 5px 14px;
+$textbox-bigger-multiline-rtl-prepand-template-padding: 11px 0 11px 14px;
+$textbox-bigger-multiline-outline-rtl-prepand-template-padding: 19px 16px 10px 14px;
+$textbox-bigger-multiline-filled-rtl-prepand-template-padding: 2px 16px 5px 14px;
+$textbox-bigger-multiline-rtl-append-template-padding: 11px 14px 11px 0;
+$textbox-bigger-multiline-outline-rtl-append-template-padding: 19px 14px 10px 16px;
+$textbox-bigger-multiline-filled-rtl-append-template-padding: 2px 14px 5px 16px;
+$textbox-icon-template-separator-color: $grey-300;
+.e-content-placeholder.e-textbox.e-placeholder-textbox {
+  background-size: 300px 33px;
+  min-height: $textbox-min-height;
+}
+.e-input-group.e-input-focus.e-multi-line-input textarea.e-textbox {
+  padding-right: $input-focus-text-padding-right;
+}
+.e-input-group.e-input-focus.e-rtl.e-multi-line-input textarea.e-textbox {
+  padding-left: $input-focus-text-padding-left;
+}
+div.e-input-group,
+span.e-input-group {
+  &.e-prepend-wrapper {
+    & .e-prepend-template {
+      padding: $textbox-prepend-padding;
+      display: flex;
+      align-items: center;
+      & .e-icons {
+        font-size: $textbox-icon-template-font-size;
+        margin: $textbox-icon-template-margin;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      & .e-input-separator {
+        border: 1px solid $textbox-icon-template-separator-color;
+        border-width: 0 2px 0 0;
+        margin: 0 5px;
+        padding: 7px 0;
+      }
+    }
+    & input.e-control {
+      height: auto;
+    }
+    @if ($skin-name != 'material' or $skin-name != 'material-dark') {
+      & input.e-input,
+      &.e-input-focus input.e-input,
+      &.e-append-wrapper input.e-input {
+        padding-left: 1px;
+      }
+    }
+    &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric, .e-outline, .e-filled) label.e-float-text.e-label-top {
+      top: $textbox-prepend-float-label-top;
+    }
+    &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric, .e-outline, .e-filled) label.e-float-text.e-label-bottom {
+      top: $textbox-prepend-float-label-bottom;
+    }
+    &.e-outline {
+      &.e-multi-line-input {
+        &.e-float-input.e-control-wrapper label.e-float-text.e-label-top,
+        &.e-float-input.e-control-wrapper.e-input-focus .e-float-text {
+          @if ($skin-name == 'fluent2') {
+            top: $textbox-outline-prepend-multiline-label-top !important; /* stylelint-disable-line declaration-no-important */
+          }
+          @else {
+            top: $textbox-outline-prepend-multiline-label-top;
+          }
+        }
+      }
+      & .e-prepend-template {
+        padding: $textbox-outline-prepend-padding;
+      }
+      & input.e-input,
+      & input.e-input:focus,
+      &.e-input-focus input.e-input {
+        padding: $textbox-outline-prepend-input-padding;
+      }
+      &.e-append-wrapper input.e-input,
+      &.e-append-wrapper input.e-input:focus,
+      &.e-append-wrapper.e-input-focus input.e-input {
+        padding: $textbox-outline-prepend-append-input-padding;
+      }
+      &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric) label.e-float-text.e-label-bottom {
+        top: $textbox-outline-prepend-label-bottom-top;
+      }
+      &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric) label.e-float-text.e-label-top {
+        top: $textbox-outline-prepend-label-top;
+      }
+    }
+    &.e-filled {
+      @if ($skin-name == 'fluent2') {
+        padding-left: 0;
+        &.e-append-wrapper {
+          padding: 0;
+        }
+      }
+      & .e-prepend-template {
+        padding: $textbox-filled-prepend-padding;
+      }
+      @if ($skin-name == 'tailwind3') {
+        & input.e-input,
+        & input.e-input:focus,
+        &.e-input-focus input.e-input {
+          padding: 7px 7px 5px 1px;
+        }
+      }
+      &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric) label.e-float-text.e-label-bottom {
+        top: $textbox-filled-prepend-label-bottom-top;
+      }
+      &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric) label.e-float-text.e-label-top {
+        top: $textbox-filled-prepend-label-top;
+      }
+    }
+    &.e-multi-line-input {
+      & .e-prepend-template {
+        display: block;
+        padding: $textbox-prepand-multiline-padding;
+        & .e-input-separator {
+          padding: 5px 0 2px;
+        }
+      }
+      & textarea.e-input {
+        height: auto;
+      }
+      @if ($skin-name == 'tailwind' or $skin-name == 'tailwind3') {
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: 4px 2px;
+        }
+      }
+      @if ($skin-name == 'highcontrast' or $skin-name == 'highcontrat-light') {
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: 4px 2px 0;
+        }
+      }
+      @if ($skin-name == 'FluentUI') {
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: 6px 1px;
+        }
+      }
+      @if ($skin-name == 'fluent2') {
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: 4px 1px;
+        }
+      }
+      @if ($skin-name == 'fabric' or $skin-name == 'fabric-dark') {
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: 4px 2px 0;
+        }
+      }
+      @if ($skin-name == 'bootstrap' or $skin-name == 'bootstrap4' or $skin-name == 'bootstrap5' or $skin-name == 'bootstrap5.3') {
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: 4px 1px;
+        }
+      }
+      &.e-float-input.e-control-wrapper label.e-float-text.e-label-top,
+      &.e-float-input.e-control-wrapper.e-input-focus .e-float-text {
+        top: $textbox-prepand-multiline-label-top;
+      }
+      &.e-float-input.e-control-wrapper label.e-float-text.e-label-bottom,
+      &.e-float-input.e-control-wrapper.e-rtl label.e-float-text.e-label-bottom {
+        top: $textbox-multiline-prepand-multiline-label-bottom-top;
+      }
+      &.e-filled {
+        & .e-prepend-template {
+          padding: $textbox-prepand-multiline-filled-padding;
+        }
+        &.e-append-wrapper textarea.e-input,
+        &.e-append-wrapper.e-input-focus textarea.e-input,
+        &.e-append-wrapper textarea.e-input:focus {
+          padding: $textbox-prepand-append-multiline-filled-padding;
+        }
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: $textbox-prepand-multiline-filled-textarea-padding;
+        }
+        &.e-float-input.e-control-wrapper label.e-float-text.e-label-top {
+          top: $textbox-prepand-multiline-filled-label-top;
+        }
+        &.e-float-input.e-control-wrapper label.e-float-text.e-label-bottom {
+          top: $textbox-multiline-filled-prepand-multiline-label-bottom-top;
+        }
+        &.e-rtl .e-prepend-template {
+          padding: $textbox-rtlt-prepend-multiline-filled-template-padding;
+        }
+      }
+      &.e-outline {
+        & .e-prepend-template {
+          padding: $textbox-prepand-multiline-outline-padding;
+        }
+        &.e-float-input.e-control-wrapper label.e-float-text.e-label-bottom {
+          top: $textbox-multiline-outline-prepand-multiline-label-bottom-top;
+        }
+        @if ($skin-name == 'tailwind3') {
+          &.e-float-input.e-control-wrapper label.e-float-text.e-label-top {
+            top: -20px !important; /* stylelint-disable-line declaration-no-important */
+          }
+        }
+        @if ($skin-name == 'fabric' or $skin-name == 'fabric-dark') {
+          &.e-float-input.e-control-wrapper label.e-float-text.e-label-top {
+            top: 15px !important; /* stylelint-disable-line declaration-no-important */
+          }
+        }
+        &.e-append-wrapper textarea.e-input,
+        &.e-append-wrapper.e-input-focus textarea.e-input,
+        &.e-append-wrapper textarea.e-input:focus {
+          padding: $textbox-prepand-append-multiline-outline-textarea-padding;
+        }
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: $textbox-prepand-multiline-outline-textarea-padding;
+        }
+      }
+    }
+    &.e-rtl {
+      & .e-prepend-template {
+        padding: $textbox-rtl-prepend-padding;
+      }
+      @if ($skin-name == 'highcontrast' or $skin-name == 'highcontrast-light') {
+        &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric) label.e-label-bottom {
+          top: 14px;
+        }
+        &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric) label.e-label-top {
+          top: 15px;
+        }
+      }
+      @if ($skin-name != 'material' or $skin-name != 'material-dark') {
+        & input.e-input,
+        &.e-input-focus input.e-input,
+        &.e-append-wrapper input.e-input {
+          padding-right: 1px;
+        }
+      }
+      &.e-outline {
+        & .e-prepend-template {
+          padding: $textbox-rtl-outline-prepend-padding;
+        }
+        & input.e-input,
+        & input.e-input:focus,
+        &.e-input-focus input.e-input {
+          padding: $textbox-rtl-prepand-outline-input-padding;
+        }
+        &.e-append-wrapper input.e-input,
+        &.e-append-wrapper input.e-input:focus,
+        &.e-append-wrapper.e-input-focus input.e-input {
+          padding: $textbox-rtl-prepand-append-input-padding;
+        }
+      }
+      &.e-filled {
+        @if ($skin-name == 'fluent2') {
+          padding-right: 0;
+        }
+        & .e-prepend-template {
+          padding: $textbox-rtl-filled-prepend-padding;
+        }
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: $textbox-rtl-multiline-prepand-filled-textarea-padding;
+        }
+      }
+      &.e-multi-line-input {
+        & .e-prepend-template {
+          padding: $textbox-rtl-multiline-prepand-template-padding;
+        }
+        @if ($skin-name == 'tailwind3') {
+          & textarea.e-input {
+            padding-right: 1px;
+          }
+        }
+        @if ($skin-name == 'highcontrast' or $skin-name == 'highcontrast-light') {
+          &.e-float-input.e-control-wrapper label.e-label-top {
+            top: 15px;
+          }
+          &.e-float-input.e-control-wrapper.e-filled .label.e-float-text.e-label-bottom {
+            top: -8px;
+          }
+        }
+        @if ($skin-name == 'FluentUI') {
+          &.e-float-input.e-control-wrapper label.e-label-top {
+            top: 15px;
+          }
+          &.e-float-input.e-control-wrapper.e-filled .label.e-float-text.e-label-bottom {
+            top: -10px;
+          }
+        }
+        @if ($skin-name == 'fluent2') {
+          &.e-float-input.e-control-wrapper label.e-label-top {
+            top: -30px;
+          }
+          &.e-float-input.e-control-wrapper.e-filled .label.e-float-text.e-label-bottom {
+            top: 7px;
+          }
+        }
+        @if ($skin-name == 'fabric' or $skin-name == 'fabric-dark') {
+          &.e-float-input.e-control-wrapper label.e-label-top {
+            top: 15px;
+          }
+          &.e-float-input.e-control-wrapper.e-filled .label.e-float-text.e-label-bottom {
+            top: -5px;
+          }
+        }
+        @if ($skin-name == 'bootstrap') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 4px 1px;
+            padding-right: 0;
+          }
+        }
+        @if ($skin-name == 'bootstrap4') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 4px 1px;
+            padding-right: 0;
+          }
+          &.e-float-input.e-control-wrapper label.e-label-bottom {
+            top: -7px;
+          }
+        }
+        &.e-outline .e-prepend-template {
+          padding: $textbox-rtl-multiline-outline-prepand-template-padding;
+        }
+        &.e-outline textarea.e-input,
+        &.e-outline.e-input-focus textarea.e-input,
+        &.e-outline textarea.e-input:focus {
+          padding: $textbox-rtl-multiline-prepand-outline-textarea-padding;
+        }
+        &.e-outline.e-append-wrapper textarea.e-input,
+        &.e-filled.e-append-wrapper textarea.e-input,
+        &.e-outline.e-append-wrapper.e-input-focus textarea.e-input,
+        &.e-filled.e-append-wrapper.e-input-focus textarea.e-input,
+        &.e-outline.e-append-wrapper textarea.e-input:focus,
+        &.e-filled.e-append-wrapper textarea.e-input:focus {
+          padding: $textbox-rtl-multiline-prepand-append-outline-textarea-padding;
+        }
+      }
+    }
+  }
+  &.e-append-wrapper {
+    & .e-append-template {
+      padding: $textbox-append-padding;
+      display: flex;
+      align-items: center;
+      & .e-icons {
+        font-size: $textbox-icon-template-font-size;
+        margin: $textbox-icon-template-margin;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      & .e-input-separator {
+        border: 1px solid $textbox-icon-template-separator-color;
+        border-width: 0 2px 0 0;
+        margin: 0 5px;
+        padding: 7px 0;
+      }
+    }
+    & input.e-control {
+      height: auto;
+    }
+    &.e-outline {
+      & .e-append-template {
+        padding: $textbox-outline-append-padding;
+      }
+      & input.e-input,
+      & input.e-input:focus,
+      &.e-input-focus input.e-input {
+        padding: $textbox-append-outline-input-padding;
+      }
+    }
+    &.e-filled {
+      @if ($skin-name == 'fluent2') {
+        padding-right: 0;
+      }
+      & .e-append-template {
+        padding: $textbox-filled-append-padding;
+      }
+    }
+    &.e-multi-line-input {
+      & .e-append-template {
+        display: block;
+        padding: $textbox-append-multiline-padding;
+        & .e-input-separator {
+          padding: 5px 0 2px;
+        }
+      }
+      & textarea.e-input {
+        height: auto;
+      }
+      &.e-filled {
+        & .e-append-template {
+          padding: $textbox-append-multiline-filled-template-padding;
+        }
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: $textbox-append-multiline-filled-textarea-padding;
+        }
+      }
+      &.e-outline {
+        & .e-append-template {
+          padding: $textbox-append-multiline-outline-template-padding;
+        }
+        & textarea.e-input,
+        &.e-input-focus textarea.e-input,
+        & textarea.e-input:focus {
+          padding: $textbox-append-multiline-outline-textarea-padding;
+        }
+      }
+    }
+    &.e-rtl {
+      & .e-append-template {
+        padding: $textbox-rtl-append-template-padding;
+      }
+      @if ($skin-name == 'bootstrap4') {
+        &.e-multi-line-input .e-append-template {
+          padding: 11px 8px;
+        }
+      }
+      &.e-outline {
+        & .e-append-template {
+          padding: $textbox-rtl-append-outline-template-padding;
+        }
+        & input.e-input,
+        & input.e-input:focus,
+        &.e-input-focus input.e-input {
+          padding: $textbox-rtl-append-outline-input-padding;
+        }
+      }
+      &.e-filled {
+        @if ($skin-name == 'fluent2') {
+          padding-left: 0;
+          & input.e-input,
+          & input.e-input:focus,
+          &.e-input-focus input.e-input {
+            padding: 14px 12px 5px;
+          }
+        }
+        & .e-append-template {
+          padding: $textbox-rtl-append-filled-template-padding;
+        }
+      }
+      &.e-multi-line-input.e-filled .e-append-template {
+        padding: $textbox-rtl-multiline-append-filled-template-padding;
+      }
+      &.e-multi-line-input.e-filled textarea.e-input,
+      &.e-multi-line-input.e-filled.e-input-focus textarea.e-input,
+      &.e-multi-line-input.e-filled textarea.e-input:focus {
+        padding: $textbox-rtl-multiline-append-filled-textarea-padding;
+      }
+      &.e-multi-line-input.e-outline textarea.e-input,
+      &.e-multi-line-input.e-outline.e-input-focus textarea.e-input,
+      &.e-multi-line-input.e-outline textarea.e-input:focus {
+        padding: $textbox-rtl-multiline-append-outline-textarea-padding;
+      }
+    }
+  }
+}
+@if ($skin-name == 'material' or $skin-name == 'material-dark' or $skin-name == 'Material3') {
+  .e-float-input.e-input-group.e-prepend-wrapper.e-append-wrapper:not(.e-filled) label.e-float-text.e-label-top {
+    margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+  }
+  .e-float-input.e-input-group.e-prepend-wrapper:not(.e-filled) label.e-float-text.e-label-top {
+    margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+  }
+  .e-float-input.e-rtl.e-input-group.e-prepend-wrapper.e-append-wrapper:not(.e-filled) label.e-float-text.e-label-top,
+  .e-float-input.e-rtl.e-input-group.e-prepend-wrapper:not(.e-filled) label.e-float-text.e-label-top {
+    margin-right: 0 !important; /* stylelint-disable-line declaration-no-important */
+  }
+}
+@else {
+  .e-float-input.e-input-group.e-prepend-wrapper.e-append-wrapper label.e-float-text.e-label-top {
+    margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+  }
+  .e-float-input.e-input-group.e-prepend-wrapper label.e-float-text.e-label-top {
+    margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+  }
+  .e-float-input.e-rtl.e-input-group.e-prepend-wrapper.e-append-wrapper label.e-float-text.e-label-top,
+  .e-float-input.e-rtl.e-input-group.e-prepend-wrapper label.e-float-text.e-label-top {
+    margin-right: 0 !important; /* stylelint-disable-line declaration-no-important */
+  }
+}
+@if ($skin-name == 'tailwind3') {
+  .e-float-input.e-input-group.e-rtl.e-filled.e-prepend-wrapper.e-append-wrapper,
+  .e-float-input.e-input-group.e-rtl.e-filled.e-prepend-wrapper,
+  .e-float-input.e-input-group.e-rtl.e-filled.e-append-wrapper {
+    padding: 0;
+  }
+}
+.e-input-group.e-prepend-wrapper.e-input-focus input.e-input {
+  padding-left: 1px;
+}
+.e-input-group.e-rtl.e-prepend-wrapper.e-input-focus input.e-input {
+  padding-right: 1px;
+}
+/* stylelint-disable-line no-empty-source */
+@include export-module('textbox-bigger') {
+  .e-bigger .e-content-placeholder.e-textbox.e-placeholder-textbox,
+  .e-bigger.e-content-placeholder.e-textbox.e-placeholder-textbox {
+    background-size: 300px 40px;
+    min-height: $textbox-bigger-min-height;
+  }
+  .e-bigger .e-input-group.e-input-focus.e-multi-line-input textarea.e-textbox {
+    padding-right: $input-bigger-focus-text-padding-right;
+  }
+  .e-bigger .e-input-group.e-input-focus.e-rtl.e-multi-line-input textarea.e-textbox {
+    padding-left: $input-bigger-focus-text-padding-left;
+  }
+  .e-bigger div.e-input-group,
+  div.e-bigger.e-input-group,
+  .e-bigger span.e-input-group,
+  span.e-bigger.e-input-group {
+    &.e-prepend-wrapper {
+      & .e-prepend-template {
+        padding: $textbox-bigger-prepand-template-padding;
+        & .e-icons {
+          font-size: $textbox-bigger-icon-template-font-size;
+        }
+      }
+      &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric, .e-outline, .e-filled) label.e-float-text.e-label-top {
+        top: $textbox-bigger-prepand-top-label-top;
+      }
+      &.e-float-input.e-control-wrapper:not(.e-mask, .e-numeric, .e-outline, .e-filled) label.e-float-text.e-label-bottom {
+        top: $textbox-bigger-prepand-bottom-label-top;
+      }
+      &.e-outline {
+        & .e-prepend-template {
+          padding: $textbox-bigger-outline-prepand-template-padding;
+        }
+        &.e-float-input.e-control-wrapper label.e-label-bottom {
+          top: $textbox-bigger-outline-prepand-bottom-label-top !important; /* stylelint-disable-line declaration-no-important */
+        }
+        &.e-float-input.e-control-wrapper label.e-label-top {
+          top: $textbox-bigger-outline-prepand-top-label-top;
+        }
+      }
+      &.e-filled {
+        @if ($skin-name == 'Material3') {
+          & input.e-input,
+          & input.e-input:focus,
+          &.e-input-focus input.e-input {
+            padding: 2px 3px 5px;
+          }
+        }
+        @if ($skin-name == 'tailwind3') {
+          & input.e-input,
+          & input.e-input:focus,
+          &.e-input-focus input.e-input {
+            padding: 0;
+          }
+        }
+        & .e-prepend-template {
+          padding: $textbox-bigger-filled-prepand-template-padding;
+        }
+        &.e-float-input.e-control-wrapper label.e-label-bottom {
+          top: $textbox-bigger-filled-prepand-bottom-label-top;
+        }
+        &.e-float-input.e-control-wrapper label.e-label-top {
+          top: $textbox-bigger-filled-prepand-top-label-top;
+        }
+      }
+      &.e-multi-line-input {
+        & .e-prepend-template {
+          padding: $textbox-bigger-multiline-prepand-template-padding;
+        }
+        &.e-float-input.e-control-wrapper label.e-label-bottom {
+          top: $textbox-bigger-multiline-prepand-bottom-label-top;
+        }
+        &.e-float-input.e-control-wrapper label.e-label-top {
+          top: $textbox-bigger-multiline-prepand-top-label-top;
+        }
+        @if ($skin-name == 'material' or $skin-name == 'material-dark') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 10px 0 5px;
+          }
+          &.e-outline textarea.e-input,
+          &.e-outline.e-input-focus textarea.e-input,
+          &.e-outline textarea.e-input:focus {
+            padding: 7px 1px 0;
+          }
+          &.e-filled textarea.e-input,
+          &.e-filled.e-input-focus textarea.e-input,
+          &.e-filled textarea.e-input:focus {
+            padding: 1px 0 5px;
+          }
+        }
+        @if ($skin-name == 'Material3') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 10px 0 1px;
+          }
+          &.e-outline textarea.e-input,
+          &.e-outline.e-input-focus textarea.e-input,
+          &.e-outline textarea.e-input:focus {
+            padding: 1px;
+          }
+        }
+        @if ($skin-name == 'tailwind') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 5px 2px 1px;
+          }
+        }
+        @if ($skin-name == 'tailwind3') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 11px 2px 1px;
+          }
+          &.e-outline textarea.e-input,
+          &.e-outline.e-input-focus textarea.e-input,
+          &.e-outline textarea.e-input:focus {
+            padding: 2px 2px 1px;
+          }
+          &.e-filled textarea.e-input,
+          &.e-filled.e-input-focus textarea.e-input,
+          &.e-filled textarea.e-input:focus {
+            padding: 0 1px 5px;
+          }
+        }
+        @if ($skin-name == 'highcontrast' or $skin-name == 'highcontrast-light') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 5px 2px 0;
+          }
+        }
+        @if ($skin-name == 'FluentUI') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 9px 1px 1px;
+          }
+        }
+        @if ($skin-name == 'fluent2') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 7px 1px 1px;
+          }
+        }
+        @if ($skin-name == 'bootstrap' or $skin-name == 'bootstrap-dark') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 10px 1px 0;
+          }
+        }
+        @if ($skin-name == 'bootstrap4') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 10px 1px 0;
+          }
+        }
+        @if ($skin-name == 'bootstrap5') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 9px 1px 0;
+          }
+        }
+        @if ($skin-name == 'bootstrap5.3') {
+          & textarea.e-input,
+          &.e-input-focus textarea.e-input,
+          & textarea.e-input:focus {
+            padding: 10px 1px 0;
+          }
+        }
+        &.e-outline {
+          & .e-prepend-template {
+            padding: $textbox-bigger-multiline-outline-prepand-template-padding;
+          }
+          &.e-float-input.e-control-wrapper label.e-label-bottom {
+            top: $textbox-bigger-multiline-outline-prepand-bottom-label-top;
+          }
+          &.e-float-input.e-control-wrapper label.e-label-top {
+            top: $textbox-bigger-multiline-outline-prepand-top-label-top;
+          }
+        }
+        &.e-filled {
+          & .e-prepend-template {
+            padding: $textbox-bigger-multiline-filled-prepand-template-padding;
+          }
+          &.e-float-input.e-control-wrapper label.e-label-bottom {
+            top: $textbox-bigger-multiline-filled-prepand-bottom-label-top;
+          }
+          &.e-float-input.e-control-wrapper label.e-label-top {
+            top: $textbox-bigger-multiline-filled-prepand-top-label-top;
+          }
+        }
+      }
+      &.e-rtl {
+        @if ($skin-name == 'fluent2') {
+          & input.e-input,
+          & input.e-input:focus,
+          &.e-input-focus input.e-input.e-input {
+            padding: 0;
+          }
+        }
+        & .e-prepend-template {
+          padding: $textbox-bigger-rtl-prepand-template-padding;
+        }
+        &.e-outline .e-prepend-template {
+          padding: $textbox-bigger-rtl-outline-prepand-template-padding;
+        }
+        &.e-filled .e-prepend-template {
+          padding: $textbox-bigger-rtl-filled-prepand-template-padding;
+        }
+        &.e-multi-line-input {
+          @if ($skin-name == 'tailwind') {
+            & textarea.e-input,
+            &.e-input-focus textarea.e-input,
+            & textarea.e-input:focus {
+              padding: 5px 2px 1px;
+            }
+          }
+          @if ($skin-name == 'tailwind3') {
+            & textarea.e-input,
+            &.e-input-focus textarea.e-input,
+            & textarea.e-input:focus {
+              padding: 11px 2px 1px;
+            }
+            &.e-outline textarea.e-input,
+            &.e-outline.e-input-focus textarea.e-input,
+            &.e-outline textarea.e-input:focus {
+              padding: 2px 2px 1px;
+            }
+            &.e-filled textarea.e-input,
+            &.e-filled.e-input-focus textarea.e-input,
+            &.e-filled textarea.e-input:focus {
+              padding: 0 1px 5px;
+            }
+          }
+          @if ($skin-name == 'highcontrast' or $skin-name == 'highcontrast-light') {
+            & textarea.e-input,
+            &.e-outline textarea.e-input,
+            &.e-filled textarea.e-input {
+              padding: 5px 2px 0;
+            }
+          }
+          @if ($skin-name == 'FluentUI') {
+            & textarea.e-input,
+            &.e-outline textarea.e-input,
+            &.e-filled textarea.e-input {
+              padding: 9px 1px 1px;
+            }
+          }
+          @if ($skin-name == 'fluent2') {
+            & textarea.e-input,
+            &.e-outline textarea.e-input,
+            &.e-filled textarea.e-input {
+              padding: 7px 1px 1px;
+            }
+          }
+          @if ($skin-name == 'bootstrap' or $skin-name == 'bootstrap-dark') {
+            & textarea.e-input,
+            &.e-outline textarea.e-input,
+            &.e-filled textarea.e-input  {
+              padding: 10px 1px 0;
+            }
+          }
+          @if ($skin-name == 'bootstrap4') {
+            & textarea.e-input,
+            &.e-outline textarea.e-input,
+            &.e-filled textarea.e-input  {
+              padding: 10px 1px 0;
+            }
+          }
+          @if ($skin-name == 'bootstrap5') {
+            & textarea.e-input,
+            &.e-outline textarea.e-input,
+            &.e-filled textarea.e-input  {
+              padding: 9px 1px 0;
+            }
+          }
+          @if ($skin-name == 'bootstrap5.3') {
+            & textarea.e-input,
+            &.e-outline textarea.e-input,
+            &.e-filled textarea.e-input  {
+              padding: 10px 1px 0;
+            }
+          }
+          & .e-prepend-template {
+            padding: $textbox-bigger-multiline-rtl-prepand-template-padding;
+          }
+          &.e-outline .e-prepend-template {
+            padding: $textbox-bigger-multiline-outline-rtl-prepand-template-padding;
+          }
+          &.e-filled .e-prepend-template {
+            padding: $textbox-bigger-multiline-filled-rtl-prepand-template-padding;
+          }
+        }
+      }
+    }
+    &.e-append-wrapper {
+      & .e-append-template {
+        padding: $textbox-bigger-append-template-padding;
+        & .e-icons {
+          font-size: $textbox-bigger-icon-template-font-size;
+        }
+      }
+      &.e-outline {
+        & .e-append-template {
+          padding: $textbox-bigger-outline-append-template-padding;
+        }
+      }
+      &.e-filled {
+        & .e-append-template {
+          padding: $textbox-bigger-filled-append-template-padding;
+        }
+      }
+      &.e-multi-line-input {
+        & .e-append-template {
+          padding: $textbox-bigger-multiline-append-template-padding;
+        }
+        &.e-outline {
+          & .e-append-template {
+            padding: $textbox-bigger-multiline-outline-append-template-padding;
+          }
+        }
+        &.e-filled {
+          & .e-append-template {
+            padding: $textbox-bigger-multiline-filled-append-template-padding;
+          }
+          @if ($skin-name == 'material' or $skin-name == 'material-dark') {
+            &.e-float-input.e-control-wrapper label.e-label-top {
+              top: 0;
+            }
+          }
+          @if ($skin-name == 'Material3') {
+            &.e-float-input.e-control-wrapper label.e-label-top {
+              top: 1px;
+            }
+          }
+        }
+      }
+      &.e-rtl {
+        & .e-append-template {
+          padding: $textbox-bigger-rtl-append-template-padding;
+        }
+        &.e-outline .e-append-template {
+          padding: $textbox-bigger-rtl-outline-append-template-padding;
+        }
+        &.e-filled .e-append-template {
+          padding: $textbox-bigger-rtl-filled-append-template-padding;
+        }
+        &.e-multi-line-input {
+          & .e-append-template {
+            padding: $textbox-bigger-multiline-rtl-append-template-padding;
+          }
+          &.e-outline .e-append-template {
+            padding: $textbox-bigger-multiline-outline-rtl-append-template-padding;
+          }
+          &.e-filled .e-append-template {
+            padding: $textbox-bigger-multiline-filled-rtl-append-template-padding;
+          }
+        }
+      }
+    }
+  }
+  .e-bigger.e-float-input.e-input-group.e-prepend-wrapper.e-input-focus,
+  .e-bigger.e-float-input.e-input-group.e-prepend-wrapper.e-valid-input,
+  .e-bigger .e-float-input.e-input-group.e-prepend-wrapper.e-input-focus,
+  .e-bigger .e-float-input.e-input-group.e-prepend-wrapper.e-valid-input {
+    & input.e-input,
+    & textarea.e-input {
+      padding-left: 0;
+    }
+  }
+  .e-bigger.e-rtl.e-float-input.e-input-group.e-prepend-wrapper.e-input-focus,
+  .e-bigger.e-rtl.e-float-input.e-input-group.e-prepend-wrapper.e-valid-input,
+  .e-bigger .e-rtl.e-float-input.e-input-group.e-prepend-wrapper.e-input-focus,
+  .e-bigger .e-rtl.e-float-input.e-input-group.e-prepend-wrapper.e-valid-input {
+    & input.e-input,
+    & textarea.e-input {
+      padding-right: 0;
+    }
+  }
+}

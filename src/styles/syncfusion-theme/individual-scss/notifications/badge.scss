@@ -1,0 +1,514 @@
+@import "../base/base.scss";
+
+@use 'sass:color';
+
+// Base Badge
+$badge-theme : $skin-name !default;
+$badge-base-border-radius: .25em !default;
+$badge-base-font-size: .75em !default;
+$badge-base-line-height: 1 !default;
+$badge-base-font-weight: 500 !default;
+$badge-base-text-indent: 0 !default;
+$badge-base-text-color: rgba(0, 0, 0, .87) !default;
+$badge-base-background-color: #fafafa !default;
+// Pill Badge
+$badge-pill-border-radius: 5em !default;
+// Notification Badge
+$badge-notification-top: -10px !default;
+$badge-notification-left: 100% !default;
+$badge-notification-font-size: 12px !default;
+$badge-notification-border-radius: 1em !default;
+$badge-notification-min-width: 24px !default;
+$badge-notification-height: 18px !default;
+$badge-notification-padding: 0 8px 0 8px !default;
+// Circle Badge
+$badge-circle-width: 1.834em !default;
+$badge-circle-height: 1.834em !default;
+$badge-circle-line-height: 1.834em !default;
+$badge-circle-border-radius: 50% !default;
+$badge-circle-padding: 0 !default;
+$badge-circle-min-width: 0 !default;
+$badge-circle-ghost-line-height: 1.8em !default;
+// Overlap Badge
+$badge-overlap-top: -10px !default;
+$badge-overlap-transform-left: translateX(-50%) !default;
+// Button Badge
+$badge-button-line-height: .9 !default;
+$badge-button-circle-width: 2em !default;
+$badge-button-circle-height: 2em !default;
+$badge-button-circle-line-height: 2em !default;
+$badge-ghost-circle-line-height: 1.9em !default;
+$badge-button-top: -2px !default;
+// Dot Badge
+$badge-dot-top: -3px !default;
+$badge-dot-width: 6px !default;
+$badge-dot-height: 6px !default;
+$badge-dot-line-height: 1 !default;
+$badge-dot-border-radius: 100% !default;
+$badge-dot-padding: 0 !default;
+$badge-dot-min-width: 0 !default;
+$badge-dot-left: 100% !default;
+$badge-dot-box-shadow: 0 0 0 1px #fff !default;
+$badge-padding: .25em .4em .25em .4em !default;
+$badge-notification-line-height: 18px !default;
+$badge-notification-ghost-line-height: 16px !default;
+$badge-primary-bg-color: $primary !default;
+$badge-secondary-bg-color: $accent !default;
+$badge-success-bg-color: #4d841d !default;
+$badge-danger-bg-color: #d64113 !default;
+$badge-warning-bg-color: #c15700 !default;
+$badge-info-bg-color: #0378d5 !default;
+$badge-light-bg-color: $grey-white !default;
+$badge-dark-bg-color: $grey-dark !default;
+$badge-primary-font-color: $primary-font !default;
+$badge-secondary-font-color: $accent-font !default;
+$badge-light-font-color: $grey-light-font !default;
+$badge-dark-font-color: $grey-dark-font !default;
+$badge-warning-font-color: $grey-dark-font !default;
+$badge-zero-padding-margin: 0 !default;
+$badge-notification-width: auto !default;
+$badge-button-nrml-line-height: .9 !default;
+@mixin badge-size($border-radius, $height, $line-height, $min-width, $padding, $width) {
+  border-radius: $border-radius;
+  height: $height;
+  line-height: $line-height;
+  min-width: $min-width;
+  padding: $padding;
+  width: $width;
+}
+@mixin position($pos, $top, $left, $bottom) {
+  position: $pos;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+}
+@include export-module('badge-layout') {
+  .e-badge {
+    background: $badge-base-background-color;
+    border-color: transparent;
+    border-radius: $badge-base-border-radius;
+    box-shadow: 0 0 0 2px transparent;
+    box-sizing: border-box;
+    color: $badge-base-text-color;
+    display: inline-block;
+    font-family: $font-family;
+    font-size: $badge-base-font-size;
+    font-weight: $badge-base-font-weight;
+    @if ($badge-theme == 'bootstrap5.3') {
+      line-height: $badge-boot-line-height;
+      padding: $badge-normal-padding;
+    }
+    @else {
+      line-height: $badge-base-line-height;
+      padding: $badge-padding;
+    }
+    @if ($badge-theme == 'tailwind' or $badge-theme == 'FluentUI' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'bootstrap5.3') {
+      height: $badge-base-height;
+    }
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-indent: $badge-base-text-indent;
+    vertical-align: middle;
+    &:hover {
+      text-decoration: none;
+    }
+    &.e-badge-pill {
+      border-radius: $badge-pill-border-radius;
+      @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'FluentUI') {
+        padding: $badge-pill-padding;
+      }
+    }
+    &.e-badge-ghost {
+      @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'FluentUI') {
+        line-height: $badge-ghost-line-height;
+        padding: $badge-ghost-padding;
+      }
+    }
+    &.e-badge-notification {
+      @include badge-size($badge-notification-border-radius, $badge-notification-height, $badge-notification-line-height, $badge-notification-min-width, $badge-notification-padding, $badge-notification-width);
+      font-size: $badge-notification-font-size;
+      @include position(absolute, $badge-notification-top, $badge-notification-left, null);
+      &.e-badge-ghost {
+        line-height: $badge-notification-ghost-line-height;
+      }
+    }
+    &.e-badge-circle {
+      @include badge-size($badge-circle-border-radius, $badge-circle-height, $badge-circle-line-height, $badge-circle-min-width, $badge-circle-padding, $badge-circle-width);
+      &.e-badge-ghost {
+        line-height: $badge-circle-ghost-line-height;
+        @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'FluentUI' or $badge-theme == 'Material3') {
+          padding: $badge-circle-ghost-padding;
+        }
+      }
+    }
+    &.e-badge-overlap {
+      @include position(absolute, $badge-overlap-top, null, null);
+      transform: $badge-overlap-transform-left;
+    }
+    &.e-badge-dot {
+      @include badge-size($badge-dot-border-radius, $badge-dot-height, $badge-dot-line-height, $badge-dot-min-width, $badge-dot-padding, $badge-dot-width);
+      box-shadow: $badge-dot-box-shadow;
+      margin: $badge-zero-padding-margin;
+      overflow: visible;
+      @include position(absolute, $badge-dot-top, $badge-dot-left, null);
+    }
+    &.e-badge-bottom {
+      &.e-badge-dot {
+        @include position(absolute, auto, null, 3px);
+      }
+      &.e-badge-notification {
+        @include position(absolute, auto, null, -3px);
+      }
+    }
+    @at-root {
+      button#{''} .e-badge {
+        @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'FluentUI') {
+          line-height: $leading-none;
+        }
+        @else {
+          line-height: $badge-button-nrml-line-height;
+        }
+        @include position(relative, $badge-button-top, null, null);
+        &.e-badge-circle {
+          height: $badge-button-circle-height;
+          line-height: $badge-button-circle-line-height;
+          width: $badge-button-circle-width;
+          &.e-badge-ghost {
+            line-height: $badge-ghost-circle-line-height;
+          }
+        }
+      }
+    }
+  }
+}
+@include export-module('badge-theme') {
+  //sass-lint:disable no-color-literals
+  .e-badge {
+    &.e-badge-primary:not(.e-badge-ghost):not([href]),
+    &.e-badge-primary[href]:not(.e-badge-ghost) {
+      background-color: $badge-primary-bg-color;
+      color: $badge-primary-font-color;
+    }
+    &.e-badge-secondary:not(.e-badge-ghost):not([href]),
+    &.e-badge-secondary[href]:not(.e-badge-ghost) {
+      background-color: $badge-secondary-bg-color;
+      color: $badge-secondary-font-color;
+      @if $badge-theme == 'fluent2' {
+        border: $badge-secondary-border-color;
+      }
+      @if ($badge-theme == 'tailwind3') {
+        background-color: $badge-secondary-font-color;
+        color: $badge-secondary-bg-color;
+      }
+    }
+    &.e-badge-success:not(.e-badge-ghost):not([href]),
+    &.e-badge-success[href]:not(.e-badge-ghost) {
+      background-color: $badge-success-bg-color;
+      @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind3' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2') {
+        color: $badge-success-font-color;
+      }
+      @else {
+        color: $badge-dark-font-color;
+      }
+    }
+    &.e-badge-danger:not(.e-badge-ghost):not([href]),
+    &.e-badge-danger[href]:not(.e-badge-ghost) {
+      background-color: $badge-danger-bg-color;
+      @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind3' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2') {
+        color: $badge-danger-font-color;
+      }
+      @else {
+        color: $badge-dark-font-color;
+      }
+    }
+    &.e-badge-warning:not(.e-badge-ghost):not([href]),
+    &.e-badge-warning[href]:not(.e-badge-ghost) {
+      background-color: $badge-warning-bg-color;
+      color: $badge-warning-font-color;
+    }
+    &.e-badge-info:not(.e-badge-ghost):not([href]),
+    &.e-badge-info[href]:not(.e-badge-ghost) {
+      background-color: $badge-info-bg-color;
+      @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind3' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2') {
+        color: $badge-info-font-color;
+      }
+      @else {
+        color: $badge-dark-font-color;
+      }
+    }
+    &.e-badge-light:not(.e-badge-ghost):not([href]),
+    &.e-badge-light[href]:not(.e-badge-ghost) {
+      @if $badge-theme == 'Material3' or $badge-theme == 'Material3-dark' {
+        background: $badge-light-bg-color;
+      }
+      @else {
+        background-color: $badge-light-bg-color;
+      }
+      color: $badge-light-font-color;
+    }
+    &.e-badge-dark:not(.e-badge-ghost):not([href]),
+    &.e-badge-dark[href]:not(.e-badge-ghost) {
+      background-color: $badge-dark-bg-color;
+      color: $badge-dark-font-color;
+      @if ($badge-theme == 'tailwind3') {
+        background-color: $content-text-color-alt3;
+        color: $content-bg-color-alt1;
+      }
+    }
+    &.e-badge-primary-subtle:not(.e-badge-ghost):not([href]),
+    &.e-badge-primary-subtle[href]:not(.e-badge-ghost) {
+      @if ($badge-theme == 'tailwind3' or $badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark'or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2' or $badge-theme == 'FluentUI'){
+        background-color: $badge-primary-subtle-bg-color;
+        color: $badge-primary-subtle-font-color;
+      }
+    }
+    &.e-badge-secondary-subtle:not(.e-badge-ghost):not([href]),
+    &.e-badge-secondary-subtle[href]:not(.e-badge-ghost) {
+      @if ($badge-theme == 'tailwind3' or $badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark'or $badge-theme == 'bootstrap5.3' or $badge-theme == 'fluent2' or $badge-theme == 'FluentUI'){
+        background-color: $badge-secondary-subtle-bg-color;
+        color: $badge-secondary-subtle-font-color;
+      }
+      @if ($badge-theme == 'Material3'){
+        background: $badge-secondary-subtle-bg-color;
+        color: $badge-secondary-subtle-font-color;
+      }
+    }
+    &.e-badge-success-subtle:not(.e-badge-ghost):not([href]),
+    &.e-badge-success-subtle[href]:not(.e-badge-ghost) {
+      @if ($badge-theme == 'tailwind3' or $badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark'or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2' or $badge-theme == 'FluentUI'){
+        background-color: $badge-success-subtle-bg-color;
+        color: $badge-success-subtle-font-color;
+      }
+    }
+    &.e-badge-danger-subtle:not(.e-badge-ghost):not([href]),
+    &.e-badge-danger-subtle[href]:not(.e-badge-ghost) {
+      @if ($badge-theme == 'tailwind3' or $badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark'or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2' or $badge-theme == 'FluentUI'){
+        background-color: $badge-danger-subtle-bg-color;
+        color: $badge-danger-subtle-font-color;
+      }
+    }
+    &.e-badge-warning-subtle:not(.e-badge-ghost):not([href]),
+    &.e-badge-warning-subtle[href]:not(.e-badge-ghost) {
+      @if ($badge-theme == 'tailwind3' or $badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark'or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2' or $badge-theme == 'FluentUI'){
+        background-color: $badge-warning-subtle-bg-color;
+        color: $badge-warning-subtle-font-color;
+      }
+    }
+    &.e-badge-info-subtle:not(.e-badge-ghost):not([href]),
+    &.e-badge-info-subtle[href]:not(.e-badge-ghost) {
+      @if ($badge-theme == 'tailwind3' or $badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark'or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2' or $badge-theme == 'FluentUI'){
+        background-color: $badge-info-subtle-bg-color;
+        color: $badge-info-subtle-font-color;
+      }
+    }
+    &.e-badge-light-subtle:not(.e-badge-ghost):not([href]),
+    &.e-badge-light-subtle[href]:not(.e-badge-ghost) {
+      @if ($badge-theme == 'tailwind3' or $badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark'or $badge-theme == 'bootstrap5.3' or $badge-theme == 'fluent2' or $badge-theme == 'FluentUI'){
+        background-color: $badge-light-subtle-bg-color;
+        color: $badge-light-subtle-font-color;
+      }
+      @if ($badge-theme == 'Material3'){
+        background: $badge-light-subtle-bg-color;
+        color: $badge-light-subtle-font-color;
+      }
+    }
+    &.e-badge-dark-subtle:not(.e-badge-ghost):not([href]),
+    &.e-badge-dark-subtle[href]:not(.e-badge-ghost) {
+      @if ($badge-theme == 'tailwind3' or $badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark'or $badge-theme == 'bootstrap5.3' or $badge-theme == 'Material3' or $badge-theme == 'fluent2' or $badge-theme == 'FluentUI'){
+        background-color: $badge-dark-subtle-bg-color;
+        color: $badge-dark-subtle-font-color;
+      }
+    }
+    $badge-types: (
+      'primary': $badge-primary-bg-color,
+      'secondary': $badge-secondary-bg-color,
+      'success': $badge-success-bg-color,
+      'danger': $badge-danger-bg-color,
+      'warning': $badge-warning-bg-color,
+      'info': $badge-info-bg-color,
+      'light': $badge-light-bg-color,
+      'dark': $badge-dark-bg-color
+    );
+    @each $type, $color in $badge-types {
+      &.e-badge-#{$type}[href]:not(.e-badge-ghost) {
+        &:hover {
+          @if $badge-theme == 'Material3' or $badge-theme == 'fluent2' {
+            text-decoration: underline;
+          }
+          @else if $badge-theme == 'bootstrap5' or $badge-theme == 'bootstrap5.3' or $badge-theme == 'tailwind3' {
+            background-color: $badge-primary-bg-color-darken;
+          }
+          @else {
+            background-color: color.adjust($color: $color, $lightness: -10%);
+          }
+        }
+      }
+    }
+    @each $type, $color in $badge-types {
+      &.e-badge-#{$type}[href].e-badge-ghost {
+        &:hover {
+          @if $badge-theme != 'Material3' and $badge-theme != 'fluent2' and $badge-theme != 'bootstrap5' and $badge-theme != 'bootstrap5.3' and $badge-theme != 'bds' and $badge-theme != 'tailwind3' {
+            border-color: color.adjust($color: $color, $lightness: -15%);
+            color: color.adjust($color: $color, $lightness: -15%);
+          }
+        }
+      }
+    }
+    &.e-badge-ghost {
+      &.e-badge-primary {
+        background-color: transparent;
+        border: 1px solid $badge-primary-bg-color;
+        color: $badge-primary-bg-color;
+      }
+      &.e-badge-secondary {
+        background-color: transparent;
+        @if ($badge-theme == 'tailwind' or $badge-theme == 'FluentUI' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'Material3' or $badge-theme == 'Material3-dark' or $badge-theme == 'fluent2') {
+          border: 1px solid $badge-secondary-font-color;
+          color: $badge-secondary-font-color;
+        }
+        @if ($badge-theme == 'tailwind3') {
+          border: 1px solid $secondary-border-color;
+          color: $secondary-text-color;
+        }
+        @else {
+          border: 1px solid $badge-secondary-bg-color;
+          color: $badge-secondary-bg-color;
+        }
+      }
+      &.e-badge-success {
+        background-color: transparent;
+        @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5') {
+          border: 1px solid $badge-success-font-color;
+          color: $badge-success-font-color;
+        }
+        @if ($badge-theme == 'tailwind3') {
+          border: 1px solid $badge-ghost-success-font-color;
+          color: $badge-ghost-success-font-color;
+        }
+        @else {
+          border: 1px solid $badge-success-bg-color;
+          color: $badge-success-bg-color;
+        }
+      }
+      &.e-badge-danger {
+        background-color: transparent;
+        @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5') {
+          border: 1px solid $badge-danger-font-color;
+          color: $badge-danger-font-color;
+        }
+        @if ($badge-theme == 'tailwind3') {
+          border: 1px solid $badge-ghost-danger-font-color;
+          color: $badge-ghost-danger-font-color;
+        }
+        @else {
+          border: 1px solid $badge-danger-bg-color;
+          color: $badge-danger-bg-color;
+        }
+      }
+      &.e-badge-warning {
+        background-color: transparent;
+        @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5') {
+          border: 1px solid $badge-warning-font-color;
+          color: $badge-warning-font-color;
+        }
+        @else if $badge-theme == 'fluent2' {
+          border: 1px solid $badge-warning-bg-color;
+          color: $badge-warning-ghost-color;
+        }
+        @else {
+          border: 1px solid $badge-warning-bg-color;
+          color: $badge-warning-bg-color;
+        }
+      }
+      &.e-badge-info {
+        background-color: transparent;
+        @if ($badge-theme == 'tailwind' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5') {
+          border: 1px solid $badge-info-font-color;
+          color: $badge-info-font-color;
+        }
+        @else if $badge-theme == 'fluent2' {
+          border: 1px solid $badge-info-ghost-border;
+          color: $badge-info-ghost-color;
+        }
+        @else {
+          border: 1px solid $badge-info-bg-color;
+          color: $badge-info-bg-color;
+        }
+      }
+      &.e-badge-light {
+        background-color: transparent;
+        @if ($badge-theme == 'tailwind' or $badge-theme == 'FluentUI' or$badge-theme == 'tailwind-dark' or$badge-theme == 'bootstrap5' or $badge-theme == 'Material3' or $badge-theme == 'Material3-dark') {
+          border: 1px solid $badge-light-font-color;
+          color: $badge-light-font-color;
+        }
+        @if ($badge-theme == 'tailwind3') {
+          border: 1px solid $secondary-border-color;
+          color: $secondary-text-color;
+        }
+        @else if $badge-theme == 'fluent2' {
+          border: 1px solid $badge-light-bg-color;
+          color: $badge-light-font-color;
+        }
+        @else {
+          border: 1px solid $badge-light-bg-color;
+          color: $badge-light-bg-color;
+        }
+      }
+      &.e-badge-dark {
+        background-color: transparent;
+        border: 1px solid $badge-dark-bg-color;
+        color: $badge-dark-bg-color;
+        @if ($badge-theme == 'tailwind3') {
+          border: 1px solid $content-text-color-alt3;
+          color: $content-text-color-alt3;
+        }
+      }
+    }
+  }
+}
+@mixin badge-size($border-radius, $height, $line-height, $min-width, $padding, $width) {
+  border-radius: $border-radius;
+  height: $height;
+  line-height: $line-height;
+  min-width: $min-width;
+  padding: $padding;
+  width: $width;
+}
+@include export-module('badge-bigger') {
+  .e-bigger .e-badge,
+  .e-badge.e-bigger {
+    @if ($badge-theme == 'tailwind' or $badge-theme == 'FluentUI' or $badge-theme == 'tailwind-dark' or $badge-theme == 'bootstrap5' or $badge-theme == 'Material3' or $badge-theme == 'fluent2' or $badge-theme == 'tailwind3') {
+      font-size: $badge-touch-base-font-size;
+      font-weight: $badge-touch-base-font-weight;
+      @include badge-size($badge-touch-base-border-radius, $badge-touch-base-height, $badge-touch-base-line-height, null, $badge-touch-padding, null);
+      &.e-badge-pill {
+        border-radius: $badge-pill-border-radius;
+        padding: $badge-touch-pill-padding;
+      }
+      &.e-badge-ghost {
+        padding: $badge-touch-ghost-padding;
+        &.e-badge-circle {
+          padding: $badge-touch-ghost-circle-padding;
+        }
+        &.e-badge-notification {
+          padding: $badge-touch-ghost-notification-padding;
+        }
+      }
+      &.e-badge-notification {
+        @include badge-size($badge-pill-border-radius, null, null, $badge-touch-notification-min-width, $badge-touch-pill-padding, null);
+      }
+      &.e-badge-circle {
+        @include badge-size($badge-circle-border-radius, null, null, $badge-circle-min-width, $badge-touch-circle-padding, $badge-touch-circle-width);
+        @if ($badge-theme == 'tailwind3') {
+          height: $badge-touch-circle-height;
+          font-size: 12px;
+          padding: 4px 3px;
+        }
+      }
+      &.e-badge-dot {
+        @include badge-size($badge-dot-border-radius, $badge-touch-dot-height, null, null, null, $badge-touch-dot-width);
+      }
+    }
+  }
+}
