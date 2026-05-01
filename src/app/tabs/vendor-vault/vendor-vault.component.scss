@@ -193,8 +193,8 @@
 
 /* Move the grid Search input to the left side of the toolbar */
 ::ng-deep .e-gridtoolbar .e-toolbar-items.e-tbar-pos .e-toolbar-right {
-  left: 0;
-  right: auto;
+  left: 0 !important;
+  right: auto !important;
 }
 
 /* ----- Grid ----- */
