@@ -81,6 +81,14 @@ export class VendorVaultComponent implements OnInit {
 
   readonly toolbar = ['Search'];
 
+  readonly toggleableColumns = [
+    'Vendor', 'Testimonials', 'Type', 'Cost', 'Reputation',
+    'Specializations', 'Contract', 'Renewal',
+    'Spend (YTD)', 'Spend (All-time)',
+    'Deals (YTD)', 'Deals (All-time)',
+    'Margin %', 'Gross Profit (All-time)',
+  ];
+
   readonly suggestions: string[] = [
     "Looking for a mid-range cybersecurity vendor with strong compliance support",
     "Need a cloud storage provider with low cost and high reputation",
@@ -105,8 +113,8 @@ export class VendorVaultComponent implements OnInit {
 
   readonly statusPillClass: Record<string, string> = {
     Active: 'km-pill km-pill--green',
-    Prospect: 'km-pill km-pill--blue',
-    'Under Review': 'km-pill km-pill--amber',
+    'Under Review': 'km-pill km-pill--blue',
+    Inactive: 'km-pill km-pill--gray',
   };
 
   ngOnInit(): void {
@@ -260,10 +268,10 @@ export class VendorVaultComponent implements OnInit {
     return value.toLocaleString('en-US');
   }
 
-  formatRenewalDate(value: string): string {
-    if (!value) return '';
+  formatRenewalDate(value: string | null): string {
+    if (!value) return '—';
     const d = new Date(value);
-    if (isNaN(d.getTime())) return value;
+    if (isNaN(d.getTime())) return value; // returns 'TBD' as-is
     return d.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
   }
 

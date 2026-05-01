@@ -22,13 +22,13 @@
     </div>
 
     <div class="vv-prompt__row">
-      <label class="vv-prompt__label" for="vv-input">Describe your client's needs</label>
+      <label class="vv-prompt__label" for="vv-input">Describe your needs</label>
       <div class="vv-prompt__input-wrap">
         <textarea
           id="vv-input"
           class="vv-prompt__textarea"
           [(ngModel)]="promptValue"
-          placeholder="e.g. Mid-range cybersecurity vendor with strong compliance support"
+          placeholder="e.g. Active cybersecurity vendor with margin % above 15"
           rows="2"
           (input)="onPromptInput()"
           (focus)="onPromptFocus()"
@@ -169,6 +169,18 @@
             <span class="vv-deals">{{ formatNumber(row.dealsClosedAllTime) }}</span>
           </ng-template>
         </e-column>
+
+        <e-column field="marginPct" headerText="Margin %" width="110" textAlign="Right">
+          <ng-template #template let-row>
+            <span class="vv-margin">{{ row.marginPct }}%</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="grossProfitAllTime" headerText="Gross Profit (All-time)" width="175" textAlign="Right">
+          <ng-template #template let-row>
+            <span class="vv-spend">{{ formatCurrency(row.grossProfitAllTime) }}</span>
+          </ng-template>
+        </e-column>
       </e-columns>
     </ejs-grid>
   </div>
@@ -243,6 +255,14 @@
           <div class="vv-detail__field">
             <span class="vv-detail__label">Deals Closed (All-time)</span>
             <span class="vv-detail__value">{{ formatNumber(selectedVendor.dealsClosedAllTime) }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Margin %</span>
+            <span class="vv-detail__value">{{ selectedVendor.marginPct }}%</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Gross Profit (All-time)</span>
+            <span class="vv-detail__value">{{ formatCurrency(selectedVendor.grossProfitAllTime) }}</span>
           </div>
           <div class="vv-detail__field vv-detail__field--full">
             <span class="vv-detail__label">Website</span>

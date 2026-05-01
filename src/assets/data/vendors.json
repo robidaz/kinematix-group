@@ -33,7 +33,9 @@
         "employeeName": "Alex Mercer",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 15,
+    "grossProfitAllTime": 6750
   },
   {
     "id": "actifio",
@@ -63,7 +65,9 @@
     "spendAllTime": 240000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 28,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": 40800
   },
   {
     "id": "appdynamics",
@@ -82,8 +86,8 @@
     "employees": "100,000+",
     "website": "https://appdynamics.com",
     "description": "AppDynamics delivers paas and edge computing software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-07-09",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Strategic",
       "Renewing",
@@ -109,7 +113,9 @@
         "employeeName": "Emery Wilson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 21600
   },
   {
     "id": "arista",
@@ -138,7 +144,9 @@
     "spendAllTime": 240000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 27,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": 21600
   },
   {
     "id": "broadcom",
@@ -185,7 +193,9 @@
         "employeeName": "Finley Turner",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 204000
   },
   {
     "id": "calabrio",
@@ -216,7 +226,9 @@
     "spendAllTime": 1800000,
     "dealsClosedYTD": 10,
     "dealsClosedAllTime": 44,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": 234000
   },
   {
     "id": "carbonhelix",
@@ -235,8 +247,8 @@
     "employees": "5,000-20,000",
     "website": "https://carbonhelix.com",
     "description": "Carbon Helix delivers video conferencing and collaboration software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-11-17",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "SMB",
@@ -247,7 +259,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": null
   },
   {
     "id": "centrify",
@@ -266,8 +280,8 @@
     "employees": "10-50",
     "website": "https://centrify.com",
     "description": "Centrify delivers data analytics and streaming software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-03-05",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "HIPAA",
@@ -278,7 +292,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "cisco",
@@ -308,7 +324,9 @@
     "spendAllTime": 1280000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 89,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": 115200
   },
   {
     "id": "citrix",
@@ -347,7 +365,9 @@
         "employeeName": "Avery Chen",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 135000
   },
   {
     "id": "commvault",
@@ -366,8 +386,8 @@
     "employees": "10-50",
     "website": "https://commvault.com",
     "description": "Commvault delivers soar and zero trust software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-04-07",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "HIPAA",
       "FedRAMP"
@@ -376,7 +396,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": null
   },
   {
     "id": "conneciria",
@@ -394,8 +416,8 @@
     "employees": "10-50",
     "website": "https://conneciria.com",
     "description": "Conneciria designs and manufactures multi-cloud and iaas infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-02-25",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SMB",
       "Compliance"
@@ -404,7 +426,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 15,
+    "grossProfitAllTime": null
   },
   {
     "id": "cybernetics",
@@ -423,8 +447,8 @@
     "employees": "200-1,000",
     "website": "https://cybernetics.com",
     "description": "Cybernetics blends software, hardware, and services across cloud platform and iaas to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-11-23",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SMB",
       "On-Prem",
@@ -434,7 +458,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 11,
+    "grossProfitAllTime": null
   },
   {
     "id": "cynerio",
@@ -481,7 +507,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 128000
   },
   {
     "id": "datastorage",
@@ -500,8 +528,8 @@
     "employees": "5,000-20,000",
     "website": "https://datastorage.com",
     "description": "Data Storage Inc. delivers streaming and data analytics software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-04-09",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "SMB",
       "Strategic",
@@ -522,7 +550,9 @@
         "employeeName": "Casey Rivera",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 7200
   },
   {
     "id": "dcblox",
@@ -551,7 +581,9 @@
     "spendAllTime": 600000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 31,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 7,
+    "grossProfitAllTime": 42000
   },
   {
     "id": "dell",
@@ -597,7 +629,9 @@
         "employeeName": "Alex Mercer",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 7,
+    "grossProfitAllTime": 22400
   },
   {
     "id": "duo",
@@ -645,7 +679,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 216000
   },
   {
     "id": "eaton",
@@ -664,8 +700,8 @@
     "employees": "200-1,000",
     "website": "https://eaton.com",
     "description": "Eaton designs and manufactures streaming and business intelligence infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-06-25",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "New",
       "Renewing",
@@ -676,7 +712,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": null
   },
   {
     "id": "exagrid",
@@ -693,8 +731,8 @@
     "employees": "100,000+",
     "website": "https://exagrid.com",
     "description": "ExaGrid designs and manufactures data archiving infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-05-06",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Mid-Market",
       "Compliance",
@@ -721,7 +759,9 @@
         "employeeName": "Drew Santos",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 425000
   },
   {
     "id": "hcl",
@@ -739,8 +779,8 @@
     "employees": "200-1,000",
     "website": "https://hcl.com",
     "description": "HCL Technologies designs and manufactures disaster recovery and backup & recovery infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-06-21",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Compliance",
       "Strategic",
@@ -751,7 +791,9 @@
     "spendAllTime": 6000000,
     "dealsClosedYTD": 12,
     "dealsClosedAllTime": 49,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": 360000
   },
   {
     "id": "helpsystems",
@@ -778,7 +820,9 @@
     "spendAllTime": 1280000,
     "dealsClosedYTD": 17,
     "dealsClosedAllTime": 89,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": 115200
   },
   {
     "id": "ibm",
@@ -797,8 +841,8 @@
     "employees": "20,000-100,000",
     "website": "https://ibm.com",
     "description": "IBM blends software, hardware, and services across zero trust and identity to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-06-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SaaS",
       "HIPAA",
@@ -809,7 +853,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": null
   },
   {
     "id": "legrand",
@@ -829,8 +875,8 @@
     "employees": "1,000-5,000",
     "website": "https://legrand.com",
     "description": "Legrand blends software, hardware, and services across communications and video conferencing to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-08-15",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "HIPAA",
@@ -841,7 +887,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": null
   },
   {
     "id": "lenovo",
@@ -886,7 +934,9 @@
         "employeeName": "Morgan Ellis",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 12,
+    "grossProfitAllTime": 86400
   },
   {
     "id": "microsoft",
@@ -904,8 +954,8 @@
     "employees": "100,000+",
     "website": "https://microsoft.com",
     "description": "Microsoft designs and manufactures productivity and communications infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-12-17",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Enterprise",
       "HIPAA",
@@ -915,7 +965,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "nasuni",
@@ -934,8 +986,8 @@
     "employees": "1,000-5,000",
     "website": "https://nasuni.com",
     "description": "Nasuni delivers edge computing and paas software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-05-25",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Renewing",
       "Strategic"
@@ -944,7 +996,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": null
   },
   {
     "id": "netapp",
@@ -984,7 +1038,9 @@
         "employeeName": "Riley Thompson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 17,
+    "grossProfitAllTime": 40800
   },
   {
     "id": "netbrain",
@@ -1003,8 +1059,8 @@
     "employees": "100,000+",
     "website": "https://netbrain.com",
     "description": "NetBrain delivers edge computing and multi-cloud software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-07-16",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Cloud-Native",
       "SaaS"
@@ -1029,7 +1085,9 @@
         "employeeName": "Sage Kim",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 5400
   },
   {
     "id": "nutanix",
@@ -1048,8 +1106,8 @@
     "employees": "1,000-5,000",
     "website": "https://nutanix.com",
     "description": "Nutanix blends software, hardware, and services across service management and monitoring to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-12-06",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "New",
       "SMB",
@@ -1059,7 +1117,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 20,
+    "grossProfitAllTime": null
   },
   {
     "id": "nyriad",
@@ -1101,7 +1161,9 @@
         "employeeName": "Sage Kim",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 11,
+    "grossProfitAllTime": 66000
   },
   {
     "id": "opengear",
@@ -1121,8 +1183,8 @@
     "employees": "100,000+",
     "website": "https://opengear.com",
     "description": "Opengear blends software, hardware, and services across cybersecurity and identity to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-08-22",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "PCI-DSS",
       "On-Prem"
@@ -1131,7 +1193,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": null
   },
   {
     "id": "perle",
@@ -1151,8 +1215,8 @@
     "employees": "200-1,000",
     "website": "https://perle.com",
     "description": "Perle Systems blends software, hardware, and services across communications and video conferencing to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-12-07",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "PCI-DSS",
       "Tier 1"
@@ -1161,7 +1225,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": null
   },
   {
     "id": "portworx",
@@ -1198,7 +1264,9 @@
         "employeeName": "Cameron Davis",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 86400
   },
   {
     "id": "precisely",
@@ -1218,8 +1286,8 @@
     "employees": "200-1,000",
     "website": "https://precisely.com",
     "description": "Precisely designs and manufactures edge computing and paas infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-08-08",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "PCI-DSS",
       "New",
@@ -1229,7 +1297,9 @@
     "spendAllTime": 125000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 8,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": 15000
   },
   {
     "id": "predator",
@@ -1248,8 +1318,8 @@
     "employees": "200-1,000",
     "website": "https://predator.com",
     "description": "Predator blends software, hardware, and services across network monitoring and sd-wan to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-01-17",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Mid-Market",
       "On-Prem"
@@ -1258,7 +1328,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": null
   },
   {
     "id": "purestorage",
@@ -1289,7 +1361,9 @@
     "spendAllTime": 1350000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 34,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": 256500
   },
   {
     "id": "quantum",
@@ -1308,8 +1382,8 @@
     "employees": "10-50",
     "website": "https://quantum.com",
     "description": "Quantum provides network monitoring and load balancing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-04-07",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "FedRAMP",
       "SaaS",
@@ -1320,7 +1394,9 @@
     "spendAllTime": 4250000,
     "dealsClosedYTD": 23,
     "dealsClosedAllTime": 87,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": 722500
   },
   {
     "id": "raritan",
@@ -1359,7 +1435,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 14,
+    "grossProfitAllTime": 6300
   },
   {
     "id": "redhat",
@@ -1391,7 +1469,9 @@
     "spendAllTime": 50000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 21,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": 6000
   },
   {
     "id": "reliaquest",
@@ -1436,7 +1516,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 28800
   },
   {
     "id": "riverbed",
@@ -1471,7 +1553,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 11,
+    "grossProfitAllTime": 132000
   },
   {
     "id": "roomready",
@@ -1489,8 +1573,8 @@
     "employees": "50-200",
     "website": "https://roomready.com",
     "description": "Room Ready provides communications and edge computing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-01-06",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "PCI-DSS",
       "Tier 1",
@@ -1511,7 +1595,9 @@
         "employeeName": "Finley Turner",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 19,
+    "grossProfitAllTime": 15200
   },
   {
     "id": "rubrik",
@@ -1530,8 +1616,8 @@
     "employees": "1,000-5,000",
     "website": "https://rubrik.com",
     "description": "Rubrik provides paas and multi-cloud consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-04-22",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "PCI-DSS",
       "Enterprise",
@@ -1542,7 +1628,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 20,
+    "grossProfitAllTime": null
   },
   {
     "id": "sectigo",
@@ -1561,8 +1649,8 @@
     "employees": "20,000-100,000",
     "website": "https://sectigo.com",
     "description": "Sectigo provides ml/ai platform and risk management consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-07-11",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Strategic",
       "Mid-Market",
@@ -1572,7 +1660,9 @@
     "spendAllTime": 720000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 68,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": 115200
   },
   {
     "id": "tierpoint",
@@ -1592,8 +1682,8 @@
     "employees": "10-50",
     "website": "https://tierpoint.com",
     "description": "TierPoint provides paas and multi-cloud consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-08-14",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "On-Prem",
       "HIPAA"
@@ -1602,7 +1692,9 @@
     "spendAllTime": 45000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 14,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": 4050
   },
   {
     "id": "trendmicro",
@@ -1632,7 +1724,9 @@
     "spendAllTime": 2400000,
     "dealsClosedYTD": 19,
     "dealsClosedAllTime": 95,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": 456000
   },
   {
     "id": "turbonomic",
@@ -1649,8 +1743,8 @@
     "employees": "1,000-5,000",
     "website": "https://turbonomic.com",
     "description": "Turbonomic delivers business intelligence software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-08-16",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "HIPAA"
@@ -1659,7 +1753,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": null
   },
   {
     "id": "uplogix",
@@ -1701,7 +1797,9 @@
         "employeeName": "Morgan Ellis",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 7,
+    "grossProfitAllTime": 28000
   },
   {
     "id": "varonis",
@@ -1731,7 +1829,9 @@
     "spendAllTime": 3400000,
     "dealsClosedYTD": 20,
     "dealsClosedAllTime": 70,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": 612000
   },
   {
     "id": "veeam",
@@ -1750,8 +1850,8 @@
     "employees": "10-50",
     "website": "https://veeam.com",
     "description": "Veeam designs and manufactures edge computing and soar infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-07-28",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "SMB",
       "Mid-Market",
@@ -1773,7 +1873,9 @@
         "employeeName": "Dakota Lee",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 5400
   },
   {
     "id": "veritas",
@@ -1810,7 +1912,9 @@
         "employeeName": "Reese Martinez",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 16,
+    "grossProfitAllTime": 12000
   },
   {
     "id": "vmware",
@@ -1858,7 +1962,9 @@
         "employeeName": "Emery Wilson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 11,
+    "grossProfitAllTime": 22000
   },
   {
     "id": "zerto",
@@ -1878,8 +1984,8 @@
     "employees": "200-1,000",
     "website": "https://zerto.com",
     "description": "Zerto designs and manufactures zero trust and risk management infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-11-18",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Mid-Market",
       "FedRAMP"
@@ -1894,7 +2000,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 13,
+    "grossProfitAllTime": 124800
   },
   {
     "id": "aruba",
@@ -1914,8 +2022,8 @@
     "employees": "50-200",
     "website": "https://aruba.com",
     "description": "Aruba Networks provides ml/ai platform and data warehousing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-12-10",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Renewing",
       "Strategic"
@@ -1924,7 +2032,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 7,
+    "grossProfitAllTime": null
   },
   {
     "id": "cofense",
@@ -1943,8 +2053,8 @@
     "employees": "5,000-20,000",
     "website": "https://cofense.com",
     "description": "Cofense blends software, hardware, and services across networking and dns services to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-11-04",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Strategic",
       "Enterprise",
@@ -1955,7 +2065,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 7,
+    "grossProfitAllTime": null
   },
   {
     "id": "cohesity",
@@ -1975,8 +2087,8 @@
     "employees": "200-1,000",
     "website": "https://cohesity.com",
     "description": "Cohesity delivers business intelligence and data analytics software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-05-27",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 2",
       "SaaS",
@@ -1986,7 +2098,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": null
   },
   {
     "id": "extrahop",
@@ -2004,8 +2118,8 @@
     "employees": "200-1,000",
     "website": "https://extrahop.com",
     "description": "ExtraHop provides it operations and monitoring consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-09-04",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Cloud-Native",
       "Strategic",
@@ -2015,7 +2129,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 15,
+    "grossProfitAllTime": null
   },
   {
     "id": "f5",
@@ -2052,7 +2168,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 11250
   },
   {
     "id": "fortinet",
@@ -2079,7 +2197,9 @@
     "spendAllTime": 3400000,
     "dealsClosedYTD": 20,
     "dealsClosedAllTime": 141,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": 612000
   },
   {
     "id": "gigamon",
@@ -2110,7 +2230,9 @@
     "spendAllTime": 400000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 10,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": 68000
   },
   {
     "id": "infinidat",
@@ -2129,8 +2251,8 @@
     "employees": "200-1,000",
     "website": "https://infinidat.com",
     "description": "Infinidat delivers identity and sd-wan software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-05-28",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SMB",
       "HIPAA"
@@ -2139,7 +2261,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "infoblox",
@@ -2178,7 +2302,9 @@
         "employeeName": "Emery Wilson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 57600
   },
   {
     "id": "paloalto",
@@ -2207,7 +2333,9 @@
     "spendAllTime": 3000000,
     "dealsClosedYTD": 28,
     "dealsClosedAllTime": 183,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": 420000
   },
   {
     "id": "variphy",
@@ -2225,8 +2353,8 @@
     "employees": "5,000-20,000",
     "website": "https://variphy.com",
     "description": "Variphy blends software, hardware, and services across collaboration and edge computing to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-10-17",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "HIPAA",
@@ -2236,7 +2364,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": null
   },
   {
     "id": "proofpoint",
@@ -2254,8 +2384,8 @@
     "employees": "1,000-5,000",
     "website": "https://proofpoint.com",
     "description": "Proofpoint blends software, hardware, and services across zero trust and incident response to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-06-22",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Cloud-Native",
       "SMB",
@@ -2265,7 +2395,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": null
   },
   {
     "id": "zscaler",
@@ -2282,8 +2414,8 @@
     "employees": "10-50",
     "website": "https://zscaler.com",
     "description": "Zscaler blends software, hardware, and services across endpoint protection to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-11-04",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Cloud-Native",
       "Renewing",
@@ -2304,7 +2436,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 192000
   },
   {
     "id": "aireye",
@@ -2338,7 +2472,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 12500
   },
   {
     "id": "armis",
@@ -2374,7 +2510,9 @@
         "employeeName": "Rowan Mitchell",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 19200
   },
   {
     "id": "cloverhound",
@@ -2394,8 +2532,8 @@
     "employees": "100,000+",
     "website": "https://cloverhound.com",
     "description": "CloverHound delivers zero trust and risk management software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-03-25",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Enterprise",
       "Strategic",
@@ -2406,7 +2544,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "okta",
@@ -2447,7 +2587,9 @@
         "employeeName": "Parker Johnson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 12,
+    "grossProfitAllTime": 360000
   },
   {
     "id": "ownbackup",
@@ -2488,7 +2630,9 @@
         "employeeName": "Finley Turner",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 16,
+    "grossProfitAllTime": 544000
   },
   {
     "id": "vectra",
@@ -2526,7 +2670,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 15,
+    "grossProfitAllTime": 36000
   },
   {
     "id": "versa",
@@ -2546,8 +2692,8 @@
     "employees": "10-50",
     "website": "https://versa.com",
     "description": "Versa Networks delivers data archiving and cloud storage software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-04-25",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Cloud-Native",
       "Tier 1",
@@ -2557,7 +2703,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": null
   },
   {
     "id": "2ring",
@@ -2586,7 +2734,9 @@
     "spendAllTime": 1350000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 41,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": 135000
   },
   {
     "id": "glean",
@@ -2626,7 +2776,9 @@
         "employeeName": "Dakota Lee",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 96000
   },
   {
     "id": "crowdstrike",
@@ -2646,8 +2798,8 @@
     "employees": "1,000-5,000",
     "website": "https://crowdstrike.com",
     "description": "CrowdStrike blends software, hardware, and services across cloud platform and multi-cloud to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-09-21",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Enterprise",
       "On-Prem"
@@ -2667,7 +2819,9 @@
         "employeeName": "Morgan Ellis",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 19,
+    "grossProfitAllTime": 114000
   },
   {
     "id": "snowflake",
@@ -2713,7 +2867,9 @@
         "employeeName": "Cameron Davis",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 13,
+    "grossProfitAllTime": 468000
   },
   {
     "id": "servicenow",
@@ -2754,7 +2910,9 @@
         "employeeName": "Sage Kim",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 255000
   },
   {
     "id": "splunk",
@@ -2784,7 +2942,9 @@
     "spendAllTime": 120000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 7,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": 21600
   },
   {
     "id": "cloudflare",
@@ -2820,7 +2980,9 @@
         "employeeName": "Alex Mercer",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 43200
   },
   {
     "id": "lacework",
@@ -2838,8 +3000,8 @@
     "employees": "1,000-5,000",
     "website": "https://lacework.com",
     "description": "Lacework blends software, hardware, and services across disaster recovery and business intelligence to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-09-17",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SMB",
       "Renewing",
@@ -2849,7 +3011,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": null
   },
   {
     "id": "sentinelone",
@@ -2879,7 +3043,9 @@
     "spendAllTime": 4800000,
     "dealsClosedYTD": 16,
     "dealsClosedAllTime": 90,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": 384000
   },
   {
     "id": "dynatrace",
@@ -2920,7 +3086,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 16,
+    "grossProfitAllTime": 9600
   },
   {
     "id": "hashicorp",
@@ -2940,8 +3108,8 @@
     "employees": "200-1,000",
     "website": "https://hashicorp.com",
     "description": "HashiCorp designs and manufactures identity and compliance infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-09-14",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Tier 2",
       "SaaS"
@@ -2950,7 +3118,9 @@
     "spendAllTime": 1280000,
     "dealsClosedYTD": 10,
     "dealsClosedAllTime": 46,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 7,
+    "grossProfitAllTime": 89600
   },
   {
     "id": "elastic",
@@ -2994,7 +3164,9 @@
         "employeeName": "Morgan Ellis",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 11,
+    "grossProfitAllTime": 176000
   },
   {
     "id": "mongodb",
@@ -3012,8 +3184,8 @@
     "employees": "10-50",
     "website": "https://mongodb.com",
     "description": "MongoDB delivers streaming and sd-wan software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-09-01",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Renewing",
       "FedRAMP",
@@ -3023,7 +3195,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "databricks",
@@ -3066,7 +3240,9 @@
         "employeeName": "Parker Johnson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 43200
   },
   {
     "id": "datadog",
@@ -3083,8 +3259,8 @@
     "employees": "200-1,000",
     "website": "https://datadog.com",
     "description": "Datadog delivers video conferencing software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-05-02",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "SaaS",
@@ -3095,7 +3271,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": null
   },
   {
     "id": "qualys",
@@ -3136,7 +3314,9 @@
         "employeeName": "Casey Rivera",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 15,
+    "grossProfitAllTime": 900000
   },
   {
     "id": "tenable",
@@ -3154,8 +3334,8 @@
     "employees": "200-1,000",
     "website": "https://tenable.com",
     "description": "Tenable delivers edge computing and data warehousing software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-12-15",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "Enterprise",
@@ -3165,7 +3345,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 20,
+    "grossProfitAllTime": null
   },
   {
     "id": "google-cloud",
@@ -3185,8 +3367,8 @@
     "employees": "100,000+",
     "website": "https://googlecloud.com",
     "description": "Google Cloud provides data analytics and streaming consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-03-03",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 2",
       "Strategic"
@@ -3195,7 +3377,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": null
   },
   {
     "id": "aws",
@@ -3215,8 +3399,8 @@
     "employees": "5,000-20,000",
     "website": "https://aws.com",
     "description": "AWS provides networking and sd-wan consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-11-09",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Mid-Market",
       "Enterprise"
@@ -3225,7 +3409,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 15,
+    "grossProfitAllTime": null
   },
   {
     "id": "auth0",
@@ -3267,7 +3453,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 20,
+    "grossProfitAllTime": 48000
   },
   {
     "id": "jumpcloud",
@@ -3287,8 +3475,8 @@
     "employees": "50-200",
     "website": "https://jumpcloud.com",
     "description": "JumpCloud provides collaboration and video conferencing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-04-26",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Enterprise",
       "Cloud-Native",
@@ -3314,7 +3502,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 540000
   },
   {
     "id": "1password",
@@ -3331,8 +3521,8 @@
     "employees": "5,000-20,000",
     "website": "https://1password.com",
     "description": "1Password provides edge computing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-03-11",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Mid-Market",
       "FedRAMP",
@@ -3343,7 +3533,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 7,
+    "grossProfitAllTime": null
   },
   {
     "id": "lastpass",
@@ -3385,7 +3577,9 @@
         "employeeName": "River Clark",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 38400
   },
   {
     "id": "keeper-security",
@@ -3431,7 +3625,9 @@
         "employeeName": "Alex Mercer",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 144000
   },
   {
     "id": "beyondtrust",
@@ -3472,7 +3668,9 @@
         "employeeName": "Parker Johnson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 16,
+    "grossProfitAllTime": 768000
   },
   {
     "id": "cyberark",
@@ -3491,8 +3689,8 @@
     "employees": "20,000-100,000",
     "website": "https://cyberark.com",
     "description": "CyberArk designs and manufactures multi-cloud and iaas infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-09-18",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Cloud-Native",
       "On-Prem"
@@ -3507,7 +3705,9 @@
         "employeeName": "Drew Santos",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 20,
+    "grossProfitAllTime": 32000
   },
   {
     "id": "sailpoint",
@@ -3536,7 +3736,9 @@
     "spendAllTime": 240000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 17,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": 38400
   },
   {
     "id": "saviynt",
@@ -3565,7 +3767,9 @@
     "spendAllTime": 720000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 37,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": 100800
   },
   {
     "id": "ping-identity",
@@ -3595,7 +3799,9 @@
     "spendAllTime": 1350000,
     "dealsClosedYTD": 17,
     "dealsClosedAllTime": 129,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": 216000
   },
   {
     "id": "bitdefender",
@@ -3613,8 +3819,8 @@
     "employees": "5,000-20,000",
     "website": "https://bitdefender.com",
     "description": "Bitdefender blends software, hardware, and services across service management and it operations to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-09-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Enterprise",
       "New",
@@ -3625,7 +3831,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 15,
+    "grossProfitAllTime": null
   },
   {
     "id": "kaspersky",
@@ -3645,8 +3853,8 @@
     "employees": "5,000-20,000",
     "website": "https://kaspersky.com",
     "description": "Kaspersky provides incident response and monitoring consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-08-23",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SaaS",
       "FedRAMP",
@@ -3657,7 +3865,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 20,
+    "grossProfitAllTime": null
   },
   {
     "id": "eset",
@@ -3677,8 +3887,8 @@
     "employees": "5,000-20,000",
     "website": "https://eset.com",
     "description": "ESET provides video conferencing and productivity consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-03-17",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "PCI-DSS",
@@ -3689,7 +3899,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": null
   },
   {
     "id": "sophos",
@@ -3707,8 +3919,8 @@
     "employees": "50-200",
     "website": "https://sophos.com",
     "description": "Sophos designs and manufactures it operations and monitoring infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-10-16",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "Enterprise",
@@ -3719,7 +3931,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": null
   },
   {
     "id": "webroot",
@@ -3738,8 +3952,8 @@
     "employees": "5,000-20,000",
     "website": "https://webroot.com",
     "description": "Webroot designs and manufactures ml/ai platform and streaming infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-10-16",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "SaaS"
@@ -3748,7 +3962,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": null
   },
   {
     "id": "acronis",
@@ -3767,8 +3983,8 @@
     "employees": "200-1,000",
     "website": "https://acronis.com",
     "description": "Acronis provides backup & recovery and data archiving consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-07-27",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 2",
       "New",
@@ -3778,7 +3994,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "druva",
@@ -3798,8 +4016,8 @@
     "employees": "200-1,000",
     "website": "https://druva.com",
     "description": "Druva provides endpoint protection and identity consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-10-24",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "New",
@@ -3810,7 +4028,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": null
   },
   {
     "id": "veritas-backup-exec",
@@ -3828,8 +4048,8 @@
     "employees": "10-50",
     "website": "https://veritas-backup-exec.com",
     "description": "Veritas Backup Exec designs and manufactures collaboration and disaster recovery infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-11-16",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Strategic",
       "On-Prem",
@@ -3855,7 +4075,9 @@
         "employeeName": "Morgan Ellis",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 14,
+    "grossProfitAllTime": 16800
   },
   {
     "id": "barracuda",
@@ -3875,8 +4097,8 @@
     "employees": "10-50",
     "website": "https://barracuda.com",
     "description": "Barracuda provides networking and load balancing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-01-01",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "PCI-DSS",
       "New",
@@ -3886,7 +4108,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": null
   },
   {
     "id": "mimecast",
@@ -3906,8 +4130,8 @@
     "employees": "50-200",
     "website": "https://mimecast.com",
     "description": "Mimecast provides load balancing and dns services consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-01-24",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 2",
       "SaaS",
@@ -3917,7 +4141,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 15,
+    "grossProfitAllTime": null
   },
   {
     "id": "tessian",
@@ -3953,7 +4179,9 @@
         "employeeName": "Riley Thompson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 14,
+    "grossProfitAllTime": 50400
   },
   {
     "id": "vade-secure",
@@ -4001,7 +4229,9 @@
         "employeeName": "Skyler Williams",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 20,
+    "grossProfitAllTime": 320000
   },
   {
     "id": "abnormal-security",
@@ -4021,8 +4251,8 @@
     "employees": "100,000+",
     "website": "https://abnormalsecurity.com",
     "description": "Abnormal Security designs and manufactures backup & recovery and data archiving infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-11-25",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Renewing",
       "Tier 2",
@@ -4033,7 +4263,9 @@
     "spendAllTime": 360000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 25,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 7,
+    "grossProfitAllTime": 25200
   },
   {
     "id": "knowbe4",
@@ -4051,8 +4283,8 @@
     "employees": "50-200",
     "website": "https://knowbe4.com",
     "description": "KnowBe4 blends software, hardware, and services across data analytics and streaming to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-11-07",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "PCI-DSS",
       "FedRAMP",
@@ -4063,7 +4295,9 @@
     "spendAllTime": 480000,
     "dealsClosedYTD": 18,
     "dealsClosedAllTime": 138,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": 48000
   },
   {
     "id": "wiz-cloud",
@@ -4092,7 +4326,9 @@
     "spendAllTime": 60000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 15,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": 6000
   },
   {
     "id": "orca-security",
@@ -4130,7 +4366,9 @@
         "employeeName": "Parker Johnson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 17,
+    "grossProfitAllTime": 91800
   },
   {
     "id": "aqua-security",
@@ -4149,8 +4387,8 @@
     "employees": "200-1,000",
     "website": "https://aquasecurity.com",
     "description": "Aqua Security designs and manufactures communications and dns services infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-09-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "FedRAMP"
@@ -4159,7 +4397,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "snyk",
@@ -4188,7 +4428,9 @@
     "spendAllTime": 900000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 45,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": 72000
   },
   {
     "id": "veracode",
@@ -4221,7 +4463,9 @@
         "employeeName": "Alex Mercer",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 7,
+    "grossProfitAllTime": 189000
   },
   {
     "id": "checkmarx",
@@ -4263,7 +4507,9 @@
         "employeeName": "River Clark",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 13,
+    "grossProfitAllTime": 117000
   },
   {
     "id": "gitlab",
@@ -4307,7 +4553,9 @@
         "employeeName": "Jordan Hayes",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 32000
   },
   {
     "id": "github-enterprise",
@@ -4327,8 +4575,8 @@
     "employees": "100,000+",
     "website": "https://githubenterprise.com",
     "description": "GitHub Enterprise provides zero trust and cybersecurity consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-08-07",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SaaS",
       "Enterprise",
@@ -4338,7 +4586,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": null
   },
   {
     "id": "atlassian",
@@ -4358,8 +4608,8 @@
     "employees": "1,000-5,000",
     "website": "https://atlassian.com",
     "description": "Atlassian designs and manufactures productivity and collaboration infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-06-17",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "Mid-Market",
@@ -4369,7 +4619,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "pagerduty",
@@ -4404,7 +4656,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 172800
   },
   {
     "id": "opsgenie",
@@ -4424,8 +4678,8 @@
     "employees": "1,000-5,000",
     "website": "https://opsgenie.com",
     "description": "Opsgenie provides backup & recovery and data archiving consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-03-24",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "SMB",
@@ -4436,7 +4690,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "victorops",
@@ -4465,7 +4721,9 @@
     "spendAllTime": 960000,
     "dealsClosedYTD": 17,
     "dealsClosedAllTime": 121,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": 76800
   },
   {
     "id": "grafana-labs",
@@ -4495,7 +4753,9 @@
     "spendAllTime": 75000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 16,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": 13500
   },
   {
     "id": "new-relic",
@@ -4514,8 +4774,8 @@
     "employees": "200-1,000",
     "website": "https://newrelic.com",
     "description": "New Relic provides incident response and it operations consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-02-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Compliance",
       "HIPAA",
@@ -4525,7 +4785,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 7,
+    "grossProfitAllTime": null
   },
   {
     "id": "appdynamics-pro",
@@ -4545,8 +4807,8 @@
     "employees": "50-200",
     "website": "https://appdynamicspro.com",
     "description": "AppDynamics Pro delivers communications and collaboration software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-08-09",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "New",
       "Mid-Market"
@@ -4561,7 +4823,9 @@
         "employeeName": "River Clark",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 459000
   },
   {
     "id": "logicmonitor",
@@ -4592,7 +4856,9 @@
     "spendAllTime": 240000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 15,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": 19200
   },
   {
     "id": "solarwinds",
@@ -4611,8 +4877,8 @@
     "employees": "200-1,000",
     "website": "https://solarwinds.com",
     "description": "SolarWinds designs and manufactures it operations and apm infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-06-01",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SaaS",
       "Tier 2",
@@ -4623,7 +4889,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": null
   },
   {
     "id": "manageengine",
@@ -4643,8 +4911,8 @@
     "employees": "100,000+",
     "website": "https://manageengine.com",
     "description": "ManageEngine designs and manufactures dns services and sd-wan infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-03-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 2",
       "Strategic",
@@ -4655,7 +4923,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "tanium",
@@ -4690,7 +4960,9 @@
         "employeeName": "Skyler Williams",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 36000
   },
   {
     "id": "bigfix",
@@ -4709,8 +4981,8 @@
     "employees": "20,000-100,000",
     "website": "https://bigfix.com",
     "description": "BigFix provides streaming and data warehousing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-09-06",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Compliance",
       "SMB",
@@ -4721,7 +4993,9 @@
     "spendAllTime": 300000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 35,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": 36000
   },
   {
     "id": "connectwise",
@@ -4759,7 +5033,9 @@
         "employeeName": "Casey Rivera",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 54000
   },
   {
     "id": "n-able",
@@ -4778,8 +5054,8 @@
     "employees": "200-1,000",
     "website": "https://nable.com",
     "description": "N-able designs and manufactures network monitoring and dns services infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-08-11",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Compliance",
       "Cloud-Native"
@@ -4788,7 +5064,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": null
   },
   {
     "id": "kaseya",
@@ -4808,8 +5086,8 @@
     "employees": "200-1,000",
     "website": "https://kaseya.com",
     "description": "Kaseya provides productivity and video conferencing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-09-06",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Tier 2",
       "HIPAA",
@@ -4831,7 +5109,9 @@
         "employeeName": "Finley Turner",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 14400
   },
   {
     "id": "fortify",
@@ -4866,7 +5146,9 @@
         "employeeName": "Quinn Patel",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 162000
   },
   {
     "id": "imperva",
@@ -4897,7 +5179,9 @@
     "spendAllTime": 120000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 29,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": 22800
   },
   {
     "id": "akamai",
@@ -4915,8 +5199,8 @@
     "employees": "5,000-20,000",
     "website": "https://akamai.com",
     "description": "Akamai blends software, hardware, and services across it operations and service management to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-06-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 2",
       "Strategic",
@@ -4926,7 +5210,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 15,
+    "grossProfitAllTime": null
   },
   {
     "id": "fastly",
@@ -4956,7 +5242,9 @@
     "spendAllTime": 6000000,
     "dealsClosedYTD": 30,
     "dealsClosedAllTime": 172,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": 360000
   },
   {
     "id": "stackpath",
@@ -4974,8 +5262,8 @@
     "employees": "20,000-100,000",
     "website": "https://stackpath.com",
     "description": "StackPath blends software, hardware, and services across networking and load balancing to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-06-18",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "On-Prem",
@@ -4985,7 +5273,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "lucidworks",
@@ -5003,8 +5293,8 @@
     "employees": "1,000-5,000",
     "website": "https://lucidworks.com",
     "description": "Lucidworks blends software, hardware, and services across productivity and cloud storage to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-12-26",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "PCI-DSS",
       "Mid-Market"
@@ -5013,7 +5303,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": null
   },
   {
     "id": "algolia",
@@ -5030,8 +5322,8 @@
     "employees": "5,000-20,000",
     "website": "https://algolia.com",
     "description": "Algolia designs and manufactures dns services infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-10-04",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Cloud-Native",
       "Renewing",
@@ -5041,7 +5333,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 11,
+    "grossProfitAllTime": null
   },
   {
     "id": "coveo",
@@ -5083,7 +5377,9 @@
         "employeeName": "Quinn Patel",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 12,
+    "grossProfitAllTime": 9600
   },
   {
     "id": "sinequa",
@@ -5103,8 +5399,8 @@
     "employees": "5,000-20,000",
     "website": "https://sinequa.com",
     "description": "Sinequa designs and manufactures iaas and edge computing infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-03-07",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "HIPAA",
       "New",
@@ -5120,7 +5416,9 @@
         "employeeName": "Jordan Hayes",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 15,
+    "grossProfitAllTime": 6750
   },
   {
     "id": "vespa",
@@ -5166,7 +5464,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 115200
   },
   {
     "id": "domo",
@@ -5183,8 +5483,8 @@
     "employees": "5,000-20,000",
     "website": "https://domo.com",
     "description": "Domo blends software, hardware, and services across streaming to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-04-14",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "Renewing"
@@ -5193,7 +5493,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "looker",
@@ -5223,7 +5525,9 @@
     "spendAllTime": 3400000,
     "dealsClosedYTD": 12,
     "dealsClosedAllTime": 74,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": 306000
   },
   {
     "id": "tableau",
@@ -5253,7 +5557,9 @@
     "spendAllTime": 960000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 22,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": 134400
   },
   {
     "id": "qlik",
@@ -5272,8 +5578,8 @@
     "employees": "20,000-100,000",
     "website": "https://qlik.com",
     "description": "Qlik designs and manufactures communications and disaster recovery infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-02-21",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Compliance",
       "HIPAA"
@@ -5282,7 +5588,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": null
   },
   {
     "id": "thoughtspot",
@@ -5302,8 +5610,8 @@
     "employees": "100,000+",
     "website": "https://thoughtspot.com",
     "description": "ThoughtSpot provides productivity and communications consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-07-27",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "SaaS"
@@ -5312,7 +5620,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "alteryx",
@@ -5332,8 +5642,8 @@
     "employees": "10-50",
     "website": "https://alteryx.com",
     "description": "Alteryx provides service management and monitoring consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-08-01",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "On-Prem",
       "Tier 1",
@@ -5354,7 +5664,9 @@
         "employeeName": "Finley Turner",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 11,
+    "grossProfitAllTime": 13200
   },
   {
     "id": "talend",
@@ -5372,8 +5684,8 @@
     "employees": "10-50",
     "website": "https://talend.com",
     "description": "Talend provides disaster recovery and networking consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-07-21",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "Mid-Market"
@@ -5382,7 +5694,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": null
   },
   {
     "id": "informatica",
@@ -5401,8 +5715,8 @@
     "employees": "100,000+",
     "website": "https://informatica.com",
     "description": "Informatica delivers backup & recovery and iaas software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-08-03",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Compliance",
       "Mid-Market"
@@ -5427,7 +5741,9 @@
         "employeeName": "Cameron Davis",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 7,
+    "grossProfitAllTime": 37800
   },
   {
     "id": "fivetran",
@@ -5446,8 +5762,8 @@
     "employees": "10-50",
     "website": "https://fivetran.com",
     "description": "Fivetran delivers siem and endpoint protection software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-12-07",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "SMB",
@@ -5458,7 +5774,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 7,
+    "grossProfitAllTime": null
   },
   {
     "id": "stitch-data",
@@ -5491,7 +5809,9 @@
         "employeeName": "Skyler Williams",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 14,
+    "grossProfitAllTime": 28000
   },
   {
     "id": "confluent",
@@ -5508,8 +5828,8 @@
     "employees": "20,000-100,000",
     "website": "https://confluent.com",
     "description": "Confluent provides apm consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-08-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "FedRAMP"
@@ -5518,7 +5838,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": null
   },
   {
     "id": "apache-kafka-pro",
@@ -5537,8 +5859,8 @@
     "employees": "100,000+",
     "website": "https://apachekafkapro.com",
     "description": "Apache Kafka Pro delivers data warehousing and business intelligence software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-01-19",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Enterprise",
       "SaaS"
@@ -5547,7 +5869,9 @@
     "spendAllTime": 3600000,
     "dealsClosedYTD": 30,
     "dealsClosedAllTime": 100,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": 432000
   },
   {
     "id": "redpanda",
@@ -5583,7 +5907,9 @@
         "employeeName": "Cameron Davis",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 27000
   },
   {
     "id": "aiven",
@@ -5603,8 +5929,8 @@
     "employees": "10-50",
     "website": "https://aiven.com",
     "description": "Aiven provides cloud platform and paas consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-11-24",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "SMB",
@@ -5615,7 +5941,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": null
   },
   {
     "id": "cockroach-labs",
@@ -5633,8 +5961,8 @@
     "employees": "20,000-100,000",
     "website": "https://cockroachlabs.com",
     "description": "Cockroach Labs designs and manufactures productivity and siem infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-07-09",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Mid-Market",
       "SaaS",
@@ -5645,7 +5973,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": null
   },
   {
     "id": "yugabyte",
@@ -5690,7 +6020,9 @@
         "employeeName": "Casey Rivera",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 160000
   },
   {
     "id": "planetscale",
@@ -5730,7 +6062,9 @@
         "employeeName": "Jordan Hayes",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 6000
   },
   {
     "id": "neon",
@@ -5749,8 +6083,8 @@
     "employees": "200-1,000",
     "website": "https://neon.com",
     "description": "Neon delivers paas and edge computing software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-04-15",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "PCI-DSS",
       "FedRAMP",
@@ -5760,7 +6094,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 15,
+    "grossProfitAllTime": null
   },
   {
     "id": "supabase",
@@ -5777,8 +6113,8 @@
     "employees": "200-1,000",
     "website": "https://supabase.com",
     "description": "Supabase designs and manufactures communications infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-12-24",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Mid-Market",
       "On-Prem",
@@ -5799,7 +6135,9 @@
         "employeeName": "Dakota Lee",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 6000
   },
   {
     "id": "vercel",
@@ -5836,7 +6174,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 20,
+    "grossProfitAllTime": 850000
   },
   {
     "id": "netlify",
@@ -5864,7 +6204,9 @@
     "spendAllTime": 400000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 52,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": 36000
   },
   {
     "id": "render",
@@ -5898,7 +6240,9 @@
         "employeeName": "Riley Thompson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 13,
+    "grossProfitAllTime": 124800
   },
   {
     "id": "fly-io",
@@ -5945,7 +6289,9 @@
         "employeeName": "Finley Turner",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 32000
   },
   {
     "id": "digitalocean",
@@ -5962,8 +6308,8 @@
     "employees": "50-200",
     "website": "https://digitalocean.com",
     "description": "DigitalOcean designs and manufactures identity infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-10-19",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "New",
       "Renewing",
@@ -5979,7 +6325,9 @@
         "employeeName": "Avery Chen",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 13,
+    "grossProfitAllTime": 93600
   },
   {
     "id": "linode",
@@ -5998,8 +6346,8 @@
     "employees": "10-50",
     "website": "https://linode.com",
     "description": "Linode delivers risk management and compliance software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-08-01",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Strategic",
       "Compliance",
@@ -6009,7 +6357,9 @@
     "spendAllTime": 720000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 49,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": 100800
   },
   {
     "id": "vultr",
@@ -6038,7 +6388,9 @@
     "spendAllTime": 640000,
     "dealsClosedYTD": 17,
     "dealsClosedAllTime": 124,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": 108800
   },
   {
     "id": "ovhcloud",
@@ -6056,8 +6408,8 @@
     "employees": "200-1,000",
     "website": "https://ovhcloud.com",
     "description": "OVHcloud designs and manufactures collaboration and data warehousing infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-03-01",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "PCI-DSS",
       "On-Prem",
@@ -6067,7 +6419,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": null
   },
   {
     "id": "backblaze",
@@ -6086,8 +6440,8 @@
     "employees": "200-1,000",
     "website": "https://backblaze.com",
     "description": "Backblaze provides soar and compliance consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-04-19",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Cloud-Native",
       "Renewing",
@@ -6113,7 +6467,9 @@
         "employeeName": "Quinn Patel",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 306000
   },
   {
     "id": "wasabi",
@@ -6151,7 +6507,9 @@
         "employeeName": "Parker Johnson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 20,
+    "grossProfitAllTime": 15000
   },
   {
     "id": "egnyte",
@@ -6169,8 +6527,8 @@
     "employees": "5,000-20,000",
     "website": "https://egnyte.com",
     "description": "Egnyte delivers sd-wan and business intelligence software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-02-12",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Strategic",
       "Compliance",
@@ -6181,7 +6539,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": null
   },
   {
     "id": "box",
@@ -6200,8 +6560,8 @@
     "employees": "20,000-100,000",
     "website": "https://box.com",
     "description": "Box provides sd-wan and dns services consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-03-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "New",
@@ -6211,7 +6571,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": null
   },
   {
     "id": "dropbox-business",
@@ -6256,7 +6618,9 @@
         "employeeName": "Blair Anderson",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 108000
   },
   {
     "id": "citrix-sharefile",
@@ -6275,8 +6639,8 @@
     "employees": "200-1,000",
     "website": "https://citrixsharefile.com",
     "description": "Citrix ShareFile provides networking and network monitoring consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-01-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "Compliance",
@@ -6286,7 +6650,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": null
   },
   {
     "id": "slack-enterprise",
@@ -6326,7 +6692,9 @@
         "employeeName": "Riley Thompson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 6000
   },
   {
     "id": "microsoft-teams-premium",
@@ -6345,8 +6713,8 @@
     "employees": "20,000-100,000",
     "website": "https://microsoft-teams-premium.com",
     "description": "Microsoft Teams Premium provides cloud storage and cloud platform consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-01-04",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "New",
@@ -6356,7 +6724,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "zoom-workplace",
@@ -6397,7 +6767,9 @@
         "employeeName": "Morgan Ellis",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 19,
+    "grossProfitAllTime": 136800
   },
   {
     "id": "webex",
@@ -6437,7 +6809,9 @@
         "employeeName": "Rowan Mitchell",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 180000
   },
   {
     "id": "ringcentral",
@@ -6472,7 +6846,9 @@
         "employeeName": "River Clark",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 425000
   },
   {
     "id": "dialpad",
@@ -6492,8 +6868,8 @@
     "employees": "1,000-5,000",
     "website": "https://dialpad.com",
     "description": "Dialpad designs and manufactures streaming and ml/ai platform infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-11-20",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Mid-Market",
       "Tier 2"
@@ -6502,7 +6878,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "8x8",
@@ -6519,8 +6897,8 @@
     "employees": "50-200",
     "website": "https://8x8.com",
     "description": "8x8 blends software, hardware, and services across backup & recovery to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-12-26",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Mid-Market",
       "Compliance"
@@ -6529,7 +6907,9 @@
     "spendAllTime": 240000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 26,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 11,
+    "grossProfitAllTime": 26400
   },
   {
     "id": "vonage",
@@ -6547,8 +6927,8 @@
     "employees": "50-200",
     "website": "https://vonage.com",
     "description": "Vonage blends software, hardware, and services across streaming and ml/ai platform to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-02-19",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 2",
       "SaaS"
@@ -6557,7 +6937,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": null
   },
   {
     "id": "twilio",
@@ -6575,8 +6957,8 @@
     "employees": "5,000-20,000",
     "website": "https://twilio.com",
     "description": "Twilio provides multi-cloud and edge computing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-07-11",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "Enterprise",
@@ -6587,7 +6969,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 11,
+    "grossProfitAllTime": null
   },
   {
     "id": "five9",
@@ -6606,8 +6990,8 @@
     "employees": "50-200",
     "website": "https://five9.com",
     "description": "Five9 provides network monitoring and load balancing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-05-24",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "PCI-DSS",
       "Strategic",
@@ -6623,7 +7007,9 @@
         "employeeName": "Morgan Ellis",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 19,
+    "grossProfitAllTime": 136800
   },
   {
     "id": "nice-incontact",
@@ -6641,8 +7027,8 @@
     "employees": "1,000-5,000",
     "website": "https://niceincontact.com",
     "description": "NICE inContact designs and manufactures multi-cloud and paas infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-01-06",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "New",
       "Renewing"
@@ -6651,7 +7037,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": null
   },
   {
     "id": "genesys",
@@ -6669,8 +7057,8 @@
     "employees": "200-1,000",
     "website": "https://genesys.com",
     "description": "Genesys designs and manufactures it operations and cybersecurity infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-11-01",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Cloud-Native",
       "FedRAMP"
@@ -6679,7 +7067,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": null
   },
   {
     "id": "talkdesk",
@@ -6719,7 +7109,9 @@
         "employeeName": "Alex Mercer",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 16000
   },
   {
     "id": "salesforce",
@@ -6739,8 +7131,8 @@
     "employees": "50-200",
     "website": "https://salesforce.com",
     "description": "Salesforce designs and manufactures load balancing and networking infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-07-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "SaaS",
@@ -6750,7 +7142,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 11,
+    "grossProfitAllTime": null
   },
   {
     "id": "hubspot-enterprise",
@@ -6769,8 +7163,8 @@
     "employees": "5,000-20,000",
     "website": "https://hubspot-enterprise.com",
     "description": "HubSpot Enterprise blends software, hardware, and services across load balancing and dns services to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-08-03",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SaaS",
       "Strategic",
@@ -6780,7 +7174,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 20,
+    "grossProfitAllTime": null
   },
   {
     "id": "zendesk",
@@ -6800,8 +7196,8 @@
     "employees": "20,000-100,000",
     "website": "https://zendesk.com",
     "description": "Zendesk provides network monitoring and sd-wan consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-07-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "Enterprise",
@@ -6811,7 +7207,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 15,
+    "grossProfitAllTime": null
   },
   {
     "id": "freshworks",
@@ -6843,7 +7241,9 @@
     "spendAllTime": 120000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 18,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": 15600
   },
   {
     "id": "intercom",
@@ -6871,7 +7271,9 @@
     "spendAllTime": 2400000,
     "dealsClosedYTD": 13,
     "dealsClosedAllTime": 63,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 10,
+    "grossProfitAllTime": 240000
   },
   {
     "id": "drift",
@@ -6890,8 +7292,8 @@
     "employees": "200-1,000",
     "website": "https://drift.com",
     "description": "Drift delivers service management and apm software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-06-28",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "SMB",
       "Tier 2",
@@ -6913,7 +7315,9 @@
         "employeeName": "Emery Wilson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 12,
+    "grossProfitAllTime": 57600
   },
   {
     "id": "gong",
@@ -6943,7 +7347,9 @@
     "spendAllTime": 4800000,
     "dealsClosedYTD": 21,
     "dealsClosedAllTime": 106,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": 864000
   },
   {
     "id": "outreach",
@@ -6962,8 +7368,8 @@
     "employees": "50-200",
     "website": "https://outreach.com",
     "description": "Outreach blends software, hardware, and services across cloud platform and iaas to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-04-23",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "SaaS",
       "SMB",
@@ -6973,7 +7379,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 11,
+    "grossProfitAllTime": null
   },
   {
     "id": "salesloft",
@@ -6991,8 +7399,8 @@
     "employees": "20,000-100,000",
     "website": "https://salesloft.com",
     "description": "SalesLoft blends software, hardware, and services across business intelligence and data analytics to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-11-05",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "New",
       "FedRAMP",
@@ -7002,7 +7410,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": null
   },
   {
     "id": "marketo",
@@ -7036,7 +7446,9 @@
         "employeeName": "Rowan Mitchell",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 15,
+    "grossProfitAllTime": 54000
   },
   {
     "id": "pardot",
@@ -7056,8 +7468,8 @@
     "employees": "200-1,000",
     "website": "https://pardot.com",
     "description": "Pardot delivers data analytics and streaming software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-05-14",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Mid-Market",
       "Strategic",
@@ -7068,7 +7480,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": null
   },
   {
     "id": "eloqua",
@@ -7087,8 +7501,8 @@
     "employees": "100,000+",
     "website": "https://eloqua.com",
     "description": "Eloqua designs and manufactures edge computing and cloud platform infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-12-14",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "SMB",
       "Enterprise",
@@ -7114,7 +7528,9 @@
         "employeeName": "Finley Turner",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 11,
+    "grossProfitAllTime": 26400
   },
   {
     "id": "iterable",
@@ -7132,8 +7548,8 @@
     "employees": "100,000+",
     "website": "https://iterable.com",
     "description": "Iterable blends software, hardware, and services across disaster recovery and backup & recovery to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-09-03",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "Mid-Market",
@@ -7144,7 +7560,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": null
   },
   {
     "id": "braze",
@@ -7172,7 +7590,9 @@
     "spendAllTime": 125000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 6,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": 7500
   },
   {
     "id": "segment",
@@ -7201,7 +7621,9 @@
     "spendAllTime": 900000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 32,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": 117000
   },
   {
     "id": "mparticle",
@@ -7220,8 +7642,8 @@
     "employees": "5,000-20,000",
     "website": "https://mparticle.com",
     "description": "mParticle delivers incident response and data archiving software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-08-16",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "New",
       "Compliance"
@@ -7236,7 +7658,9 @@
         "employeeName": "Rowan Mitchell",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 12,
+    "grossProfitAllTime": 408000
   },
   {
     "id": "tealium",
@@ -7273,7 +7697,9 @@
         "employeeName": "Casey Rivera",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 7,
+    "grossProfitAllTime": 210000
   },
   {
     "id": "heap",
@@ -7308,7 +7734,9 @@
         "employeeName": "Morgan Ellis",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 360000
   },
   {
     "id": "mixpanel",
@@ -7343,7 +7771,9 @@
         "employeeName": "Riley Thompson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 11,
+    "grossProfitAllTime": 140800
   },
   {
     "id": "amplitude",
@@ -7361,8 +7791,8 @@
     "employees": "200-1,000",
     "website": "https://amplitude.com",
     "description": "Amplitude provides ml/ai platform and data warehousing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-12-22",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "FedRAMP",
@@ -7372,7 +7802,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": null
   },
   {
     "id": "pendo",
@@ -7402,7 +7834,9 @@
     "spendAllTime": 240000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 18,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": 45600
   },
   {
     "id": "fullstory",
@@ -7443,7 +7877,9 @@
         "employeeName": "Reese Martinez",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 11,
+    "grossProfitAllTime": 118800
   },
   {
     "id": "logrocket",
@@ -7475,7 +7911,9 @@
     "spendAllTime": 200000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 16,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 19,
+    "grossProfitAllTime": 38000
   },
   {
     "id": "hotjar",
@@ -7493,8 +7931,8 @@
     "employees": "50-200",
     "website": "https://hotjar.com",
     "description": "Hotjar blends software, hardware, and services across data warehousing and apm to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-05-27",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "HIPAA",
       "Renewing",
@@ -7505,7 +7943,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 6,
+    "grossProfitAllTime": null
   },
   {
     "id": "workday",
@@ -7524,8 +7964,8 @@
     "employees": "20,000-100,000",
     "website": "https://workday.com",
     "description": "Workday designs and manufactures disaster recovery and object storage infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-10-19",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "Compliance",
@@ -7536,7 +7976,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": null
   },
   {
     "id": "sap-successfactors",
@@ -7575,7 +8017,9 @@
         "employeeName": "Skyler Williams",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 324000
   },
   {
     "id": "bamboohr",
@@ -7593,8 +8037,8 @@
     "employees": "1,000-5,000",
     "website": "https://bamboohr.com",
     "description": "BambooHR provides disaster recovery and data analytics consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-12-22",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "New",
       "Compliance"
@@ -7603,7 +8047,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "gusto",
@@ -7621,8 +8067,8 @@
     "employees": "100,000+",
     "website": "https://gusto.com",
     "description": "Gusto blends software, hardware, and services across edge computing and cloud platform to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-10-18",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "PCI-DSS",
       "On-Prem",
@@ -7649,7 +8095,9 @@
         "employeeName": "Drew Santos",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 340000
   },
   {
     "id": "rippling",
@@ -7684,7 +8132,9 @@
         "employeeName": "Finley Turner",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 86400
   },
   {
     "id": "adp-workforce",
@@ -7702,8 +8152,8 @@
     "employees": "1,000-5,000",
     "website": "https://adpworkforce.com",
     "description": "ADP Workforce blends software, hardware, and services across communications and object storage to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-09-08",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "HIPAA",
       "Mid-Market"
@@ -7712,7 +8162,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": null
   },
   {
     "id": "paylocity",
@@ -7743,7 +8195,9 @@
     "spendAllTime": 2400000,
     "dealsClosedYTD": 25,
     "dealsClosedAllTime": 90,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": 408000
   },
   {
     "id": "paycor",
@@ -7790,7 +8244,9 @@
         "employeeName": "Casey Rivera",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 16,
+    "grossProfitAllTime": 307200
   },
   {
     "id": "lattice",
@@ -7810,8 +8266,8 @@
     "employees": "5,000-20,000",
     "website": "https://lattice.com",
     "description": "Lattice blends software, hardware, and services across iaas and paas to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-11-14",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "On-Prem",
       "HIPAA"
@@ -7820,7 +8276,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": null
   },
   {
     "id": "15five",
@@ -7840,8 +8298,8 @@
     "employees": "100,000+",
     "website": "https://15five.com",
     "description": "15Five blends software, hardware, and services across communications and collaboration to give customers a single accountable partner. Engagements often start tactical and grow into multi-year programs.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-05-14",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "FedRAMP",
       "Strategic",
@@ -7851,7 +8309,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 11,
+    "grossProfitAllTime": null
   },
   {
     "id": "coupa",
@@ -7898,7 +8358,9 @@
         "employeeName": "Casey Rivera",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 144000
   },
   {
     "id": "ariba",
@@ -7927,7 +8389,9 @@
     "spendAllTime": 3600000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 80,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": 648000
   },
   {
     "id": "jaggaer",
@@ -7946,8 +8410,8 @@
     "employees": "50-200",
     "website": "https://jaggaer.com",
     "description": "Jaggaer designs and manufactures compliance and endpoint protection infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-03-06",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "PCI-DSS",
       "Renewing"
@@ -7967,7 +8431,9 @@
         "employeeName": "Quinn Patel",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 16,
+    "grossProfitAllTime": 256000
   },
   {
     "id": "ivalua",
@@ -8001,7 +8467,9 @@
         "employeeName": "Skyler Williams",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 12,
+    "grossProfitAllTime": 14400
   },
   {
     "id": "gep",
@@ -8047,7 +8515,9 @@
         "employeeName": "Reese Martinez",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 15,
+    "grossProfitAllTime": 337500
   },
   {
     "id": "procore",
@@ -8066,8 +8536,8 @@
     "employees": "1,000-5,000",
     "website": "https://procore.com",
     "description": "Procore designs and manufactures incident response and apm infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-02-06",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "PCI-DSS",
       "Mid-Market",
@@ -8078,7 +8548,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": null
   },
   {
     "id": "autodesk-construction",
@@ -8098,8 +8570,8 @@
     "employees": "200-1,000",
     "website": "https://autodesk-construction.com",
     "description": "Autodesk Construction designs and manufactures networking and load balancing infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-11-25",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Cloud-Native",
       "Compliance"
@@ -8108,7 +8580,9 @@
     "spendAllTime": 1600000,
     "dealsClosedYTD": 18,
     "dealsClosedAllTime": 98,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 17,
+    "grossProfitAllTime": 272000
   },
   {
     "id": "bluebeam",
@@ -8128,8 +8602,8 @@
     "employees": "20,000-100,000",
     "website": "https://bluebeam.com",
     "description": "Bluebeam designs and manufactures apm and monitoring infrastructure for data centers and edge deployments. Customers value the build quality, performance, and long-term support cycles.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-11-06",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "SMB",
       "FedRAMP",
@@ -8146,7 +8620,9 @@
         "employeeName": "Skyler Williams",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 14,
+    "grossProfitAllTime": 672000
   },
   {
     "id": "plangrid",
@@ -8186,7 +8662,9 @@
         "employeeName": "Drew Santos",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 13,
+    "grossProfitAllTime": 23400
   },
   {
     "id": "cylance",
@@ -8205,8 +8683,8 @@
     "employees": "5,000-20,000",
     "website": "https://cylance.com",
     "description": "Cylance delivers video conferencing and network monitoring software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-09-13",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Renewing",
       "New",
@@ -8216,7 +8694,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": null
   },
   {
     "id": "carbon-black",
@@ -8245,7 +8725,9 @@
     "spendAllTime": 240000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 61,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": 28800
   },
   {
     "id": "bromium",
@@ -8277,7 +8759,9 @@
     "spendAllTime": 900000,
     "dealsClosedYTD": 16,
     "dealsClosedAllTime": 73,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": 81000
   },
   {
     "id": "cybereason",
@@ -8306,7 +8790,9 @@
     "spendAllTime": 720000,
     "dealsClosedYTD": 12,
     "dealsClosedAllTime": 79,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 14,
+    "grossProfitAllTime": 100800
   },
   {
     "id": "stellar-cyber",
@@ -8336,7 +8822,9 @@
     "spendAllTime": 1600000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 40,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 8,
+    "grossProfitAllTime": 128000
   },
   {
     "id": "anomali",
@@ -8367,7 +8855,9 @@
     "spendAllTime": 60000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 7,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 9,
+    "grossProfitAllTime": 5400
   },
   {
     "id": "threatconnect",
@@ -8396,7 +8886,9 @@
     "spendAllTime": 960000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 112,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": 172800
   },
   {
     "id": "recorded-future",
@@ -8425,7 +8917,9 @@
     "spendAllTime": 540000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 40,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": 97200
   },
   {
     "id": "mandiant",
@@ -8444,8 +8938,8 @@
     "employees": "1,000-5,000",
     "website": "https://mandiant.com",
     "description": "Mandiant provides productivity and edge computing consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2025-12-13",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "SMB",
       "Renewing",
@@ -8456,7 +8950,9 @@
     "spendAllTime": 1800000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 52,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 20,
+    "grossProfitAllTime": 360000
   },
   {
     "id": "zerofox",
@@ -8494,7 +8990,9 @@
         "employeeName": "Rowan Mitchell",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 13,
+    "grossProfitAllTime": 156000
   },
   {
     "id": "domaintools",
@@ -8529,7 +9027,9 @@
         "employeeName": "Avery Chen",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 9,
+    "grossProfitAllTime": 121500
   },
   {
     "id": "riskiq",
@@ -8548,8 +9048,8 @@
     "employees": "50-200",
     "website": "https://riskiq.com",
     "description": "RiskIQ provides object storage and backup & recovery consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-06-22",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "Compliance",
       "PCI-DSS",
@@ -8559,7 +9059,9 @@
     "spendAllTime": 7200000,
     "dealsClosedYTD": 19,
     "dealsClosedAllTime": 133,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 16,
+    "grossProfitAllTime": 1152000
   },
   {
     "id": "forescout",
@@ -8578,8 +9080,8 @@
     "employees": "50-200",
     "website": "https://forescout.com",
     "description": "Forescout delivers collaboration and apm software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-10-01",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "SMB",
       "Compliance",
@@ -8595,7 +9097,9 @@
         "employeeName": "Drew Santos",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 57600
   },
   {
     "id": "claroty",
@@ -8615,8 +9119,8 @@
     "employees": "5,000-20,000",
     "website": "https://claroty.com",
     "description": "Claroty delivers data warehousing and streaming software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2025-08-22",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "New",
       "PCI-DSS",
@@ -8626,7 +9130,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 18,
+    "grossProfitAllTime": null
   },
   {
     "id": "nozomi-networks",
@@ -8667,7 +9173,9 @@
         "employeeName": "Casey Rivera",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 6,
+    "grossProfitAllTime": 9600
   },
   {
     "id": "dragos",
@@ -8711,7 +9219,9 @@
         "employeeName": "River Clark",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 9600
   },
   {
     "id": "pluribus-networks",
@@ -8752,7 +9262,9 @@
         "employeeName": "Emery Wilson",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 16,
+    "grossProfitAllTime": 76800
   },
   {
     "id": "big-switch",
@@ -8790,7 +9302,9 @@
         "employeeName": "Alex Mercer",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 13500
   },
   {
     "id": "cumulus-networks",
@@ -8836,7 +9350,9 @@
         "employeeName": "Jordan Hayes",
         "employeeRole": "Technical"
       }
-    ]
+    ],
+    "marginPct": 8,
+    "grossProfitAllTime": 38400
   },
   {
     "id": "mellanox",
@@ -8877,7 +9393,9 @@
         "employeeName": "Reese Martinez",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 17,
+    "grossProfitAllTime": 15300
   },
   {
     "id": "xilinx-edge",
@@ -8919,7 +9437,9 @@
         "employeeName": "Alex Mercer",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 18,
+    "grossProfitAllTime": 86400
   },
   {
     "id": "nvidia-networking",
@@ -8939,8 +9459,8 @@
     "employees": "1,000-5,000",
     "website": "https://nvidianetworking.com",
     "description": "NVIDIA Networking delivers edge computing and iaas software trusted by enterprises worldwide. Their platform emphasizes scalability, integrations, and a low-friction onboarding experience.",
-    "contractStatus": "Under Review",
-    "renewalDate": "2026-05-15",
+    "contractStatus": "Inactive",
+    "renewalDate": null,
     "tags": [
       "SMB",
       "Renewing",
@@ -8957,7 +9477,9 @@
         "employeeName": "Taylor Brooks",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 10,
+    "grossProfitAllTime": 72000
   },
   {
     "id": "amd-pensando",
@@ -8976,8 +9498,8 @@
     "employees": "200-1,000",
     "website": "https://amdpensando.com",
     "description": "AMD Pensando provides edge computing and multi-cloud consulting and managed services, helping mid-to-large organizations operationalize complex programs. Their delivery teams blend strategy with hands-on engineering.",
-    "contractStatus": "Prospect",
-    "renewalDate": "2026-05-15",
+    "contractStatus": "Under Review",
+    "renewalDate": "TBD",
     "tags": [
       "Tier 1",
       "PCI-DSS",
@@ -8987,7 +9509,9 @@
     "spendAllTime": null,
     "dealsClosedYTD": null,
     "dealsClosedAllTime": null,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 12,
+    "grossProfitAllTime": null
   },
   {
     "id": "intel-networking",
@@ -9014,7 +9538,9 @@
     "spendAllTime": 75000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 5,
-    "testimonials": []
+    "testimonials": [],
+    "marginPct": 13,
+    "grossProfitAllTime": 9750
   },
   {
     "id": "marvell",
@@ -9054,6 +9580,8 @@
         "employeeName": "Cameron Davis",
         "employeeRole": "Sales"
       }
-    ]
+    ],
+    "marginPct": 16,
+    "grossProfitAllTime": 32000
   }
 ]

@@ -74,12 +74,12 @@ export class VendorAnalyticsComponent implements OnInit {
       this.avgReputation = +(vendors.reduce((s, v) => s + v.reputation, 0) / vendors.length).toFixed(1);
       this.activeCount = vendors.filter(v => v.contractStatus === 'Active').length;
 
-      const sm: Record<string, number> = { Active: 0, Prospect: 0, 'Under Review': 0 };
+      const sm: Record<string, number> = { Active: 0, 'Under Review': 0, Inactive: 0 };
       vendors.forEach(v => { sm[v.contractStatus] = (sm[v.contractStatus] ?? 0) + 1; });
       this.statusData = [
         { x: 'Active', y: sm['Active'], fill: '#4caf50' },
-        { x: 'Prospect', y: sm['Prospect'], fill: '#3b82f6' },
-        { x: 'Under Review', y: sm['Under Review'], fill: '#f59e0b' },
+        { x: 'Under Review', y: sm['Under Review'], fill: '#3b82f6' },
+        { x: 'Inactive', y: sm['Inactive'], fill: '#9e9e9e' },
       ];
 
       const tm: Record<string, number> = {};

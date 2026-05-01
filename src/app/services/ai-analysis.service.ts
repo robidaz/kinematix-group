@@ -172,9 +172,12 @@ export class AiAnalysisService {
     if (/active contract/.test(q)) {
       filter.contractStatus = 'Active';
       summaryParts.push('active contracts');
-    } else if (/prospect/.test(q)) {
-      filter.contractStatus = 'Prospect';
-      summaryParts.push('prospects only');
+    } else if (/under review/.test(q)) {
+      filter.contractStatus = 'Under Review';
+      summaryParts.push('under review only');
+    } else if (/inactive/.test(q)) {
+      filter.contractStatus = 'Inactive';
+      summaryParts.push('inactive only');
     }
 
     if (/hardware/.test(q)) {

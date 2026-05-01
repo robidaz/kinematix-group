@@ -1,5 +1,5 @@
 export type VendorType = 'Software' | 'Hardware' | 'Services' | 'Hybrid';
-export type ContractStatus = 'Active' | 'Prospect' | 'Under Review';
+export type ContractStatus = 'Active' | 'Under Review' | 'Inactive';
 export type EmployeeRole = 'Sales' | 'Technical';
 
 export interface Employee {
@@ -31,7 +31,9 @@ export interface Vendor {
   spendAllTime: number | null;
   dealsClosedYTD: number | null;
   dealsClosedAllTime: number | null;
-  renewalDate: string; // ISO date
+  marginPct: number;
+  grossProfitAllTime: number | null;
+  renewalDate: string | null;
   tags: string[];
   testimonials: Testimonial[];
 }
@@ -43,6 +45,7 @@ export interface VendorFilter {
   specializations?: string[];
   contractStatus?: string;
   tags?: string[];
+  marginPct?: { min?: number };
 }
 
 export interface AiFilterResult {
