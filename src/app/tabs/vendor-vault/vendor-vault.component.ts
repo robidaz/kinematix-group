@@ -109,10 +109,8 @@ export class VendorVaultComponent implements OnInit {
       this.grid?.element?.querySelector<HTMLElement>('.e-toolbar .e-toolbar-items');
     const host = this.colChipsHost?.nativeElement as HTMLElement | undefined;
     if (leftBar && host) {
-      host.style.display = 'flex';
-      host.style.alignSelf = 'center';
-      host.style.padding = '0 8px';
       leftBar.appendChild(host);
+      host.style.display = 'flex';
     }
   }
 
