@@ -72,6 +72,17 @@
   grid-template-columns: 44px 1fr auto;
   gap: 14px;
   align-items: start;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 44px 1fr;
+    grid-template-rows: auto auto;
+
+    .email-date {
+      grid-column: 2;
+      grid-row: 2;
+      padding-top: 2px;
+    }
+  }
 }
 
 .email-avatar {

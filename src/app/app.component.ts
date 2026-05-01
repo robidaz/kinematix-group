@@ -20,7 +20,7 @@ export class AppComponent {
   @ViewChild('mainTab') mainTab!: TabComponent;
 
   readonly headerItems = [
-    { text: 'Purpose' },
+    { text: 'Release Notes' },
     { text: 'Design Requirements' },
     { text: 'VendorVault' },
   ];
