@@ -310,20 +310,14 @@
 
 .vv-specs {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 4px;
-  align-items: center;
-  overflow: hidden;
+  align-items: flex-start;
+  padding: 2px 0;
 }
 
 .vv-specs__chip {
   white-space: nowrap;
-}
-
-.vv-specs__more {
-  font-size: 11px;
-  color: #6b778c;
-  font-style: italic;
 }
 
 .vv-spend {

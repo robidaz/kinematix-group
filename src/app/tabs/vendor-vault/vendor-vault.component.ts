@@ -82,11 +82,10 @@ export class VendorVaultComponent implements OnInit {
   readonly toolbar = ['Search'];
 
   readonly toggleableColumns = [
-    'Vendor', 'Type', 'Cost', 'Reputation',
+    'Vendor', 'Testimonials', 'Type', 'Cost', 'Reputation',
     'Specializations', 'Contract', 'Renewal',
     'Spend (YTD)', 'Spend (All-time)',
     'Deals (YTD)', 'Deals (All-time)',
-    'Testimonials',
   ];
 
   columnVisibility: Record<string, boolean> = Object.fromEntries(

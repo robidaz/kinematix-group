@@ -114,6 +114,19 @@
           </ng-template>
         </e-column>
 
+        <e-column field="testimonials" headerText="Testimonials" width="130" textAlign="Center" [allowSorting]="false">
+          <ng-template #template let-row>
+            <ng-container *ngIf="row.testimonials?.length > 0; else noTestimonials">
+              <span class="vv-testimonial-badge" (click)="$event.stopPropagation(); openDetail(row)">
+                {{ row.testimonials.length }}
+              </span>
+            </ng-container>
+            <ng-template #noTestimonials>
+              <button class="vv-testimonial-add" title="Add testimonial" (click)="$event.stopPropagation(); openDetail(row)">＋</button>
+            </ng-template>
+          </ng-template>
+        </e-column>
+
         <e-column field="type" headerText="Type" width="120">
           <ng-template #template let-row>
             <span [class]="typePillClass[row.type] || 'km-pill km-pill--gray'">{{ row.type }}</span>
@@ -138,8 +151,7 @@
         <e-column field="specializations" headerText="Specializations" width="280" [allowSorting]="false">
           <ng-template #template let-row>
             <div class="vv-specs">
-              <span class="km-pill km-pill--gray vv-specs__chip" *ngFor="let s of visibleSpecs(row.specializations)">{{ s }}</span>
-              <span class="vv-specs__more" *ngIf="overflowCount(row.specializations) > 0">+{{ overflowCount(row.specializations) }} more</span>
+              <span class="km-pill km-pill--gray vv-specs__chip" *ngFor="let s of row.specializations">{{ s }}</span>
             </div>
           </ng-template>
         </e-column>
@@ -150,7 +162,7 @@
           </ng-template>
         </e-column>
 
-        <e-column field="renewalDate" headerText="Renewal" width="120">
+        <e-column field="renewalDate" headerText="Renewal" width="145">
           <ng-template #template let-row>
             <span>{{ formatRenewalDate(row.renewalDate) }}</span>
           </ng-template>
@@ -177,19 +189,6 @@
         <e-column field="dealsClosedAllTime" headerText="Deals (All-time)" width="135" textAlign="Right">
           <ng-template #template let-row>
             <span class="vv-deals">{{ formatNumber(row.dealsClosedAllTime) }}</span>
-          </ng-template>
-        </e-column>
-
-        <e-column field="testimonials" headerText="Testimonials" width="130" textAlign="Center" [allowSorting]="false">
-          <ng-template #template let-row>
-            <ng-container *ngIf="row.testimonials?.length > 0; else noTestimonials">
-              <span class="vv-testimonial-badge" (click)="$event.stopPropagation(); openDetail(row)">
-                {{ row.testimonials.length }}
-              </span>
-            </ng-container>
-            <ng-template #noTestimonials>
-              <button class="vv-testimonial-add" title="Add testimonial" (click)="$event.stopPropagation(); openDetail(row)">＋</button>
-            </ng-template>
           </ng-template>
         </e-column>
       </e-columns>
