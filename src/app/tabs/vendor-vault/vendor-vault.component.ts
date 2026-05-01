@@ -83,10 +83,10 @@ export class VendorVaultComponent implements OnInit {
 
   readonly toggleableColumns = [
     'Vendor', 'Testimonials', 'Type', 'Cost', 'Reputation',
-    'Specializations', 'Contract', 'Renewal',
+    'Specializations', 'Contract', 'Renewal', 'Avg. Margin %',
     'Spend (YTD)', 'Spend (All-time)',
     'Deals (YTD)', 'Deals (All-time)',
-    'Margin %', 'Gross Profit (All-time)',
+    'Gross Profit (All-time)',
   ];
 
   readonly suggestions: string[] = [

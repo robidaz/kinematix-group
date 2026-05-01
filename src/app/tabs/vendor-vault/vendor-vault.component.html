@@ -146,6 +146,12 @@
           </ng-template>
         </e-column>
 
+        <e-column field="marginPct" headerText="Avg. Margin %" width="130" textAlign="Right">
+          <ng-template #template let-row>
+            <span class="vv-margin">{{ row.marginPct }}%</span>
+          </ng-template>
+        </e-column>
+
         <e-column field="spendYTD" headerText="Spend (YTD)" width="130" textAlign="Right">
           <ng-template #template let-row>
             <span class="vv-spend">{{ formatCurrency(row.spendYTD) }}</span>
@@ -167,12 +173,6 @@
         <e-column field="dealsClosedAllTime" headerText="Deals (All-time)" width="135" textAlign="Right">
           <ng-template #template let-row>
             <span class="vv-deals">{{ formatNumber(row.dealsClosedAllTime) }}</span>
-          </ng-template>
-        </e-column>
-
-        <e-column field="marginPct" headerText="Margin %" width="110" textAlign="Right">
-          <ng-template #template let-row>
-            <span class="vv-margin">{{ row.marginPct }}%</span>
           </ng-template>
         </e-column>
 
@@ -257,7 +257,7 @@
             <span class="vv-detail__value">{{ formatNumber(selectedVendor.dealsClosedAllTime) }}</span>
           </div>
           <div class="vv-detail__field">
-            <span class="vv-detail__label">Margin %</span>
+            <span class="vv-detail__label">Avg. Margin %</span>
             <span class="vv-detail__value">{{ selectedVendor.marginPct }}%</span>
           </div>
           <div class="vv-detail__field">
