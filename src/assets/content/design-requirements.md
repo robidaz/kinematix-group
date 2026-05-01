@@ -10,7 +10,7 @@
 
 ## 0. Disclaimer
 
-VendorVault is a **proof of concept** formulated entirely by Zach Robida to demonstrate the ability to leverage AI-assisted development to rapidly create value-added tools — without sacrificing quality. The goal was to show that modern AI tooling can meaningfully compress the gap between idea and working product, while still producing something polished and purposeful. This entire application went from design to deployment in ~5 hours and cost ~$30 including token consumption and domain name.
+VendorVault is a **proof of concept** formulated entirely by Zach Robida to demonstrate the ability to leverage AI-assisted development to rapidly create value-added tools — without sacrificing quality. The goal was to show that modern AI tooling can meaningfully compress the gap between idea and working product, while still producing something polished and purposeful. This entire application went from design to deployment in ~7 hours and cost ~$35 including token consumption and domain name.
 
 This application was designed and built using the assistance of **Claude Opus 4.7**.
 
