@@ -110,6 +110,8 @@ export class VendorVaultComponent implements OnInit {
     const host = this.colChipsHost?.nativeElement as HTMLElement | undefined;
     if (leftBar && host) {
       host.style.display = 'flex';
+      host.style.alignSelf = 'center';
+      host.style.padding = '0 8px';
       leftBar.appendChild(host);
     }
   }
