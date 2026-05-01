@@ -198,15 +198,6 @@
   align-items: center;
 }
 
-// toolbar-left is display:table so align-self doesn't work;
-// use absolute centering relative to the 42px toolbar-left container
-::ng-deep .e-gridtoolbar .e-toolbar-left .vv-col-toggle__chips {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  padding: 0 8px;
-}
 
 .vv-col-toggle__chip {
   font-size: 12px;

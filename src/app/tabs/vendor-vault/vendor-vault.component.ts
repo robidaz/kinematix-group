@@ -111,6 +111,14 @@ export class VendorVaultComponent implements OnInit {
     if (leftBar && host) {
       leftBar.appendChild(host);
       host.style.display = 'flex';
+      host.style.flexWrap = 'wrap';
+      host.style.gap = '6px';
+      host.style.alignItems = 'center';
+      host.style.position = 'absolute';
+      host.style.top = '50%';
+      host.style.transform = 'translateY(-50%)';
+      host.style.left = '0';
+      host.style.padding = '0 8px';
     }
   }
 
