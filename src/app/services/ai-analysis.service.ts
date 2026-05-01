@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, firstValueFrom, map, shareReplay } from 'rxjs';
+import { Observable, firstValueFrom, map, shareReplay, catchError, of } from 'rxjs';
 import { AiFilterResult, Vendor, VendorFilter } from '../models/vendor';
 
 interface AnthropicMessageResponse {
@@ -24,9 +24,12 @@ export class AiAnalysisService {
 
   loadApiKey(): Observable<string> {
     if (!this.apiKey$) {
+      // Try server endpoint (Heroku Config Var) first, fall back to asset file (local ng serve)
       this.apiKey$ = this.http
         .get('/api/config/anthropic-key', { responseType: 'text' })
         .pipe(
+          catchError(() => this.http.get('assets/config/anthropic_key.txt', { responseType: 'text' })),
+          catchError(() => of('')),
           map((raw) => raw.trim()),
           shareReplay(1),
         );
