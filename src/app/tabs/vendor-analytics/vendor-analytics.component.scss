@@ -1,0 +1,98 @@
+.va-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #f8f9fb;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.va-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.va-kpi-card {
+  background: #fff;
+  border: 1px solid #e1e4ea;
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.va-kpi-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--theme-primary);
+  line-height: 1.1;
+}
+
+.va-kpi-star {
+  font-size: 20px;
+  color: #f59e0b;
+  vertical-align: baseline;
+}
+
+.va-kpi-label {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.va-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.va-chart-card {
+  background: #fff;
+  border: 1px solid #e1e4ea;
+  border-radius: 10px;
+  padding: 20px 20px 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.va-chart-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 2px;
+}
+
+.va-chart-subtitle {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0 0 8px;
+}
+
+@media (max-width: 900px) {
+  .va-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .va-row-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .va-container {
+    padding: 16px;
+  }
+
+  .va-kpi-card {
+    padding: 14px 16px;
+  }
+
+  .va-kpi-value {
+    font-size: 22px;
+  }
+}

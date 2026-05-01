@@ -10,9 +10,11 @@
 
 ## 0. Disclaimer
 
-VendorVault is a **proof of concept** formulated entirely by Zach Robida to demonstrate the ability to leverage AI-assisted development to rapidly create value-added tools — without sacrificing quality. The goal was to show that modern AI tooling can meaningfully compress the gap between idea and working product, while still producing something polished and purposeful. This entire application went from design to deployment in ~4 hours and cost ~$30 including token consumption and domain name.
+VendorVault is a **proof of concept** formulated entirely by Zach Robida to demonstrate the ability to leverage AI-assisted development to rapidly create value-added tools — without sacrificing quality. The goal was to show that modern AI tooling can meaningfully compress the gap between idea and working product, while still producing something polished and purposeful. This entire application went from design to deployment in ~5 hours and cost ~$30 including token consumption and domain name.
 
-This application was designed and built using the assistance of **Claude Opus 4.7**. All vendor data is simulated for demonstration purposes — company names may be real, but all metrics, contract values, and performance scores are entirely **fabricated** and should not be interpreted as factual.
+This application was designed and built using the assistance of **Claude Opus 4.7**.
+
+All vendor data is simulated for demonstration purposes — company names may be real, but all metrics, contract values, and performance scores are entirely **fabricated** and should not be interpreted as factual.
 
 ---
 
@@ -36,7 +38,7 @@ Each requirement above is addressed in the application as follows.
 
 ### Single, authoritative vendor catalog
 
-The application ships with a curated catalog of ~250 vendors stored in a local JSON asset (`vendors.json`). Each entry conforms to a single schema covering identity, classification, financial, reputation, contract, and specialization fields. The catalog is rendered via a Syncfusion DataGrid with sortable columns, search, and column visibility controls so a user can shape the view to the question they're asking.
+The application ships with a curated catalog of ~250 vendors stored in a local JSON asset (`vendors.json`), but in a production tool would pull from an API endpoint or database. Each entry conforms to a single schema covering identity, classification, financial, reputation, contract, and specialization fields. The catalog is rendered via a DataGrid with sortable columns, search, and column visibility controls so a user can shape the view to the question they're asking.
 
 ### Cost transparency
 
@@ -52,7 +54,7 @@ Contract status is rendered as a colored badge — green (Active), blue (Prospec
 
 ### Specialization-driven discovery
 
-Specializations are stored as an array per vendor and rendered as Syncfusion Chips in the grid (with a "+N more" overflow label when a vendor carries many specializations). The AI matching layer reads specializations as a filterable input and matches user queries against them.
+Specializations are stored as an array per vendor and rendered as Chips in the grid (with a "+N more" overflow label when a vendor carries many specializations). The AI matching layer reads specializations as a filterable input and matches user queries against them.
 
 ### AI-assisted vendor matching
 

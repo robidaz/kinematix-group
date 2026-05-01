@@ -3,6 +3,7 @@ import { TabModule, TabComponent } from '@syncfusion/ej2-angular-navigations';
 import { EmailMemoComponent } from './tabs/email-memo/email-memo.component';
 import { DesignRequirementsComponent } from './tabs/design-requirements/design-requirements.component';
 import { VendorVaultComponent } from './tabs/vendor-vault/vendor-vault.component';
+import { VendorAnalyticsComponent } from './tabs/vendor-analytics/vendor-analytics.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { VendorVaultComponent } from './tabs/vendor-vault/vendor-vault.component
     EmailMemoComponent,
     DesignRequirementsComponent,
     VendorVaultComponent,
+    VendorAnalyticsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -20,9 +22,10 @@ export class AppComponent {
   @ViewChild('mainTab') mainTab!: TabComponent;
 
   readonly headerItems = [
-    { text: 'Release Notes' },
+    { text: 'Company Memo' },
     { text: 'Design Requirements' },
     { text: 'VendorVault' },
+    { text: 'Analytics' },
   ];
 
   goToFirstTab(): void {

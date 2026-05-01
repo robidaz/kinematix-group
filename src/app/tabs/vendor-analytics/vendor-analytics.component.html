@@ -1,0 +1,76 @@
+<div class="va-container">
+
+  <!-- KPI row -->
+  <div class="va-kpis">
+    <div class="va-kpi-card">
+      <span class="va-kpi-value">{{ totalVendors }}</span>
+      <span class="va-kpi-label">Total Vendors</span>
+    </div>
+    <div class="va-kpi-card">
+      <span class="va-kpi-value">{{ totalSpendLabel }}</span>
+      <span class="va-kpi-label">Total Annual Spend</span>
+    </div>
+    <div class="va-kpi-card">
+      <span class="va-kpi-value">{{ avgReputation }}&thinsp;<span class="va-kpi-star">★</span></span>
+      <span class="va-kpi-label">Avg. Reputation</span>
+    </div>
+    <div class="va-kpi-card">
+      <span class="va-kpi-value">{{ activeCount }}</span>
+      <span class="va-kpi-label">Active Contracts</span>
+    </div>
+  </div>
+
+  <ng-container *ngIf="ready">
+
+    <!-- Row 1: donut + column -->
+    <div class="va-row-2col">
+      <div class="va-chart-card">
+        <h3 class="va-chart-title">Contract Status</h3>
+        <ejs-accumulationchart background="transparent"
+          [legendSettings]="statusLegend" [tooltip]="statusTooltip" height="300" width="100%">
+          <e-accumulation-series-collection>
+            <e-accumulation-series [dataSource]="statusData" xName="x" yName="y"
+              innerRadius="55%" pointColorMapping="fill" [dataLabel]="statusDataLabel">
+            </e-accumulation-series>
+          </e-accumulation-series-collection>
+        </ejs-accumulationchart>
+      </div>
+
+      <div class="va-chart-card">
+        <h3 class="va-chart-title">Annual Spend by Type</h3>
+        <ejs-chart background="transparent" [primaryXAxis]="spendXAxis" [primaryYAxis]="spendYAxis"
+          [tooltip]="spendTooltip" height="300" width="100%">
+          <e-series-collection>
+            <e-series [dataSource]="typeSpendData" type="Column" xName="x" yName="y"
+              fill="rgba(245,102,0,0.85)" [cornerRadius]="spendCornerRadius">
+            </e-series>
+          </e-series-collection>
+        </ejs-chart>
+      </div>
+    </div>
+
+    <!-- Row 2: bubble -->
+    <div class="va-chart-card">
+      <h3 class="va-chart-title">Reputation vs. Annual Spend</h3>
+      <p class="va-chart-subtitle">Bubble size reflects cost tier ($ – $$$$) · Colored by vendor type</p>
+      <ejs-chart background="transparent" [primaryXAxis]="repXAxis" [primaryYAxis]="repYAxis"
+        [legendSettings]="bubbleLegend" [tooltip]="bubbleTooltip" height="400" width="100%">
+        <e-series-collection>
+          <e-series [dataSource]="softwareData" type="Bubble" xName="x" yName="y" size="size"
+            name="Software" fill="rgba(82,45,128,0.65)" [minRadius]="0.25" [maxRadius]="1.25">
+          </e-series>
+          <e-series [dataSource]="hybridData" type="Bubble" xName="x" yName="y" size="size"
+            name="Hybrid" fill="rgba(245,102,0,0.65)" [minRadius]="0.25" [maxRadius]="1.25">
+          </e-series>
+          <e-series [dataSource]="hardwareData" type="Bubble" xName="x" yName="y" size="size"
+            name="Hardware" fill="rgba(59,130,246,0.65)" [minRadius]="0.25" [maxRadius]="1.25">
+          </e-series>
+          <e-series [dataSource]="servicesData" type="Bubble" xName="x" yName="y" size="size"
+            name="Services" fill="rgba(16,185,129,0.65)" [minRadius]="0.25" [maxRadius]="1.25">
+          </e-series>
+        </e-series-collection>
+      </ejs-chart>
+    </div>
+
+  </ng-container>
+</div>
