@@ -27,7 +27,15 @@ app.get('/api/config/anthropic-key', (_req, res) => {
   res.type('text').send(process.env.ANTHROPIC_KEY || '');
 });
 
-app.use(express.static(distDir, { maxAge: '1h' }));
+app.use(express.static(distDir, {
+  maxAge: '1h',
+  setHeaders: (res, filePath) => {
+    // JSON data assets change with every deployment — never cache them
+    if (filePath.endsWith('.json')) {
+      res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+    }
+  },
+}));
 
 // SPA fallback — every unmatched route serves index.html
 app.get('*', (_req, res) => {
