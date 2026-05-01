@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
-  ElementRef,
   ViewChild,
   inject,
   OnInit,
@@ -52,7 +51,6 @@ export class VendorVaultComponent implements OnInit {
 
   @ViewChild('grid', { static: false }) grid?: GridComponent;
   @ViewChild('toast', { static: false }) toast?: ToastComponent;
-  @ViewChild('colChipsHost', { static: false }) colChipsHost?: ElementRef;
 
   allVendors: Vendor[] = [];
   visibleVendors: Vendor[] = [];
@@ -82,45 +80,6 @@ export class VendorVaultComponent implements OnInit {
   };
 
   readonly toolbar = ['Search'];
-
-  readonly toggleableColumns = [
-    'Vendor', 'Testimonials', 'Type', 'Cost', 'Reputation',
-    'Specializations', 'Contract', 'Renewal',
-    'Spend (YTD)', 'Spend (All-time)',
-    'Deals (YTD)', 'Deals (All-time)',
-  ];
-
-  columnVisibility: Record<string, boolean> = Object.fromEntries(
-    this.toggleableColumns.map(h => [h, true])
-  );
-
-  toggleColumn(headerText: string): void {
-    this.columnVisibility[headerText] = !this.columnVisibility[headerText];
-    if (this.columnVisibility[headerText]) {
-      this.grid?.showColumns(headerText);
-    } else {
-      this.grid?.hideColumns(headerText);
-    }
-  }
-
-  onGridCreated(): void {
-    const leftBar =
-      this.grid?.element?.querySelector<HTMLElement>('.e-toolbar .e-toolbar-left') ??
-      this.grid?.element?.querySelector<HTMLElement>('.e-toolbar .e-toolbar-items');
-    const host = this.colChipsHost?.nativeElement as HTMLElement | undefined;
-    if (leftBar && host) {
-      leftBar.appendChild(host);
-      host.style.display = 'flex';
-      host.style.flexWrap = 'wrap';
-      host.style.gap = '6px';
-      host.style.alignItems = 'center';
-      host.style.position = 'absolute';
-      host.style.top = '50%';
-      host.style.transform = 'translateY(-50%)';
-      host.style.left = '0';
-      host.style.padding = '0 8px';
-    }
-  }
 
   readonly suggestions: string[] = [
     "Looking for a mid-range cybersecurity vendor with strong compliance support",
@@ -306,14 +265,6 @@ export class VendorVaultComponent implements OnInit {
     const d = new Date(value);
     if (isNaN(d.getTime())) return value;
     return d.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
-  }
-
-  visibleSpecs(specs: string[]): string[] {
-    return (specs ?? []).slice(0, 3);
-  }
-
-  overflowCount(specs: string[]): number {
-    return Math.max(0, (specs?.length ?? 0) - 3);
   }
 
   onLogoError(event: Event, vendor: Vendor): void {

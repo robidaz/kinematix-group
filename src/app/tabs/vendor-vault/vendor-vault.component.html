@@ -66,17 +66,6 @@
     <p class="vv-prompt__powered-by">Powered by Anthropic's Claude Sonnet model</p>
   </div>
 
-  <!-- Column chips rendered by Angular, injected into grid toolbar after grid init -->
-  <div #colChipsHost class="vv-col-toggle__chips" style="display:none">
-    <span
-      *ngFor="let col of toggleableColumns"
-      class="vv-col-toggle__chip"
-      [class.vv-col-toggle__chip--hidden]="!columnVisibility[col]"
-      (click)="toggleColumn(col)">
-      {{ col }}
-    </span>
-  </div>
-
   <!-- Vendor Grid -->
   <div class="vv-grid-wrap">
     <ejs-grid
@@ -88,7 +77,6 @@
       [pageSettings]="pageSettings"
       [toolbar]="toolbar"
       (rowSelected)="onRowClick($event)"
-      (created)="onGridCreated()"
       gridLines="Horizontal"
       height="640">
       <e-columns>

@@ -191,37 +191,10 @@
   text-align: right;
 }
 
-/* ----- Column toggle chips (injected into grid toolbar) ----- */
-.vv-col-toggle__chips {
-  flex-wrap: wrap;
-  gap: 6px;
-  align-items: center;
-}
-
-
-.vv-col-toggle__chip {
-  font-size: 12px;
-  font-weight: 500;
-  color: #1d2330;
-  cursor: pointer;
-  padding: 3px 10px;
-  border-radius: 4px;
-  border: 1px solid #d0d7e3;
-  background: #f8f9fb;
-  transition: background 0.12s, color 0.12s, border-color 0.12s;
-  user-select: none;
-
-  &:hover {
-    background: #e8edf5;
-    border-color: #b0bbcf;
-  }
-
-  &--hidden {
-    color: #aab4c6;
-    background: #f4f5f7;
-    border-color: #e1e4ea;
-    text-decoration: line-through;
-  }
+/* Move the grid Search input to the left side of the toolbar */
+::ng-deep .e-gridtoolbar .e-toolbar-items.e-tbar-pos .e-toolbar-right {
+  left: 0;
+  right: auto;
 }
 
 /* ----- Grid ----- */
