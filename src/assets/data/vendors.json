@@ -23,8 +23,8 @@
       "HIPAA",
       "On-Prem"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 900000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 10,
     "testimonials": [
@@ -35,7 +35,7 @@
       }
     ],
     "marginPct": 15,
-    "grossProfitAllTime": 135000
+    "grossProfitAllTime": 120000
   },
   {
     "id": "actifio",
@@ -61,13 +61,13 @@
       "Tier 1",
       "FedRAMP"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 4800000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 28,
     "testimonials": [],
     "marginPct": 17,
-    "grossProfitAllTime": 816000
+    "grossProfitAllTime": 221000
   },
   {
     "id": "appdynamics",
@@ -93,8 +93,8 @@
       "Renewing",
       "Cloud-Native"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 7200000,
+    "spendYTD": 700000,
+    "spendAllTime": 1600000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 20,
     "testimonials": [
@@ -115,7 +115,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 432000
+    "grossProfitAllTime": 96000
   },
   {
     "id": "arista",
@@ -140,13 +140,13 @@
       "Tier 2",
       "Cloud-Native"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 4800000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 27,
     "testimonials": [],
     "marginPct": 9,
-    "grossProfitAllTime": 432000
+    "grossProfitAllTime": 117000
   },
   {
     "id": "broadcom",
@@ -173,8 +173,8 @@
       "New",
       "Renewing"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 68000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 9800000,
     "dealsClosedYTD": 19,
     "dealsClosedAllTime": 85,
     "testimonials": [
@@ -195,7 +195,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 4080000
+    "grossProfitAllTime": 588000
   },
   {
     "id": "calabrio",
@@ -222,13 +222,13 @@
       "Strategic",
       "Tier 1"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 36000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 5500000,
     "dealsClosedYTD": 10,
     "dealsClosedAllTime": 44,
     "testimonials": [],
     "marginPct": 13,
-    "grossProfitAllTime": 4680000
+    "grossProfitAllTime": 715000
   },
   {
     "id": "carbonhelix",
@@ -320,13 +320,13 @@
       "Mid-Market",
       "Tier 1"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 25600000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4100000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 89,
     "testimonials": [],
     "marginPct": 9,
-    "grossProfitAllTime": 2304000
+    "grossProfitAllTime": 369000
   },
   {
     "id": "citrix",
@@ -350,8 +350,8 @@
       "Compliance",
       "On-Prem"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 45000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 6700000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 27,
     "testimonials": [
@@ -367,7 +367,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 2700000
+    "grossProfitAllTime": 402000
   },
   {
     "id": "commvault",
@@ -487,8 +487,8 @@
       "On-Prem",
       "Compliance"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 32000000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4900000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 47,
     "testimonials": [
@@ -509,7 +509,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 2560000
+    "grossProfitAllTime": 392000
   },
   {
     "id": "datastorage",
@@ -535,8 +535,8 @@
       "Strategic",
       "Renewing"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 2400000,
+    "spendYTD": 700000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 38,
     "testimonials": [
@@ -552,7 +552,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 144000
+    "grossProfitAllTime": 60000
   },
   {
     "id": "dcblox",
@@ -577,13 +577,13 @@
       "FedRAMP",
       "HIPAA"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 12000000,
+    "spendYTD": 1050000,
+    "spendAllTime": 2200000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 31,
     "testimonials": [],
     "marginPct": 7,
-    "grossProfitAllTime": 840000
+    "grossProfitAllTime": 154000
   },
   {
     "id": "dell",
@@ -609,8 +609,8 @@
       "Strategic",
       "Renewing"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 6400000,
+    "spendYTD": 800000,
+    "spendAllTime": 1500000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 19,
     "testimonials": [
@@ -631,7 +631,7 @@
       }
     ],
     "marginPct": 7,
-    "grossProfitAllTime": 448000
+    "grossProfitAllTime": 105000
   },
   {
     "id": "duo",
@@ -659,8 +659,8 @@
       "Renewing",
       "Tier 1"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 24000000,
+    "spendYTD": 1850000,
+    "spendAllTime": 3900000,
     "dealsClosedYTD": 13,
     "dealsClosedAllTime": 96,
     "testimonials": [
@@ -681,7 +681,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 4320000
+    "grossProfitAllTime": 702000
   },
   {
     "id": "eaton",
@@ -739,8 +739,8 @@
       "Enterprise",
       "FedRAMP"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 85000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 12100000,
     "dealsClosedYTD": 19,
     "dealsClosedAllTime": 57,
     "testimonials": [
@@ -761,7 +761,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 8500000
+    "grossProfitAllTime": 1210000
   },
   {
     "id": "hcl",
@@ -787,13 +787,13 @@
       "HIPAA",
       "Cloud-Native"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 120000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 16800000,
     "dealsClosedYTD": 12,
     "dealsClosedAllTime": 49,
     "testimonials": [],
     "marginPct": 6,
-    "grossProfitAllTime": 7200000
+    "grossProfitAllTime": 1008000
   },
   {
     "id": "helpsystems",
@@ -816,13 +816,13 @@
       "SaaS",
       "Enterprise"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 25600000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4100000,
     "dealsClosedYTD": 17,
     "dealsClosedAllTime": 89,
     "testimonials": [],
     "marginPct": 9,
-    "grossProfitAllTime": 2304000
+    "grossProfitAllTime": 369000
   },
   {
     "id": "ibm",
@@ -914,8 +914,8 @@
       "Strategic",
       "PCI-DSS"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1850000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 12,
     "dealsClosedAllTime": 49,
     "testimonials": [
@@ -936,7 +936,7 @@
       }
     ],
     "marginPct": 12,
-    "grossProfitAllTime": 1728000
+    "grossProfitAllTime": 312000
   },
   {
     "id": "microsoft",
@@ -1023,8 +1023,8 @@
       "Tier 1",
       "On-Prem"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4800000,
+    "spendYTD": 550000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 7,
     "testimonials": [
@@ -1040,7 +1040,7 @@
       }
     ],
     "marginPct": 17,
-    "grossProfitAllTime": 816000
+    "grossProfitAllTime": 221000
   },
   {
     "id": "netbrain",
@@ -1065,8 +1065,8 @@
       "Cloud-Native",
       "SaaS"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 1200000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 13,
     "testimonials": [
@@ -1087,7 +1087,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 108000
+    "grossProfitAllTime": 72000
   },
   {
     "id": "nutanix",
@@ -1146,8 +1146,8 @@
       "Renewing",
       "Mid-Market"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 12000000,
+    "spendYTD": 1050000,
+    "spendAllTime": 2200000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 35,
     "testimonials": [
@@ -1163,7 +1163,7 @@
       }
     ],
     "marginPct": 11,
-    "grossProfitAllTime": 1320000
+    "grossProfitAllTime": 242000
   },
   {
     "id": "opengear",
@@ -1254,8 +1254,8 @@
       "Renewing",
       "FedRAMP"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 21600000,
+    "spendYTD": 1450000,
+    "spendAllTime": 3500000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 47,
     "testimonials": [
@@ -1266,7 +1266,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 1728000
+    "grossProfitAllTime": 280000
   },
   {
     "id": "precisely",
@@ -1293,13 +1293,13 @@
       "New",
       "Strategic"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 2500000,
+    "spendYTD": 450000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 8,
     "testimonials": [],
     "marginPct": 12,
-    "grossProfitAllTime": 300000
+    "grossProfitAllTime": 120000
   },
   {
     "id": "predator",
@@ -1357,13 +1357,13 @@
       "Tier 1",
       "HIPAA"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 27000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 4300000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 34,
     "testimonials": [],
     "marginPct": 19,
-    "grossProfitAllTime": 5130000
+    "grossProfitAllTime": 817000
   },
   {
     "id": "quantum",
@@ -1390,13 +1390,13 @@
       "Tier 1",
       "PCI-DSS"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 85000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 12100000,
     "dealsClosedYTD": 23,
     "dealsClosedAllTime": 87,
     "testimonials": [],
     "marginPct": 17,
-    "grossProfitAllTime": 14450000
+    "grossProfitAllTime": 2057000
   },
   {
     "id": "raritan",
@@ -1420,8 +1420,8 @@
       "Strategic",
       "Renewing"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 900000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 16,
     "testimonials": [
@@ -1437,7 +1437,7 @@
       }
     ],
     "marginPct": 14,
-    "grossProfitAllTime": 126000
+    "grossProfitAllTime": 112000
   },
   {
     "id": "redhat",
@@ -1465,13 +1465,13 @@
       "Enterprise",
       "SMB"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 1000000,
+    "spendYTD": 450000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 21,
     "testimonials": [],
     "marginPct": 12,
-    "grossProfitAllTime": 120000
+    "grossProfitAllTime": 96000
   },
   {
     "id": "reliaquest",
@@ -1496,8 +1496,8 @@
       "New",
       "Enterprise"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 9600000,
+    "spendYTD": 1850000,
+    "spendAllTime": 1900000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 45,
     "testimonials": [
@@ -1518,7 +1518,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 576000
+    "grossProfitAllTime": 114000
   },
   {
     "id": "riverbed",
@@ -1543,8 +1543,8 @@
       "On-Prem",
       "SaaS"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 24000000,
+    "spendYTD": 1850000,
+    "spendAllTime": 3900000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 57,
     "testimonials": [
@@ -1555,7 +1555,7 @@
       }
     ],
     "marginPct": 11,
-    "grossProfitAllTime": 2640000
+    "grossProfitAllTime": 429000
   },
   {
     "id": "roomready",
@@ -1580,8 +1580,8 @@
       "Tier 1",
       "New"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 1600000,
+    "spendYTD": 550000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 9,
     "testimonials": [
@@ -1597,7 +1597,7 @@
       }
     ],
     "marginPct": 19,
-    "grossProfitAllTime": 304000
+    "grossProfitAllTime": 152000
   },
   {
     "id": "rubrik",
@@ -1656,13 +1656,13 @@
       "Mid-Market",
       "SMB"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1850000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 68,
     "testimonials": [],
     "marginPct": 16,
-    "grossProfitAllTime": 2304000
+    "grossProfitAllTime": 416000
   },
   {
     "id": "tierpoint",
@@ -1688,13 +1688,13 @@
       "On-Prem",
       "HIPAA"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 900000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 14,
     "testimonials": [],
     "marginPct": 9,
-    "grossProfitAllTime": 81000
+    "grossProfitAllTime": 72000
   },
   {
     "id": "trendmicro",
@@ -1720,13 +1720,13 @@
       "SaaS",
       "HIPAA"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 48000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 7100000,
     "dealsClosedYTD": 19,
     "dealsClosedAllTime": 95,
     "testimonials": [],
     "marginPct": 19,
-    "grossProfitAllTime": 9120000
+    "grossProfitAllTime": 1349000
   },
   {
     "id": "turbonomic",
@@ -1782,8 +1782,8 @@
       "SMB",
       "FedRAMP"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 8000000,
+    "spendYTD": 800000,
+    "spendAllTime": 1700000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 14,
     "testimonials": [
@@ -1799,7 +1799,7 @@
       }
     ],
     "marginPct": 7,
-    "grossProfitAllTime": 560000
+    "grossProfitAllTime": 119000
   },
   {
     "id": "varonis",
@@ -1825,13 +1825,13 @@
       "Strategic",
       "Tier 2"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 68000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 9800000,
     "dealsClosedYTD": 20,
     "dealsClosedAllTime": 70,
     "testimonials": [],
     "marginPct": 18,
-    "grossProfitAllTime": 12240000
+    "grossProfitAllTime": 1764000
   },
   {
     "id": "veeam",
@@ -1858,8 +1858,8 @@
       "FedRAMP",
       "SaaS"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 1200000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 7,
     "testimonials": [
@@ -1875,7 +1875,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 108000
+    "grossProfitAllTime": 72000
   },
   {
     "id": "veritas",
@@ -1902,8 +1902,8 @@
       "Tier 1",
       "Mid-Market"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 1500000,
+    "spendYTD": 450000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 7,
     "testimonials": [
@@ -1914,7 +1914,7 @@
       }
     ],
     "marginPct": 16,
-    "grossProfitAllTime": 240000
+    "grossProfitAllTime": 128000
   },
   {
     "id": "vmware",
@@ -1942,8 +1942,8 @@
       "SMB",
       "Renewing"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4000000,
+    "spendYTD": 550000,
+    "spendAllTime": 1200000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 23,
     "testimonials": [
@@ -1964,7 +1964,7 @@
       }
     ],
     "marginPct": 11,
-    "grossProfitAllTime": 440000
+    "grossProfitAllTime": 132000
   },
   {
     "id": "zerto",
@@ -1990,8 +1990,8 @@
       "Mid-Market",
       "FedRAMP"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 19200000,
+    "spendYTD": 1850000,
+    "spendAllTime": 3200000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 70,
     "testimonials": [
@@ -2002,7 +2002,7 @@
       }
     ],
     "marginPct": 13,
-    "grossProfitAllTime": 2496000
+    "grossProfitAllTime": 416000
   },
   {
     "id": "aruba",
@@ -2158,8 +2158,8 @@
       "SMB",
       "Enterprise"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 2500000,
+    "spendYTD": 450000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 19,
     "testimonials": [
@@ -2170,7 +2170,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 225000
+    "grossProfitAllTime": 90000
   },
   {
     "id": "fortinet",
@@ -2193,13 +2193,13 @@
       "Renewing",
       "FedRAMP"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 68000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 9800000,
     "dealsClosedYTD": 20,
     "dealsClosedAllTime": 141,
     "testimonials": [],
     "marginPct": 18,
-    "grossProfitAllTime": 12240000
+    "grossProfitAllTime": 1764000
   },
   {
     "id": "gigamon",
@@ -2226,13 +2226,13 @@
       "Strategic",
       "On-Prem"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 8000000,
+    "spendYTD": 800000,
+    "spendAllTime": 1700000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 10,
     "testimonials": [],
     "marginPct": 17,
-    "grossProfitAllTime": 1360000
+    "grossProfitAllTime": 289000
   },
   {
     "id": "infinidat",
@@ -2287,8 +2287,8 @@
       "Mid-Market",
       "Tier 1"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 6400000,
+    "spendYTD": 800000,
+    "spendAllTime": 1500000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 17,
     "testimonials": [
@@ -2304,7 +2304,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 1152000
+    "grossProfitAllTime": 270000
   },
   {
     "id": "paloalto",
@@ -2329,13 +2329,13 @@
       "Strategic",
       "Mid-Market"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 60000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 8700000,
     "dealsClosedYTD": 28,
     "dealsClosedAllTime": 183,
     "testimonials": [],
     "marginPct": 14,
-    "grossProfitAllTime": 8400000
+    "grossProfitAllTime": 1218000
   },
   {
     "id": "variphy",
@@ -2421,8 +2421,8 @@
       "Renewing",
       "Strategic"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 38400000,
+    "spendYTD": 2350000,
+    "spendAllTime": 5800000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 21,
     "testimonials": [
@@ -2438,7 +2438,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 3840000
+    "grossProfitAllTime": 580000
   },
   {
     "id": "aireye",
@@ -2462,8 +2462,8 @@
       "Tier 2",
       "SaaS"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 2500000,
+    "spendYTD": 450000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 15,
     "testimonials": [
@@ -2474,7 +2474,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 250000
+    "grossProfitAllTime": 100000
   },
   {
     "id": "armis",
@@ -2500,8 +2500,8 @@
       "SMB",
       "Tier 1"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4800000,
+    "spendYTD": 550000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 5,
     "testimonials": [
@@ -2512,7 +2512,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 384000
+    "grossProfitAllTime": 104000
   },
   {
     "id": "cloverhound",
@@ -2572,8 +2572,8 @@
       "Enterprise",
       "Renewing"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 60000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 8700000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 38,
     "testimonials": [
@@ -2589,7 +2589,7 @@
       }
     ],
     "marginPct": 12,
-    "grossProfitAllTime": 7200000
+    "grossProfitAllTime": 1044000
   },
   {
     "id": "ownbackup",
@@ -2615,8 +2615,8 @@
       "Mid-Market",
       "Compliance"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 68000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 9800000,
     "dealsClosedYTD": 19,
     "dealsClosedAllTime": 140,
     "testimonials": [
@@ -2632,7 +2632,7 @@
       }
     ],
     "marginPct": 16,
-    "grossProfitAllTime": 10880000
+    "grossProfitAllTime": 1568000
   },
   {
     "id": "vectra",
@@ -2660,8 +2660,8 @@
       "Mid-Market",
       "Compliance"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 4800000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 58,
     "testimonials": [
@@ -2672,7 +2672,7 @@
       }
     ],
     "marginPct": 15,
-    "grossProfitAllTime": 720000
+    "grossProfitAllTime": 195000
   },
   {
     "id": "versa",
@@ -2730,13 +2730,13 @@
       "PCI-DSS",
       "Cloud-Native"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 27000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 4300000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 41,
     "testimonials": [],
     "marginPct": 10,
-    "grossProfitAllTime": 2700000
+    "grossProfitAllTime": 430000
   },
   {
     "id": "glean",
@@ -2761,8 +2761,8 @@
       "Strategic",
       "New"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 24000000,
+    "spendYTD": 1850000,
+    "spendAllTime": 3900000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 58,
     "testimonials": [
@@ -2778,7 +2778,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 1920000
+    "grossProfitAllTime": 312000
   },
   {
     "id": "crowdstrike",
@@ -2804,8 +2804,8 @@
       "Enterprise",
       "On-Prem"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 12000000,
+    "spendYTD": 1050000,
+    "spendAllTime": 2200000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 16,
     "testimonials": [
@@ -2821,7 +2821,7 @@
       }
     ],
     "marginPct": 19,
-    "grossProfitAllTime": 2280000
+    "grossProfitAllTime": 418000
   },
   {
     "id": "snowflake",
@@ -2847,8 +2847,8 @@
       "HIPAA",
       "Strategic"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 72000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 10300000,
     "dealsClosedYTD": 21,
     "dealsClosedAllTime": 111,
     "testimonials": [
@@ -2869,7 +2869,7 @@
       }
     ],
     "marginPct": 13,
-    "grossProfitAllTime": 9360000
+    "grossProfitAllTime": 1339000
   },
   {
     "id": "servicenow",
@@ -2895,8 +2895,8 @@
       "Tier 2",
       "Cloud-Native"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 85000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 12100000,
     "dealsClosedYTD": 22,
     "dealsClosedAllTime": 114,
     "testimonials": [
@@ -2912,7 +2912,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 5100000
+    "grossProfitAllTime": 726000
   },
   {
     "id": "splunk",
@@ -2938,13 +2938,13 @@
       "HIPAA",
       "Tier 2"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 2400000,
+    "spendYTD": 550000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 7,
     "testimonials": [],
     "marginPct": 18,
-    "grossProfitAllTime": 432000
+    "grossProfitAllTime": 180000
   },
   {
     "id": "cloudflare",
@@ -2970,8 +2970,8 @@
       "Tier 1",
       "New"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 9600000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1900000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 50,
     "testimonials": [
@@ -2982,7 +2982,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 864000
+    "grossProfitAllTime": 171000
   },
   {
     "id": "lacework",
@@ -3039,13 +3039,13 @@
       "Compliance",
       "Mid-Market"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 96000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 13500000,
     "dealsClosedYTD": 16,
     "dealsClosedAllTime": 90,
     "testimonials": [],
     "marginPct": 8,
-    "grossProfitAllTime": 7680000
+    "grossProfitAllTime": 1080000
   },
   {
     "id": "dynatrace",
@@ -3071,8 +3071,8 @@
       "Tier 2",
       "SMB"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 1200000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 6,
     "testimonials": [
@@ -3088,7 +3088,7 @@
       }
     ],
     "marginPct": 16,
-    "grossProfitAllTime": 192000
+    "grossProfitAllTime": 128000
   },
   {
     "id": "hashicorp",
@@ -3114,13 +3114,13 @@
       "Tier 2",
       "SaaS"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 25600000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4100000,
     "dealsClosedYTD": 10,
     "dealsClosedAllTime": 46,
     "testimonials": [],
     "marginPct": 7,
-    "grossProfitAllTime": 1792000
+    "grossProfitAllTime": 287000
   },
   {
     "id": "elastic",
@@ -3144,8 +3144,8 @@
       "SaaS",
       "Compliance"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 32000000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4900000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 41,
     "testimonials": [
@@ -3166,7 +3166,7 @@
       }
     ],
     "marginPct": 11,
-    "grossProfitAllTime": 3520000
+    "grossProfitAllTime": 539000
   },
   {
     "id": "mongodb",
@@ -3225,8 +3225,8 @@
       "SMB",
       "Tier 2"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 4800000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 30,
     "testimonials": [
@@ -3242,7 +3242,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 864000
+    "grossProfitAllTime": 234000
   },
   {
     "id": "datadog",
@@ -3299,8 +3299,8 @@
       "Tier 1",
       "Compliance"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 120000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 16800000,
     "dealsClosedYTD": 24,
     "dealsClosedAllTime": 185,
     "testimonials": [
@@ -3316,7 +3316,7 @@
       }
     ],
     "marginPct": 15,
-    "grossProfitAllTime": 18000000
+    "grossProfitAllTime": 2520000
   },
   {
     "id": "tenable",
@@ -3438,8 +3438,8 @@
       "Tier 2",
       "Strategic"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4800000,
+    "spendYTD": 550000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 13,
     "testimonials": [
@@ -3455,7 +3455,7 @@
       }
     ],
     "marginPct": 20,
-    "grossProfitAllTime": 960000
+    "grossProfitAllTime": 260000
   },
   {
     "id": "jumpcloud",
@@ -3482,8 +3482,8 @@
       "Cloud-Native",
       "HIPAA"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 120000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 16800000,
     "dealsClosedYTD": 14,
     "dealsClosedAllTime": 104,
     "testimonials": [
@@ -3504,7 +3504,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 10800000
+    "grossProfitAllTime": 1512000
   },
   {
     "id": "1password",
@@ -3562,8 +3562,8 @@
       "Mid-Market",
       "SaaS"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 9600000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1900000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 22,
     "testimonials": [
@@ -3579,7 +3579,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 768000
+    "grossProfitAllTime": 152000
   },
   {
     "id": "keeper-security",
@@ -3605,8 +3605,8 @@
       "PCI-DSS",
       "Enterprise"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 36000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 5500000,
     "dealsClosedYTD": 26,
     "dealsClosedAllTime": 136,
     "testimonials": [
@@ -3627,7 +3627,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 2880000
+    "grossProfitAllTime": 440000
   },
   {
     "id": "beyondtrust",
@@ -3653,8 +3653,8 @@
       "Tier 1",
       "Enterprise"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 96000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 13500000,
     "dealsClosedYTD": 16,
     "dealsClosedAllTime": 53,
     "testimonials": [
@@ -3670,7 +3670,7 @@
       }
     ],
     "marginPct": 16,
-    "grossProfitAllTime": 15360000
+    "grossProfitAllTime": 2160000
   },
   {
     "id": "cyberark",
@@ -3695,8 +3695,8 @@
       "Cloud-Native",
       "On-Prem"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 3200000,
+    "spendYTD": 550000,
+    "spendAllTime": 1100000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 21,
     "testimonials": [
@@ -3707,7 +3707,7 @@
       }
     ],
     "marginPct": 20,
-    "grossProfitAllTime": 640000
+    "grossProfitAllTime": 220000
   },
   {
     "id": "sailpoint",
@@ -3732,13 +3732,13 @@
       "Tier 2",
       "SMB"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4800000,
+    "spendYTD": 550000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 17,
     "testimonials": [],
     "marginPct": 16,
-    "grossProfitAllTime": 768000
+    "grossProfitAllTime": 208000
   },
   {
     "id": "saviynt",
@@ -3763,13 +3763,13 @@
       "Renewing",
       "Strategic"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1050000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 37,
     "testimonials": [],
     "marginPct": 14,
-    "grossProfitAllTime": 2016000
+    "grossProfitAllTime": 364000
   },
   {
     "id": "ping-identity",
@@ -3795,13 +3795,13 @@
       "Compliance",
       "HIPAA"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 27000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 4300000,
     "dealsClosedYTD": 17,
     "dealsClosedAllTime": 129,
     "testimonials": [],
     "marginPct": 16,
-    "grossProfitAllTime": 4320000
+    "grossProfitAllTime": 688000
   },
   {
     "id": "bitdefender",
@@ -4055,8 +4055,8 @@
       "On-Prem",
       "Tier 2"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 2400000,
+    "spendYTD": 550000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 13,
     "testimonials": [
@@ -4077,7 +4077,7 @@
       }
     ],
     "marginPct": 14,
-    "grossProfitAllTime": 336000
+    "grossProfitAllTime": 140000
   },
   {
     "id": "barracuda",
@@ -4169,8 +4169,8 @@
       "FedRAMP",
       "Tier 2"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 7200000,
+    "spendYTD": 700000,
+    "spendAllTime": 1600000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 50,
     "testimonials": [
@@ -4181,7 +4181,7 @@
       }
     ],
     "marginPct": 14,
-    "grossProfitAllTime": 1008000
+    "grossProfitAllTime": 224000
   },
   {
     "id": "vade-secure",
@@ -4209,8 +4209,8 @@
       "Cloud-Native",
       "PCI-DSS"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 32000000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4900000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 66,
     "testimonials": [
@@ -4231,7 +4231,7 @@
       }
     ],
     "marginPct": 20,
-    "grossProfitAllTime": 6400000
+    "grossProfitAllTime": 980000
   },
   {
     "id": "abnormal-security",
@@ -4259,13 +4259,13 @@
       "Mid-Market",
       "HIPAA"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 7200000,
+    "spendYTD": 700000,
+    "spendAllTime": 1600000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 25,
     "testimonials": [],
     "marginPct": 7,
-    "grossProfitAllTime": 504000
+    "grossProfitAllTime": 112000
   },
   {
     "id": "knowbe4",
@@ -4291,13 +4291,13 @@
       "Mid-Market",
       "HIPAA"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 9600000,
+    "spendYTD": 1850000,
+    "spendAllTime": 1900000,
     "dealsClosedYTD": 18,
     "dealsClosedAllTime": 138,
     "testimonials": [],
     "marginPct": 10,
-    "grossProfitAllTime": 960000
+    "grossProfitAllTime": 190000
   },
   {
     "id": "wiz-cloud",
@@ -4322,13 +4322,13 @@
       "Compliance",
       "Cloud-Native"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 1200000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 15,
     "testimonials": [],
     "marginPct": 10,
-    "grossProfitAllTime": 120000
+    "grossProfitAllTime": 80000
   },
   {
     "id": "orca-security",
@@ -4351,8 +4351,8 @@
       "Strategic",
       "New"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 10800000,
+    "spendYTD": 1450000,
+    "spendAllTime": 2100000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 40,
     "testimonials": [
@@ -4368,7 +4368,7 @@
       }
     ],
     "marginPct": 17,
-    "grossProfitAllTime": 1836000
+    "grossProfitAllTime": 357000
   },
   {
     "id": "aqua-security",
@@ -4424,13 +4424,13 @@
       "Enterprise",
       "On-Prem"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 18000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 3300000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 45,
     "testimonials": [],
     "marginPct": 8,
-    "grossProfitAllTime": 1440000
+    "grossProfitAllTime": 264000
   },
   {
     "id": "veracode",
@@ -4453,8 +4453,8 @@
       "Strategic",
       "HIPAA"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 54000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 7900000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 53,
     "testimonials": [
@@ -4465,7 +4465,7 @@
       }
     ],
     "marginPct": 7,
-    "grossProfitAllTime": 3780000
+    "grossProfitAllTime": 553000
   },
   {
     "id": "checkmarx",
@@ -4492,8 +4492,8 @@
       "Tier 2",
       "HIPAA"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 18000000,
+    "spendYTD": 1450000,
+    "spendAllTime": 3100000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 55,
     "testimonials": [
@@ -4509,7 +4509,7 @@
       }
     ],
     "marginPct": 13,
-    "grossProfitAllTime": 2340000
+    "grossProfitAllTime": 403000
   },
   {
     "id": "gitlab",
@@ -4533,8 +4533,8 @@
       "New",
       "FedRAMP"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 8000000,
+    "spendYTD": 800000,
+    "spendAllTime": 1700000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 25,
     "testimonials": [
@@ -4555,7 +4555,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 640000
+    "grossProfitAllTime": 136000
   },
   {
     "id": "github-enterprise",
@@ -4646,8 +4646,8 @@
       "SMB",
       "On-Prem"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 19200000,
+    "spendYTD": 2350000,
+    "spendAllTime": 3200000,
     "dealsClosedYTD": 13,
     "dealsClosedAllTime": 96,
     "testimonials": [
@@ -4658,7 +4658,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 3456000
+    "grossProfitAllTime": 576000
   },
   {
     "id": "opsgenie",
@@ -4717,13 +4717,13 @@
       "PCI-DSS",
       "FedRAMP"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 19200000,
+    "spendYTD": 2350000,
+    "spendAllTime": 3200000,
     "dealsClosedYTD": 17,
     "dealsClosedAllTime": 121,
     "testimonials": [],
     "marginPct": 8,
-    "grossProfitAllTime": 1536000
+    "grossProfitAllTime": 256000
   },
   {
     "id": "grafana-labs",
@@ -4749,13 +4749,13 @@
       "PCI-DSS",
       "HIPAA"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 1500000,
+    "spendYTD": 450000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 16,
     "testimonials": [],
     "marginPct": 18,
-    "grossProfitAllTime": 270000
+    "grossProfitAllTime": 144000
   },
   {
     "id": "new-relic",
@@ -4813,8 +4813,8 @@
       "New",
       "Mid-Market"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 51000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 7500000,
     "dealsClosedYTD": 29,
     "dealsClosedAllTime": 116,
     "testimonials": [
@@ -4825,7 +4825,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 9180000
+    "grossProfitAllTime": 1350000
   },
   {
     "id": "logicmonitor",
@@ -4852,13 +4852,13 @@
       "Tier 2",
       "Tier 1"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 4800000,
+    "spendYTD": 700000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 15,
     "testimonials": [],
     "marginPct": 8,
-    "grossProfitAllTime": 384000
+    "grossProfitAllTime": 104000
   },
   {
     "id": "solarwinds",
@@ -4950,8 +4950,8 @@
       "Enterprise",
       "Renewing"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 7200000,
+    "spendYTD": 1450000,
+    "spendAllTime": 1600000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 51,
     "testimonials": [
@@ -4962,7 +4962,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 720000
+    "grossProfitAllTime": 160000
   },
   {
     "id": "bigfix",
@@ -4989,13 +4989,13 @@
       "Renewing",
       "SaaS"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 6000000,
+    "spendYTD": 700000,
+    "spendAllTime": 1400000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 35,
     "testimonials": [],
     "marginPct": 12,
-    "grossProfitAllTime": 720000
+    "grossProfitAllTime": 168000
   },
   {
     "id": "connectwise",
@@ -5018,8 +5018,8 @@
       "FedRAMP",
       "Mid-Market"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 6000000,
+    "spendYTD": 700000,
+    "spendAllTime": 1400000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 21,
     "testimonials": [
@@ -5035,7 +5035,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 1080000
+    "grossProfitAllTime": 252000
   },
   {
     "id": "n-able",
@@ -5094,8 +5094,8 @@
       "Enterprise",
       "Tier 1"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 4800000,
+    "spendYTD": 700000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 40,
     "testimonials": [
@@ -5111,7 +5111,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 288000
+    "grossProfitAllTime": 78000
   },
   {
     "id": "fortify",
@@ -5136,8 +5136,8 @@
       "FedRAMP",
       "PCI-DSS"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 36000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 5500000,
     "dealsClosedYTD": 24,
     "dealsClosedAllTime": 153,
     "testimonials": [
@@ -5148,7 +5148,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 3240000
+    "grossProfitAllTime": 495000
   },
   {
     "id": "imperva",
@@ -5175,13 +5175,13 @@
       "Strategic",
       "Tier 2"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 2400000,
+    "spendYTD": 700000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 29,
     "testimonials": [],
     "marginPct": 19,
-    "grossProfitAllTime": 456000
+    "grossProfitAllTime": 190000
   },
   {
     "id": "akamai",
@@ -5238,13 +5238,13 @@
       "Mid-Market",
       "New"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 120000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 16800000,
     "dealsClosedYTD": 30,
     "dealsClosedAllTime": 172,
     "testimonials": [],
     "marginPct": 6,
-    "grossProfitAllTime": 7200000
+    "grossProfitAllTime": 1008000
   },
   {
     "id": "stackpath",
@@ -5362,8 +5362,8 @@
       "Compliance",
       "Tier 2"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 1600000,
+    "spendYTD": 550000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 24,
     "testimonials": [
@@ -5379,7 +5379,7 @@
       }
     ],
     "marginPct": 12,
-    "grossProfitAllTime": 192000
+    "grossProfitAllTime": 96000
   },
   {
     "id": "sinequa",
@@ -5406,8 +5406,8 @@
       "New",
       "Strategic"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 900000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 15,
     "testimonials": [
@@ -5418,7 +5418,7 @@
       }
     ],
     "marginPct": 15,
-    "grossProfitAllTime": 135000
+    "grossProfitAllTime": 120000
   },
   {
     "id": "vespa",
@@ -5444,8 +5444,8 @@
       "Tier 1",
       "Tier 2"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 25600000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4100000,
     "dealsClosedYTD": 13,
     "dealsClosedAllTime": 96,
     "testimonials": [
@@ -5466,7 +5466,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 2304000
+    "grossProfitAllTime": 369000
   },
   {
     "id": "domo",
@@ -5521,13 +5521,13 @@
       "Compliance",
       "SMB"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 68000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 9800000,
     "dealsClosedYTD": 12,
     "dealsClosedAllTime": 74,
     "testimonials": [],
     "marginPct": 9,
-    "grossProfitAllTime": 6120000
+    "grossProfitAllTime": 882000
   },
   {
     "id": "tableau",
@@ -5553,13 +5553,13 @@
       "Enterprise",
       "SaaS"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 19200000,
+    "spendYTD": 2350000,
+    "spendAllTime": 3200000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 22,
     "testimonials": [],
     "marginPct": 14,
-    "grossProfitAllTime": 2688000
+    "grossProfitAllTime": 448000
   },
   {
     "id": "qlik",
@@ -5649,8 +5649,8 @@
       "Tier 1",
       "SMB"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 2400000,
+    "spendYTD": 550000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 21,
     "testimonials": [
@@ -5666,7 +5666,7 @@
       }
     ],
     "marginPct": 11,
-    "grossProfitAllTime": 264000
+    "grossProfitAllTime": 110000
   },
   {
     "id": "talend",
@@ -5721,8 +5721,8 @@
       "Compliance",
       "Mid-Market"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 10800000,
+    "spendYTD": 1450000,
+    "spendAllTime": 2100000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 21,
     "testimonials": [
@@ -5743,7 +5743,7 @@
       }
     ],
     "marginPct": 7,
-    "grossProfitAllTime": 756000
+    "grossProfitAllTime": 147000
   },
   {
     "id": "fivetran",
@@ -5799,8 +5799,8 @@
       "On-Prem",
       "HIPAA"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4000000,
+    "spendYTD": 550000,
+    "spendAllTime": 1200000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 16,
     "testimonials": [
@@ -5811,7 +5811,7 @@
       }
     ],
     "marginPct": 14,
-    "grossProfitAllTime": 560000
+    "grossProfitAllTime": 168000
   },
   {
     "id": "confluent",
@@ -5865,13 +5865,13 @@
       "Enterprise",
       "SaaS"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 72000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 10300000,
     "dealsClosedYTD": 30,
     "dealsClosedAllTime": 100,
     "testimonials": [],
     "marginPct": 12,
-    "grossProfitAllTime": 8640000
+    "grossProfitAllTime": 1236000
   },
   {
     "id": "redpanda",
@@ -5897,8 +5897,8 @@
       "Tier 2",
       "SMB"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 3000000,
+    "spendYTD": 450000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 6,
     "testimonials": [
@@ -5909,7 +5909,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 540000
+    "grossProfitAllTime": 180000
   },
   {
     "id": "aiven",
@@ -6000,8 +6000,8 @@
       "On-Prem",
       "Enterprise"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 32000000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4900000,
     "dealsClosedYTD": 16,
     "dealsClosedAllTime": 116,
     "testimonials": [
@@ -6022,7 +6022,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 3200000
+    "grossProfitAllTime": 490000
   },
   {
     "id": "planetscale",
@@ -6047,8 +6047,8 @@
       "SMB",
       "On-Prem"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 1500000,
+    "spendYTD": 450000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 9,
     "testimonials": [
@@ -6064,7 +6064,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 120000
+    "grossProfitAllTime": 64000
   },
   {
     "id": "neon",
@@ -6120,8 +6120,8 @@
       "On-Prem",
       "HIPAA"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 1200000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 13,
     "testimonials": [
@@ -6137,7 +6137,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 120000
+    "grossProfitAllTime": 80000
   },
   {
     "id": "vercel",
@@ -6164,8 +6164,8 @@
       "Compliance",
       "Mid-Market"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 85000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 12100000,
     "dealsClosedYTD": 27,
     "dealsClosedAllTime": 207,
     "testimonials": [
@@ -6176,7 +6176,7 @@
       }
     ],
     "marginPct": 20,
-    "grossProfitAllTime": 17000000
+    "grossProfitAllTime": 2420000
   },
   {
     "id": "netlify",
@@ -6200,13 +6200,13 @@
       "Tier 2",
       "New"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 8000000,
+    "spendYTD": 800000,
+    "spendAllTime": 1700000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 52,
     "testimonials": [],
     "marginPct": 9,
-    "grossProfitAllTime": 720000
+    "grossProfitAllTime": 153000
   },
   {
     "id": "render",
@@ -6230,8 +6230,8 @@
       "Tier 2",
       "Strategic"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 19200000,
+    "spendYTD": 1850000,
+    "spendAllTime": 3200000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 38,
     "testimonials": [
@@ -6242,7 +6242,7 @@
       }
     ],
     "marginPct": 13,
-    "grossProfitAllTime": 2496000
+    "grossProfitAllTime": 416000
   },
   {
     "id": "fly-io",
@@ -6269,8 +6269,8 @@
       "FedRAMP",
       "HIPAA"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 8000000,
+    "spendYTD": 800000,
+    "spendAllTime": 1700000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 20,
     "testimonials": [
@@ -6291,7 +6291,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 640000
+    "grossProfitAllTime": 136000
   },
   {
     "id": "digitalocean",
@@ -6315,8 +6315,8 @@
       "Renewing",
       "Mid-Market"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1050000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 31,
     "testimonials": [
@@ -6327,7 +6327,7 @@
       }
     ],
     "marginPct": 13,
-    "grossProfitAllTime": 1872000
+    "grossProfitAllTime": 338000
   },
   {
     "id": "linode",
@@ -6353,13 +6353,13 @@
       "Compliance",
       "SMB"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1450000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 49,
     "testimonials": [],
     "marginPct": 14,
-    "grossProfitAllTime": 2016000
+    "grossProfitAllTime": 364000
   },
   {
     "id": "vultr",
@@ -6384,13 +6384,13 @@
       "SMB",
       "New"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 12800000,
+    "spendYTD": 2350000,
+    "spendAllTime": 2400000,
     "dealsClosedYTD": 17,
     "dealsClosedAllTime": 124,
     "testimonials": [],
     "marginPct": 17,
-    "grossProfitAllTime": 2176000
+    "grossProfitAllTime": 408000
   },
   {
     "id": "ovhcloud",
@@ -6447,8 +6447,8 @@
       "Renewing",
       "SMB"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 68000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 9800000,
     "dealsClosedYTD": 18,
     "dealsClosedAllTime": 120,
     "testimonials": [
@@ -6469,7 +6469,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 6120000
+    "grossProfitAllTime": 882000
   },
   {
     "id": "wasabi",
@@ -6497,8 +6497,8 @@
       "HIPAA",
       "FedRAMP"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 1500000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 9,
     "testimonials": [
@@ -6509,7 +6509,7 @@
       }
     ],
     "marginPct": 20,
-    "grossProfitAllTime": 300000
+    "grossProfitAllTime": 160000
   },
   {
     "id": "egnyte",
@@ -6598,8 +6598,8 @@
       "Mid-Market",
       "On-Prem"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 27000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 4300000,
     "dealsClosedYTD": 14,
     "dealsClosedAllTime": 83,
     "testimonials": [
@@ -6620,7 +6620,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 2160000
+    "grossProfitAllTime": 344000
   },
   {
     "id": "citrix-sharefile",
@@ -6677,8 +6677,8 @@
       "Mid-Market",
       "Renewing"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 2000000,
+    "spendYTD": 450000,
+    "spendAllTime": 900000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 17,
     "testimonials": [
@@ -6694,7 +6694,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 120000
+    "grossProfitAllTime": 54000
   },
   {
     "id": "microsoft-teams-premium",
@@ -6752,8 +6752,8 @@
       "FedRAMP",
       "On-Prem"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1450000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 26,
     "testimonials": [
@@ -6769,7 +6769,7 @@
       }
     ],
     "marginPct": 19,
-    "grossProfitAllTime": 2736000
+    "grossProfitAllTime": 494000
   },
   {
     "id": "webex",
@@ -6794,8 +6794,8 @@
       "Cloud-Native",
       "New"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 60000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 8700000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 91,
     "testimonials": [
@@ -6811,7 +6811,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 3600000
+    "grossProfitAllTime": 522000
   },
   {
     "id": "ringcentral",
@@ -6836,8 +6836,8 @@
       "HIPAA",
       "Compliance"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 85000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 12100000,
     "dealsClosedYTD": 22,
     "dealsClosedAllTime": 136,
     "testimonials": [
@@ -6848,7 +6848,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 8500000
+    "grossProfitAllTime": 1210000
   },
   {
     "id": "dialpad",
@@ -6903,13 +6903,13 @@
       "Mid-Market",
       "Compliance"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 4800000,
+    "spendYTD": 800000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 26,
     "testimonials": [],
     "marginPct": 11,
-    "grossProfitAllTime": 528000
+    "grossProfitAllTime": 143000
   },
   {
     "id": "vonage",
@@ -6997,8 +6997,8 @@
       "Strategic",
       "Mid-Market"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1850000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 112,
     "testimonials": [
@@ -7009,7 +7009,7 @@
       }
     ],
     "marginPct": 19,
-    "grossProfitAllTime": 2736000
+    "grossProfitAllTime": 494000
   },
   {
     "id": "nice-incontact",
@@ -7094,8 +7094,8 @@
       "Strategic",
       "On-Prem"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4000000,
+    "spendYTD": 550000,
+    "spendAllTime": 1200000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 11,
     "testimonials": [
@@ -7111,7 +7111,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 320000
+    "grossProfitAllTime": 96000
   },
   {
     "id": "salesforce",
@@ -7237,13 +7237,13 @@
       "Strategic",
       "Cloud-Native"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 2400000,
+    "spendYTD": 550000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 18,
     "testimonials": [],
     "marginPct": 13,
-    "grossProfitAllTime": 312000
+    "grossProfitAllTime": 130000
   },
   {
     "id": "intercom",
@@ -7267,13 +7267,13 @@
       "FedRAMP",
       "On-Prem"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 48000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 7100000,
     "dealsClosedYTD": 13,
     "dealsClosedAllTime": 63,
     "testimonials": [],
     "marginPct": 10,
-    "grossProfitAllTime": 4800000
+    "grossProfitAllTime": 710000
   },
   {
     "id": "drift",
@@ -7300,8 +7300,8 @@
       "Mid-Market",
       "FedRAMP"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 9600000,
+    "spendYTD": 1850000,
+    "spendAllTime": 1900000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 56,
     "testimonials": [
@@ -7317,7 +7317,7 @@
       }
     ],
     "marginPct": 12,
-    "grossProfitAllTime": 1152000
+    "grossProfitAllTime": 228000
   },
   {
     "id": "gong",
@@ -7343,13 +7343,13 @@
       "Compliance",
       "Renewing"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 96000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 13500000,
     "dealsClosedYTD": 21,
     "dealsClosedAllTime": 106,
     "testimonials": [],
     "marginPct": 18,
-    "grossProfitAllTime": 17280000
+    "grossProfitAllTime": 2430000
   },
   {
     "id": "outreach",
@@ -7436,8 +7436,8 @@
       "HIPAA",
       "PCI-DSS"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 7200000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1600000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 43,
     "testimonials": [
@@ -7448,7 +7448,7 @@
       }
     ],
     "marginPct": 15,
-    "grossProfitAllTime": 1080000
+    "grossProfitAllTime": 240000
   },
   {
     "id": "pardot",
@@ -7508,8 +7508,8 @@
       "Enterprise",
       "HIPAA"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 4800000,
+    "spendYTD": 700000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 45,
     "testimonials": [
@@ -7530,7 +7530,7 @@
       }
     ],
     "marginPct": 11,
-    "grossProfitAllTime": 528000
+    "grossProfitAllTime": 143000
   },
   {
     "id": "iterable",
@@ -7586,13 +7586,13 @@
       "Strategic",
       "New"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 2500000,
+    "spendYTD": 450000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 6,
     "testimonials": [],
     "marginPct": 6,
-    "grossProfitAllTime": 150000
+    "grossProfitAllTime": 60000
   },
   {
     "id": "segment",
@@ -7617,13 +7617,13 @@
       "Mid-Market",
       "SMB"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 18000000,
+    "spendYTD": 1450000,
+    "spendAllTime": 3100000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 32,
     "testimonials": [],
     "marginPct": 13,
-    "grossProfitAllTime": 2340000
+    "grossProfitAllTime": 403000
   },
   {
     "id": "mparticle",
@@ -7648,8 +7648,8 @@
       "New",
       "Compliance"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 68000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 9800000,
     "dealsClosedYTD": 24,
     "dealsClosedAllTime": 128,
     "testimonials": [
@@ -7660,7 +7660,7 @@
       }
     ],
     "marginPct": 12,
-    "grossProfitAllTime": 8160000
+    "grossProfitAllTime": 1176000
   },
   {
     "id": "tealium",
@@ -7687,8 +7687,8 @@
       "Enterprise",
       "Tier 2"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 60000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 8700000,
     "dealsClosedYTD": 27,
     "dealsClosedAllTime": 137,
     "testimonials": [
@@ -7699,7 +7699,7 @@
       }
     ],
     "marginPct": 7,
-    "grossProfitAllTime": 4200000
+    "grossProfitAllTime": 609000
   },
   {
     "id": "heap",
@@ -7724,8 +7724,8 @@
       "Mid-Market",
       "FedRAMP"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 72000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 10300000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 41,
     "testimonials": [
@@ -7736,7 +7736,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 7200000
+    "grossProfitAllTime": 1030000
   },
   {
     "id": "mixpanel",
@@ -7761,8 +7761,8 @@
       "Tier 2",
       "PCI-DSS"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 25600000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4100000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 62,
     "testimonials": [
@@ -7773,7 +7773,7 @@
       }
     ],
     "marginPct": 11,
-    "grossProfitAllTime": 2816000
+    "grossProfitAllTime": 451000
   },
   {
     "id": "amplitude",
@@ -7830,13 +7830,13 @@
       "Compliance",
       "Mid-Market"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4800000,
+    "spendYTD": 550000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 18,
     "testimonials": [],
     "marginPct": 19,
-    "grossProfitAllTime": 912000
+    "grossProfitAllTime": 247000
   },
   {
     "id": "fullstory",
@@ -7862,8 +7862,8 @@
       "Tier 2",
       "FedRAMP"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 21600000,
+    "spendYTD": 1450000,
+    "spendAllTime": 3500000,
     "dealsClosedYTD": 4,
     "dealsClosedAllTime": 13,
     "testimonials": [
@@ -7879,7 +7879,7 @@
       }
     ],
     "marginPct": 11,
-    "grossProfitAllTime": 2376000
+    "grossProfitAllTime": 385000
   },
   {
     "id": "logrocket",
@@ -7907,13 +7907,13 @@
       "HIPAA",
       "Compliance"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4000000,
+    "spendYTD": 550000,
+    "spendAllTime": 1200000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 16,
     "testimonials": [],
     "marginPct": 19,
-    "grossProfitAllTime": 760000
+    "grossProfitAllTime": 228000
   },
   {
     "id": "hotjar",
@@ -8002,8 +8002,8 @@
       "Renewing",
       "Enterprise"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 72000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 10300000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 70,
     "testimonials": [
@@ -8019,7 +8019,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 6480000
+    "grossProfitAllTime": 927000
   },
   {
     "id": "bamboohr",
@@ -8075,8 +8075,8 @@
       "Tier 2",
       "Tier 1"
     ],
-    "spendYTD": 17000000,
-    "spendAllTime": 68000000,
+    "spendYTD": 5750000,
+    "spendAllTime": 9800000,
     "dealsClosedYTD": 24,
     "dealsClosedAllTime": 115,
     "testimonials": [
@@ -8097,7 +8097,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 6800000
+    "grossProfitAllTime": 980000
   },
   {
     "id": "rippling",
@@ -8122,8 +8122,8 @@
       "Enterprise",
       "Cloud-Native"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 19200000,
+    "spendYTD": 2350000,
+    "spendAllTime": 3200000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 114,
     "testimonials": [
@@ -8134,7 +8134,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 1728000
+    "grossProfitAllTime": 288000
   },
   {
     "id": "adp-workforce",
@@ -8191,13 +8191,13 @@
       "Strategic",
       "Enterprise"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 48000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 8100000,
     "dealsClosedYTD": 25,
     "dealsClosedAllTime": 90,
     "testimonials": [],
     "marginPct": 17,
-    "grossProfitAllTime": 8160000
+    "grossProfitAllTime": 1377000
   },
   {
     "id": "paycor",
@@ -8224,8 +8224,8 @@
       "Tier 2",
       "New"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 38400000,
+    "spendYTD": 2350000,
+    "spendAllTime": 5800000,
     "dealsClosedYTD": 10,
     "dealsClosedAllTime": 40,
     "testimonials": [
@@ -8246,7 +8246,7 @@
       }
     ],
     "marginPct": 16,
-    "grossProfitAllTime": 6144000
+    "grossProfitAllTime": 928000
   },
   {
     "id": "lattice",
@@ -8338,8 +8338,8 @@
       "FedRAMP",
       "Compliance"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 48000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 8100000,
     "dealsClosedYTD": 20,
     "dealsClosedAllTime": 152,
     "testimonials": [
@@ -8360,7 +8360,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 2880000
+    "grossProfitAllTime": 486000
   },
   {
     "id": "ariba",
@@ -8385,13 +8385,13 @@
       "Enterprise",
       "HIPAA"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 72000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 10300000,
     "dealsClosedYTD": 11,
     "dealsClosedAllTime": 80,
     "testimonials": [],
     "marginPct": 18,
-    "grossProfitAllTime": 12960000
+    "grossProfitAllTime": 1854000
   },
   {
     "id": "jaggaer",
@@ -8416,8 +8416,8 @@
       "PCI-DSS",
       "Renewing"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 32000000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4900000,
     "dealsClosedYTD": 13,
     "dealsClosedAllTime": 95,
     "testimonials": [
@@ -8433,7 +8433,7 @@
       }
     ],
     "marginPct": 16,
-    "grossProfitAllTime": 5120000
+    "grossProfitAllTime": 784000
   },
   {
     "id": "ivalua",
@@ -8457,8 +8457,8 @@
       "Strategic",
       "Renewing"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 2400000,
+    "spendYTD": 700000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 49,
     "testimonials": [
@@ -8469,7 +8469,7 @@
       }
     ],
     "marginPct": 12,
-    "grossProfitAllTime": 288000
+    "grossProfitAllTime": 120000
   },
   {
     "id": "gep",
@@ -8495,8 +8495,8 @@
       "Enterprise",
       "Cloud-Native"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 45000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 6700000,
     "dealsClosedYTD": 16,
     "dealsClosedAllTime": 67,
     "testimonials": [
@@ -8517,7 +8517,7 @@
       }
     ],
     "marginPct": 15,
-    "grossProfitAllTime": 6750000
+    "grossProfitAllTime": 1005000
   },
   {
     "id": "procore",
@@ -8576,13 +8576,13 @@
       "Cloud-Native",
       "Compliance"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 32000000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4900000,
     "dealsClosedYTD": 18,
     "dealsClosedAllTime": 98,
     "testimonials": [],
     "marginPct": 17,
-    "grossProfitAllTime": 5440000
+    "grossProfitAllTime": 833000
   },
   {
     "id": "bluebeam",
@@ -8610,8 +8610,8 @@
       "New",
       "Tier 2"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 96000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 13500000,
     "dealsClosedYTD": 14,
     "dealsClosedAllTime": 99,
     "testimonials": [
@@ -8622,7 +8622,7 @@
       }
     ],
     "marginPct": 14,
-    "grossProfitAllTime": 13440000
+    "grossProfitAllTime": 1890000
   },
   {
     "id": "plangrid",
@@ -8647,8 +8647,8 @@
       "FedRAMP",
       "Enterprise"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 3600000,
+    "spendYTD": 700000,
+    "spendAllTime": 1100000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 32,
     "testimonials": [
@@ -8664,7 +8664,7 @@
       }
     ],
     "marginPct": 13,
-    "grossProfitAllTime": 468000
+    "grossProfitAllTime": 143000
   },
   {
     "id": "cylance",
@@ -8721,13 +8721,13 @@
       "Strategic",
       "On-Prem"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 4800000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1300000,
     "dealsClosedYTD": 8,
     "dealsClosedAllTime": 61,
     "testimonials": [],
     "marginPct": 12,
-    "grossProfitAllTime": 576000
+    "grossProfitAllTime": 156000
   },
   {
     "id": "bromium",
@@ -8755,13 +8755,13 @@
       "PCI-DSS",
       "SMB"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 18000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 3300000,
     "dealsClosedYTD": 16,
     "dealsClosedAllTime": 73,
     "testimonials": [],
     "marginPct": 9,
-    "grossProfitAllTime": 1620000
+    "grossProfitAllTime": 297000
   },
   {
     "id": "cybereason",
@@ -8786,13 +8786,13 @@
       "SMB",
       "Tier 2"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1850000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 12,
     "dealsClosedAllTime": 79,
     "testimonials": [],
     "marginPct": 14,
-    "grossProfitAllTime": 2016000
+    "grossProfitAllTime": 364000
   },
   {
     "id": "stellar-cyber",
@@ -8818,13 +8818,13 @@
       "PCI-DSS",
       "Mid-Market"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 32000000,
+    "spendYTD": 2350000,
+    "spendAllTime": 4900000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 40,
     "testimonials": [],
     "marginPct": 8,
-    "grossProfitAllTime": 2560000
+    "grossProfitAllTime": 392000
   },
   {
     "id": "anomali",
@@ -8851,13 +8851,13 @@
       "New",
       "Compliance"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 1200000,
+    "spendYTD": 400000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 7,
     "testimonials": [],
     "marginPct": 9,
-    "grossProfitAllTime": 108000
+    "grossProfitAllTime": 72000
   },
   {
     "id": "threatconnect",
@@ -8882,13 +8882,13 @@
       "Tier 1",
       "New"
     ],
-    "spendYTD": 6400000,
-    "spendAllTime": 19200000,
+    "spendYTD": 2350000,
+    "spendAllTime": 3200000,
     "dealsClosedYTD": 15,
     "dealsClosedAllTime": 112,
     "testimonials": [],
     "marginPct": 18,
-    "grossProfitAllTime": 3456000
+    "grossProfitAllTime": 576000
   },
   {
     "id": "recorded-future",
@@ -8913,13 +8913,13 @@
       "Cloud-Native",
       "Renewing"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 10800000,
+    "spendYTD": 1450000,
+    "spendAllTime": 2100000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 40,
     "testimonials": [],
     "marginPct": 18,
-    "grossProfitAllTime": 1944000
+    "grossProfitAllTime": 378000
   },
   {
     "id": "mandiant",
@@ -8946,13 +8946,13 @@
       "Strategic",
       "Mid-Market"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 36000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 5500000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 52,
     "testimonials": [],
     "marginPct": 20,
-    "grossProfitAllTime": 7200000
+    "grossProfitAllTime": 1100000
   },
   {
     "id": "zerofox",
@@ -8975,8 +8975,8 @@
       "FedRAMP",
       "PCI-DSS"
     ],
-    "spendYTD": 12000000,
-    "spendAllTime": 24000000,
+    "spendYTD": 4150000,
+    "spendAllTime": 4250000,
     "dealsClosedYTD": 30,
     "dealsClosedAllTime": 135,
     "testimonials": [
@@ -8992,7 +8992,7 @@
       }
     ],
     "marginPct": 13,
-    "grossProfitAllTime": 3120000
+    "grossProfitAllTime": 552500
   },
   {
     "id": "domaintools",
@@ -9017,8 +9017,8 @@
       "Enterprise",
       "On-Prem"
     ],
-    "spendYTD": 9000000,
-    "spendAllTime": 27000000,
+    "spendYTD": 3200000,
+    "spendAllTime": 4300000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 49,
     "testimonials": [
@@ -9029,7 +9029,7 @@
       }
     ],
     "marginPct": 9,
-    "grossProfitAllTime": 2430000
+    "grossProfitAllTime": 387000
   },
   {
     "id": "riskiq",
@@ -9055,13 +9055,13 @@
       "PCI-DSS",
       "On-Prem"
     ],
-    "spendYTD": 24000000,
-    "spendAllTime": 144000000,
+    "spendYTD": 8000000,
+    "spendAllTime": 20000000,
     "dealsClosedYTD": 19,
     "dealsClosedAllTime": 133,
     "testimonials": [],
     "marginPct": 16,
-    "grossProfitAllTime": 23040000
+    "grossProfitAllTime": 3200000
   },
   {
     "id": "forescout",
@@ -9087,8 +9087,8 @@
       "Compliance",
       "HIPAA"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 19200000,
+    "spendYTD": 1850000,
+    "spendAllTime": 3200000,
     "dealsClosedYTD": 7,
     "dealsClosedAllTime": 43,
     "testimonials": [
@@ -9099,7 +9099,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 1152000
+    "grossProfitAllTime": 192000
   },
   {
     "id": "claroty",
@@ -9158,8 +9158,8 @@
       "Tier 1",
       "Cloud-Native"
     ],
-    "spendYTD": 1600000,
-    "spendAllTime": 3200000,
+    "spendYTD": 800000,
+    "spendAllTime": 1100000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 17,
     "testimonials": [
@@ -9175,7 +9175,7 @@
       }
     ],
     "marginPct": 6,
-    "grossProfitAllTime": 192000
+    "grossProfitAllTime": 66000
   },
   {
     "id": "dragos",
@@ -9199,8 +9199,8 @@
       "Renewing",
       "On-Prem"
     ],
-    "spendYTD": 1200000,
-    "spendAllTime": 2400000,
+    "spendYTD": 700000,
+    "spendAllTime": 1000000,
     "dealsClosedYTD": 9,
     "dealsClosedAllTime": 49,
     "testimonials": [
@@ -9221,7 +9221,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 192000
+    "grossProfitAllTime": 80000
   },
   {
     "id": "pluribus-networks",
@@ -9247,8 +9247,8 @@
       "SMB",
       "Tier 2"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 9600000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1900000,
     "dealsClosedYTD": 5,
     "dealsClosedAllTime": 32,
     "testimonials": [
@@ -9264,7 +9264,7 @@
       }
     ],
     "marginPct": 16,
-    "grossProfitAllTime": 1536000
+    "grossProfitAllTime": 304000
   },
   {
     "id": "big-switch",
@@ -9292,8 +9292,8 @@
       "Strategic",
       "On-Prem"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 1500000,
+    "spendYTD": 450000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 13,
     "testimonials": [
@@ -9304,7 +9304,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 270000
+    "grossProfitAllTime": 144000
   },
   {
     "id": "cumulus-networks",
@@ -9330,8 +9330,8 @@
       "Renewing",
       "Compliance"
     ],
-    "spendYTD": 4800000,
-    "spendAllTime": 9600000,
+    "spendYTD": 1850000,
+    "spendAllTime": 1900000,
     "dealsClosedYTD": 14,
     "dealsClosedAllTime": 76,
     "testimonials": [
@@ -9352,7 +9352,7 @@
       }
     ],
     "marginPct": 8,
-    "grossProfitAllTime": 768000
+    "grossProfitAllTime": 152000
   },
   {
     "id": "mellanox",
@@ -9378,8 +9378,8 @@
       "New",
       "Renewing"
     ],
-    "spendYTD": 300000,
-    "spendAllTime": 1800000,
+    "spendYTD": 400000,
+    "spendAllTime": 900000,
     "dealsClosedYTD": 2,
     "dealsClosedAllTime": 15,
     "testimonials": [
@@ -9395,7 +9395,7 @@
       }
     ],
     "marginPct": 17,
-    "grossProfitAllTime": 306000
+    "grossProfitAllTime": 153000
   },
   {
     "id": "xilinx-edge",
@@ -9422,8 +9422,8 @@
       "SaaS",
       "Cloud-Native"
     ],
-    "spendYTD": 2400000,
-    "spendAllTime": 9600000,
+    "spendYTD": 1050000,
+    "spendAllTime": 1900000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 20,
     "testimonials": [
@@ -9439,7 +9439,7 @@
       }
     ],
     "marginPct": 18,
-    "grossProfitAllTime": 1728000
+    "grossProfitAllTime": 342000
   },
   {
     "id": "nvidia-networking",
@@ -9467,8 +9467,8 @@
       "New",
       "Strategic"
     ],
-    "spendYTD": 3600000,
-    "spendAllTime": 14400000,
+    "spendYTD": 1450000,
+    "spendAllTime": 2600000,
     "dealsClosedYTD": 6,
     "dealsClosedAllTime": 26,
     "testimonials": [
@@ -9479,7 +9479,7 @@
       }
     ],
     "marginPct": 10,
-    "grossProfitAllTime": 1440000
+    "grossProfitAllTime": 260000
   },
   {
     "id": "amd-pensando",
@@ -9534,13 +9534,13 @@
       "Enterprise",
       "Tier 2"
     ],
-    "spendYTD": 500000,
-    "spendAllTime": 1500000,
+    "spendYTD": 450000,
+    "spendAllTime": 800000,
     "dealsClosedYTD": 1,
     "dealsClosedAllTime": 5,
     "testimonials": [],
     "marginPct": 13,
-    "grossProfitAllTime": 195000
+    "grossProfitAllTime": 104000
   },
   {
     "id": "marvell",
@@ -9565,8 +9565,8 @@
       "Enterprise",
       "New"
     ],
-    "spendYTD": 800000,
-    "spendAllTime": 4000000,
+    "spendYTD": 550000,
+    "spendAllTime": 1200000,
     "dealsClosedYTD": 3,
     "dealsClosedAllTime": 10,
     "testimonials": [
@@ -9582,6 +9582,6 @@
       }
     ],
     "marginPct": 16,
-    "grossProfitAllTime": 640000
+    "grossProfitAllTime": 192000
   }
 ]
