@@ -148,7 +148,7 @@
 
         <e-column field="marginPct" headerText="Avg. Margin %" width="130" textAlign="Right">
           <ng-template #template let-row>
-            <span class="vv-margin">{{ row.marginPct }}%</span>
+            <span class="vv-margin" [style.color]="marginColor(row.marginPct)">{{ row.marginPct }}%</span>
           </ng-template>
         </e-column>
 

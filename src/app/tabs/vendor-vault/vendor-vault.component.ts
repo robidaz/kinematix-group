@@ -275,6 +275,29 @@ export class VendorVaultComponent implements OnInit {
     return d.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
   }
 
+  marginColor(value: number): string {
+    if (!this.visibleVendors.length) return 'rgb(76, 175, 80)';
+    let min = Infinity, max = -Infinity;
+    for (const v of this.visibleVendors) {
+      if (v.marginPct < min) min = v.marginPct;
+      if (v.marginPct > max) max = v.marginPct;
+    }
+    const t = max > min ? (value - min) / (max - min) : 0.5;
+    let r: number, g: number, b: number;
+    if (t <= 0.5) {
+      const s = t * 2;
+      r = Math.round(229 + (255 - 229) * s); // red -> orange
+      g = Math.round(57  + (152 - 57)  * s);
+      b = Math.round(53  * (1 - s));
+    } else {
+      const s = (t - 0.5) * 2;
+      r = Math.round(255 + (76  - 255) * s); // orange -> green
+      g = Math.round(152 + (175 - 152) * s);
+      b = Math.round(80  * s);
+    }
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+
   onLogoError(event: Event, vendor: Vendor): void {
     const img = event.target as HTMLImageElement;
     if (img.dataset['fallback']) return;
