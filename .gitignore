@@ -46,8 +46,7 @@ syncfusion_api_key.txt
 src/assets/config/syncfusion_api_key.txt
 src/assets/config/anthropic_key.txt
 
-# Scraped logo binaries — regenerate locally via scrape_logos.py
-src/assets/logos/
+# Vendor logos are committed to the repo for Heroku deployment
 
 # Source HTML used by scrape_logos.py
 dynamix_partners.html
