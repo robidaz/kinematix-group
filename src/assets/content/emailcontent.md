@@ -12,6 +12,7 @@ VendorVault is our answer to that.
 - **AI-assisted vendor matching.** Describe a client's need in plain English ("mid-range cybersecurity vendor with strong compliance support") and the system narrows the catalog down to the strongest fits — no manual filtering required.
 - **Renewal and spend visibility** at a glance, so account leads can stay ahead of expiring contracts and sourcing teams can negotiate from data, not anecdote.
 - **A portfolio analytics dashboard (VendorAnalytics).** Before a client call, you shouldn't have to scroll a 250-row grid to get a directional read on our vendor portfolio. VendorAnalytics surfaces contract mix, spend distribution by vendor type, and how vendors cluster across reputation and cost tiers — all in a single view, in seconds.
+- **Peer experience and testimonials.** Team members can log their direct experiences with vendors — captured against their name and role — so the next person evaluating that vendor has more than a reputation score to go on. Institutional knowledge that today lives in Slack threads and one-on-ones will now travel with the vendor record.
 - **A single source of truth** that our solutions architects, account executives, and procurement leads can all rely on.
 
 ### Why now
