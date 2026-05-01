@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 import {
   GridModule,
   GridComponent,
@@ -21,7 +22,7 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
 import { ToastModule, ToastComponent } from '@syncfusion/ej2-angular-notifications';
 
-import { Vendor } from '../../models/vendor';
+import { Vendor, Employee } from '../../models/vendor';
 import { VendorService } from '../../services/vendor.service';
 import { AiAnalysisService } from '../../services/ai-analysis.service';
 
@@ -45,6 +46,7 @@ import { AiAnalysisService } from '../../services/ai-analysis.service';
 export class VendorVaultComponent implements OnInit {
   private readonly vendorService = inject(VendorService);
   private readonly aiService = inject(AiAnalysisService);
+  private readonly http = inject(HttpClient);
   private readonly cdr = inject(ChangeDetectorRef);
 
   @ViewChild('grid', { static: false }) grid?: GridComponent;
@@ -52,8 +54,9 @@ export class VendorVaultComponent implements OnInit {
 
   allVendors: Vendor[] = [];
   visibleVendors: Vendor[] = [];
+  employees: Employee[] = [];
 
-  private readonly avatarBg = '521d80'; // mirrors --theme-accent in styles.scss
+  private readonly avatarBg = '521d80';
 
   promptValue = '';
   loading = false;
@@ -65,6 +68,12 @@ export class VendorVaultComponent implements OnInit {
   selectedVendor: Vendor | null = null;
   detailVisible = false;
 
+  // Testimonial form state
+  showTestimonialForm = false;
+  newTestimonialEmployee = '';
+  newTestimonialRole = '';
+  newTestimonialFeedback = '';
+
   readonly pageSettings = {
     pageSize: 15,
     pageSizes: [10, 15, 25, 50],
@@ -74,7 +83,10 @@ export class VendorVaultComponent implements OnInit {
 
   readonly toggleableColumns = [
     'Vendor', 'Type', 'Cost', 'Reputation',
-    'Specializations', 'Contract', 'Renewal', 'Annual Spend',
+    'Specializations', 'Contract', 'Renewal',
+    'Spend (YTD)', 'Spend (All-time)',
+    'Deals (YTD)', 'Deals (All-time)',
+    'Testimonials',
   ];
 
   columnVisibility: Record<string, boolean> = Object.fromEntries(
@@ -128,6 +140,10 @@ export class VendorVaultComponent implements OnInit {
       error: () => {
         this.showToast('Failed to load vendor catalog', 'error');
       },
+    });
+
+    this.http.get<Employee[]>('assets/data/employees.json').subscribe({
+      next: (employees) => { this.employees = employees; },
     });
   }
 
@@ -190,13 +206,52 @@ export class VendorVaultComponent implements OnInit {
 
   onRowClick(args: { data?: Vendor }): void {
     if (!args?.data) return;
-    this.selectedVendor = args.data;
+    this.openDetail(args.data);
+  }
+
+  openDetail(vendor: Vendor): void {
+    this.selectedVendor = vendor;
     this.detailVisible = true;
+    this.showTestimonialForm = false;
+    this.resetTestimonialForm();
   }
 
   closeDetail(): void {
     this.detailVisible = false;
     this.selectedVendor = null;
+    this.showTestimonialForm = false;
+    this.resetTestimonialForm();
+  }
+
+  onEmployeeSelect(): void {
+    const emp = this.employees.find(e => e.name === this.newTestimonialEmployee);
+    this.newTestimonialRole = emp?.role ?? '';
+  }
+
+  submitTestimonial(): void {
+    const feedback = this.newTestimonialFeedback.trim();
+    if (!this.newTestimonialEmployee || !feedback) {
+      this.showToast('Please select an employee and enter feedback.', 'warning');
+      return;
+    }
+    if (!this.selectedVendor) return;
+
+    this.selectedVendor.testimonials.push({
+      feedback,
+      employeeName: this.newTestimonialEmployee,
+      employeeRole: this.newTestimonialRole as 'Sales' | 'Technical',
+    });
+
+    this.showTestimonialForm = false;
+    this.resetTestimonialForm();
+    this.cdr.markForCheck();
+    this.showToast('Testimonial submitted. Thank you!', 'success');
+  }
+
+  resetTestimonialForm(): void {
+    this.newTestimonialEmployee = '';
+    this.newTestimonialRole = '';
+    this.newTestimonialFeedback = '';
   }
 
   starString(rep: number): string {
@@ -211,14 +266,19 @@ export class VendorVaultComponent implements OnInit {
     return '$'.repeat(n);
   }
 
-  formatCurrency(value: number): string {
-    if (value == null) return '';
+  formatCurrency(value: number | null): string {
+    if (value == null) return '—';
     return value.toLocaleString('en-US', {
       style: 'currency',
       currency: 'USD',
       minimumFractionDigits: 0,
       maximumFractionDigits: 0,
     });
+  }
+
+  formatNumber(value: number | null): string {
+    if (value == null) return '—';
+    return value.toLocaleString('en-US');
   }
 
   formatRenewalDate(value: string): string {

@@ -62,14 +62,14 @@ export class VendorAnalyticsComponent implements OnInit {
   servicesData: BubblePoint[] = [];
 
   readonly repXAxis = { minimum: 2.9, maximum: 5.1, title: 'Reputation Score', titleStyle: { size: '12px' }, interval: 0.5 };
-  readonly repYAxis = { labelFormat: '${value}K', title: 'Annual Spend (USD K)', titleStyle: { size: '12px' } };
+  readonly repYAxis = { labelFormat: '${value}K', title: 'Spend YTD (USD K)', titleStyle: { size: '12px' } };
   readonly bubbleLegend = { visible: true, position: 'Bottom' };
   readonly bubbleTooltip = { enable: true, format: '${series.name}<br/>Rep: ${point.x}<br/>Spend: $${point.y}K' };
 
   ngOnInit(): void {
     this.vendorService.load().subscribe(vendors => {
       this.totalVendors = vendors.length;
-      const total = vendors.reduce((s, v) => s + v.annualSpend, 0);
+      const total = vendors.reduce((s, v) => s + (v.spendYTD ?? 0), 0);
       this.totalSpendLabel = '$' + (total / 1_000_000).toFixed(1) + 'M';
       this.avgReputation = +(vendors.reduce((s, v) => s + v.reputation, 0) / vendors.length).toFixed(1);
       this.activeCount = vendors.filter(v => v.contractStatus === 'Active').length;
@@ -83,14 +83,15 @@ export class VendorAnalyticsComponent implements OnInit {
       ];
 
       const tm: Record<string, number> = {};
-      vendors.forEach(v => { tm[v.type] = (tm[v.type] ?? 0) + v.annualSpend; });
+      vendors.forEach(v => { tm[v.type] = (tm[v.type] ?? 0) + (v.spendYTD ?? 0); });
       this.typeSpendData = (['Services', 'Hardware', 'Hybrid', 'Software'] as const).map(t => ({
         x: t,
         y: +(tm[t] / 1_000_000).toFixed(1),
       }));
 
       vendors.forEach(v => {
-        const pt: BubblePoint = { x: v.reputation, y: +(v.annualSpend / 1000).toFixed(1), size: v.costScale };
+        if (v.spendYTD == null) return;
+        const pt: BubblePoint = { x: v.reputation, y: +(v.spendYTD / 1000).toFixed(1), size: v.costScale };
         if (v.type === 'Software') this.softwareData.push(pt);
         else if (v.type === 'Hybrid') this.hybridData.push(pt);
         else if (v.type === 'Hardware') this.hardwareData.push(pt);

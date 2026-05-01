@@ -156,9 +156,40 @@
           </ng-template>
         </e-column>
 
-        <e-column field="annualSpend" headerText="Annual Spend" width="140" textAlign="Right">
+        <e-column field="spendYTD" headerText="Spend (YTD)" width="130" textAlign="Right">
           <ng-template #template let-row>
-            <span class="vv-spend">{{ formatCurrency(row.annualSpend) }}</span>
+            <span class="vv-spend">{{ formatCurrency(row.spendYTD) }}</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="spendAllTime" headerText="Spend (All-time)" width="145" textAlign="Right">
+          <ng-template #template let-row>
+            <span class="vv-spend">{{ formatCurrency(row.spendAllTime) }}</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="dealsClosedYTD" headerText="Deals (YTD)" width="120" textAlign="Right">
+          <ng-template #template let-row>
+            <span class="vv-deals">{{ formatNumber(row.dealsClosedYTD) }}</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="dealsClosedAllTime" headerText="Deals (All-time)" width="135" textAlign="Right">
+          <ng-template #template let-row>
+            <span class="vv-deals">{{ formatNumber(row.dealsClosedAllTime) }}</span>
+          </ng-template>
+        </e-column>
+
+        <e-column field="testimonials" headerText="Testimonials" width="130" textAlign="Center" [allowSorting]="false">
+          <ng-template #template let-row>
+            <ng-container *ngIf="row.testimonials?.length > 0; else noTestimonials">
+              <span class="vv-testimonial-badge" (click)="$event.stopPropagation(); openDetail(row)">
+                {{ row.testimonials.length }}
+              </span>
+            </ng-container>
+            <ng-template #noTestimonials>
+              <button class="vv-testimonial-add" title="Add testimonial" (click)="$event.stopPropagation(); openDetail(row)">＋</button>
+            </ng-template>
           </ng-template>
         </e-column>
       </e-columns>
@@ -171,7 +202,7 @@
     [visible]="detailVisible"
     [showCloseIcon]="true"
     [isModal]="true"
-    width="640px"
+    width="660px"
     [animationSettings]="{ effect: 'Zoom', duration: 200 }"
     (close)="closeDetail()"
     [target]="'body'">
@@ -217,14 +248,26 @@
             </span>
           </div>
           <div class="vv-detail__field">
-            <span class="vv-detail__label">Annual Spend</span>
-            <span class="vv-detail__value">{{ formatCurrency(selectedVendor.annualSpend) }}</span>
-          </div>
-          <div class="vv-detail__field">
             <span class="vv-detail__label">Renewal Date</span>
             <span class="vv-detail__value">{{ formatRenewalDate(selectedVendor.renewalDate) }}</span>
           </div>
           <div class="vv-detail__field">
+            <span class="vv-detail__label">Spend (YTD)</span>
+            <span class="vv-detail__value">{{ formatCurrency(selectedVendor.spendYTD) }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Spend (All-time)</span>
+            <span class="vv-detail__value">{{ formatCurrency(selectedVendor.spendAllTime) }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Deals Closed (YTD)</span>
+            <span class="vv-detail__value">{{ formatNumber(selectedVendor.dealsClosedYTD) }}</span>
+          </div>
+          <div class="vv-detail__field">
+            <span class="vv-detail__label">Deals Closed (All-time)</span>
+            <span class="vv-detail__value">{{ formatNumber(selectedVendor.dealsClosedAllTime) }}</span>
+          </div>
+          <div class="vv-detail__field vv-detail__field--full">
             <span class="vv-detail__label">Website</span>
             <span class="vv-detail__value"><a [href]="selectedVendor.website" target="_blank" rel="noopener">{{ selectedVendor.website }}</a></span>
           </div>
@@ -242,6 +285,61 @@
           <div class="vv-detail__chips">
             <span class="km-pill km-pill--gray" *ngFor="let t of selectedVendor.tags">{{ t }}</span>
           </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="vv-detail__section vv-testimonials">
+          <div class="vv-testimonials__header">
+            <h4>Testimonials <span class="vv-testimonials__count" *ngIf="selectedVendor?.testimonials?.length">{{ selectedVendor?.testimonials?.length }}</span></h4>
+            <button class="vv-btn-experience" (click)="showTestimonialForm = !showTestimonialForm">
+              {{ showTestimonialForm ? 'Cancel' : 'Describe your Experience' }}
+            </button>
+          </div>
+
+          <div class="vv-testimonials__list" *ngIf="selectedVendor?.testimonials?.length">
+            <div class="vv-testimonial" *ngFor="let t of selectedVendor?.testimonials">
+              <div class="vv-testimonial__meta">
+                <span class="vv-testimonial__name">{{ t.employeeName }}</span>
+                <span class="vv-testimonial__role km-pill" [class.km-pill--teal]="t.employeeRole === 'Technical'" [class.km-pill--blue]="t.employeeRole === 'Sales'">{{ t.employeeRole }}</span>
+              </div>
+              <p class="vv-testimonial__text">{{ t.feedback }}</p>
+            </div>
+          </div>
+
+          <p class="vv-testimonials__empty" *ngIf="!selectedVendor?.testimonials?.length && !showTestimonialForm">
+            No testimonials yet. Be the first to share your experience.
+          </p>
+
+          <!-- Add experience form -->
+          <div class="vv-testimonial-form" *ngIf="showTestimonialForm">
+            <div class="vv-testimonial-form__row">
+              <div class="vv-testimonial-form__field">
+                <label>Employee</label>
+                <select [(ngModel)]="newTestimonialEmployee" (change)="onEmployeeSelect()">
+                  <option value="">Select employee…</option>
+                  <option *ngFor="let emp of employees" [value]="emp.name">{{ emp.name }}</option>
+                </select>
+              </div>
+              <div class="vv-testimonial-form__field">
+                <label>Role</label>
+                <input type="text" [value]="newTestimonialRole || '—'" readonly />
+              </div>
+            </div>
+            <div class="vv-testimonial-form__field">
+              <label>Feedback <span class="vv-char-count">{{ newTestimonialFeedback.length }}/250</span></label>
+              <textarea
+                [(ngModel)]="newTestimonialFeedback"
+                [maxlength]="250"
+                rows="3"
+                placeholder="Share your experience with this vendor…">
+              </textarea>
+            </div>
+            <div class="vv-testimonial-form__actions">
+              <button class="vv-btn vv-btn--ghost" (click)="showTestimonialForm = false; resetTestimonialForm()">Cancel</button>
+              <button class="vv-btn vv-btn--primary" (click)="submitTestimonial()">Submit</button>
+            </div>
+          </div>
+
         </div>
       </div>
     </ng-template>

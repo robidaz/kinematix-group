@@ -435,3 +435,185 @@
 ::ng-deep .e-dlg-container .e-dialog .e-footer-content {
   border-radius: 0 0 12px 12px;
 }
+
+// ── Detail grid full-width override ──────────────────────────────────────────
+.vv-detail__field--full {
+  grid-column: 1 / -1;
+}
+
+// ── Testimonial column cells ──────────────────────────────────────────────────
+.vv-testimonial-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 7px;
+  background: var(--theme-accent);
+  color: #fff;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  &:hover { background: var(--theme-accent-dark); }
+}
+
+.vv-testimonial-add {
+  background: none;
+  border: 1.5px dashed #bdbdbd;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  color: #9e9e9e;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s;
+  &:hover { border-color: var(--theme-accent); color: var(--theme-accent); }
+}
+
+// ── Testimonials section in dialog ───────────────────────────────────────────
+.vv-testimonials__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 10px;
+
+  h4 { margin: 0; display: flex; align-items: center; gap: 6px; }
+}
+
+.vv-testimonials__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  background: var(--theme-accent);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.vv-btn-experience {
+  background: none;
+  border: 1.5px solid var(--theme-accent);
+  color: var(--theme-accent);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  &:hover { background: var(--theme-accent); color: #fff; }
+}
+
+.vv-testimonials__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.vv-testimonial {
+  background: #f8f9fb;
+  border: 1px solid #e1e4ea;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.vv-testimonial__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.vv-testimonial__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.vv-testimonial__text {
+  margin: 0;
+  font-size: 13px;
+  color: #424242;
+  line-height: 1.5;
+}
+
+.vv-testimonials__empty {
+  font-size: 13px;
+  color: #9e9e9e;
+  font-style: italic;
+  margin: 4px 0 8px;
+}
+
+// ── Add experience form ───────────────────────────────────────────────────────
+.vv-testimonial-form {
+  background: #f8f9fb;
+  border: 1px solid #e1e4ea;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vv-testimonial-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.vv-testimonial-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  select, input, textarea {
+    font-family: inherit;
+    font-size: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 7px 10px;
+    background: #fff;
+    color: #212121;
+    outline: none;
+    transition: border-color 0.15s;
+    resize: vertical;
+    &:focus { border-color: var(--theme-accent); }
+    &[readonly] { background: #f3f4f6; color: #6b7280; cursor: default; }
+  }
+}
+
+.vv-char-count {
+  font-size: 11px;
+  color: #9ca3af;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.vv-testimonial-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
