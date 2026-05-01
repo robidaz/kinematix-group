@@ -1,12 +1,18 @@
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: #fafafa;
-  min-height: calc(100vh - 130px);
+  height: calc(100vh - 130px);
+  overflow: hidden;
 }
 
 .vv-page {
-  margin: 0 auto;
-  padding: 24px 28px 40px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  padding: 24px 28px 0 28px;
+  overflow: hidden;
 }
 
 /* ----- Prompt panel ----- */
@@ -199,6 +205,8 @@
 
 /* ----- Grid ----- */
 .vv-grid-wrap {
+  flex: 1;
+  min-height: 0;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(10, 22, 40, 0.10);
   overflow: hidden;
