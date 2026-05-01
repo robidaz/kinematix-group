@@ -25,7 +25,7 @@ export class AiAnalysisService {
   loadApiKey(): Observable<string> {
     if (!this.apiKey$) {
       this.apiKey$ = this.http
-        .get('assets/config/anthropic_key.txt', { responseType: 'text' })
+        .get('/api/config/anthropic-key', { responseType: 'text' })
         .pipe(
           map((raw) => raw.trim()),
           shareReplay(1),

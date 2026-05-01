@@ -8,7 +8,7 @@ import { AppComponent } from './app/app.component';
 // root and is also copied into src/assets/config/ for the browser to fetch.
 async function loadSyncfusionLicense(): Promise<void> {
   try {
-    const response = await fetch('assets/config/syncfusion_api_key.txt');
+    const response = await fetch('/api/config/syncfusion-key');
     if (!response.ok) return;
     const key = (await response.text()).trim();
     if (key && !key.startsWith('REPLACE_')) {

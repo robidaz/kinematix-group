@@ -10,6 +10,15 @@ const port = process.env.PORT || 8080;
 
 const distDir = path.join(__dirname, 'dist', 'vendorvault', 'browser');
 
+// Config endpoints — read secrets from Heroku Config Vars, never from the repo
+app.get('/api/config/syncfusion-key', (_req, res) => {
+  res.type('text').send(process.env.SYNCFUSION_KEY || '');
+});
+
+app.get('/api/config/anthropic-key', (_req, res) => {
+  res.type('text').send(process.env.ANTHROPIC_KEY || '');
+});
+
 app.use(express.static(distDir, { maxAge: '1h' }));
 
 // SPA fallback — every unmatched route serves index.html
