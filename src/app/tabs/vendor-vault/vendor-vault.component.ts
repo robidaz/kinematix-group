@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
+  ElementRef,
   ViewChild,
   inject,
   OnInit,
@@ -51,6 +52,7 @@ export class VendorVaultComponent implements OnInit {
 
   @ViewChild('grid', { static: false }) grid?: GridComponent;
   @ViewChild('toast', { static: false }) toast?: ToastComponent;
+  @ViewChild('colChipsHost', { static: false }) colChipsHost?: ElementRef;
 
   allVendors: Vendor[] = [];
   visibleVendors: Vendor[] = [];
@@ -98,6 +100,17 @@ export class VendorVaultComponent implements OnInit {
       this.grid?.showColumns(headerText);
     } else {
       this.grid?.hideColumns(headerText);
+    }
+  }
+
+  onGridCreated(): void {
+    const leftBar =
+      this.grid?.element?.querySelector<HTMLElement>('.e-toolbar .e-toolbar-left') ??
+      this.grid?.element?.querySelector<HTMLElement>('.e-toolbar .e-toolbar-items');
+    const host = this.colChipsHost?.nativeElement as HTMLElement | undefined;
+    if (leftBar && host) {
+      host.style.display = 'flex';
+      leftBar.appendChild(host);
     }
   }
 
