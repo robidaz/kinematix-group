@@ -25,7 +25,7 @@ export class AppComponent {
     { text: 'Company Memo' },
     { text: 'Design Requirements' },
     { text: 'VendorVault' },
-    { text: 'Analytics' },
+    { text: 'VendorAnalytics' },
   ];
 
   goToFirstTab(): void {

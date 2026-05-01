@@ -4,7 +4,7 @@
 
 **Status:** Initial release
 
-**Last updated:** 4/30/2026
+**Last updated:** 5/1/2026
 
 ---
 
@@ -28,6 +28,7 @@ The VendorVault initiative was scoped from a series of internal interviews acros
 - **Contract lifecycle visibility.** Account leads need to see contract status (Active / Prospect / Under Review) and upcoming renewal dates without filing a procurement ticket.
 - **Specialization-driven discovery.** Vendors should be tagged by what they actually *do* — "Cybersecurity," "Identity," "Cloud Storage," "Backup & Recovery" — so filtering can be done by business outcome rather than vendor name.
 - **AI-assisted vendor matching.** Most internal users describe needs in plain English ("we need a mid-range storage vendor with strong compliance"). The system should translate that description into a structured filter automatically, eliminating manual click-through filtering.
+- **Quick-glance portfolio summary.** Front-line team members frequently need a directional read on vendor portfolio health before client conversations — contract status mix, spend allocation by vendor type, and how vendors cluster across reputation and cost tiers. Navigating a 250-row grid to build that picture manually is too slow. A dedicated summary view was needed that surfaces the most decision-relevant signals immediately, without requiring any interaction with the full catalog.
 - **Demo / portfolio fitness.** This first iteration is a demonstration of the product concept, not a production deployment. The data set is intentionally a mix of real partners and simulated entries; all metrics are fabricated for demonstration purposes.
 
 ---
@@ -59,6 +60,10 @@ Specializations are stored as an array per vendor and rendered as Chips in the g
 ### AI-assisted vendor matching
 
 The AI Prompt Panel above the grid accepts a free-text description of a client's need. On submit, the description is sent to Anthropic's Claude API along with a context summary of available vendor types and specializations. Claude returns a structured JSON filter object plus a one-line plain-English summary of what was filtered. The filter is applied to the grid's data source programmatically; the summary is rendered below the input. A pre-seeded AutoComplete dropdown gives users common starting prompts, and a Clear / Reset button restores the unfiltered view.
+
+### Quick-glance portfolio summary (VendorAnalytics)
+
+The VendorAnalytics tab provides a dashboard-style summary of the full vendor catalog without requiring the user to engage the grid. Four KPI tiles surface top-line figures at a glance: total vendor count, total annual spend, average reputation score, and active contract count. Three charts break the portfolio down further: a donut chart for contract status distribution (Active / Prospect / Under Review, using the same color language as the grid badges), a column chart for annual spend by vendor type, and a bubble chart plotting every vendor by reputation score and annual spend — with bubble size encoding cost tier and color encoding vendor type. The chart layer is designed to answer directional questions — *"how balanced is our active portfolio?"*, *"which vendor type consumes the most budget?"*, *"are there high-reputation vendors we're underutilizing?"* — in the time it takes to open a tab.
 
 ### Demo / portfolio fitness
 
