@@ -10,6 +10,14 @@ const port = process.env.PORT || 8080;
 
 const distDir = path.join(__dirname, 'dist', 'vendorvault', 'browser');
 
+// Force HTTPS on Heroku (x-forwarded-proto is set by Heroku's router)
+app.use((req, res, next) => {
+  if (req.headers['x-forwarded-proto'] !== 'https') {
+    return res.redirect(301, 'https://' + req.host + req.url);
+  }
+  next();
+});
+
 // Config endpoints — read secrets from Heroku Config Vars, never from the repo
 app.get('/api/config/syncfusion-key', (_req, res) => {
   res.type('text').send(process.env.SYNCFUSION_KEY || '');
